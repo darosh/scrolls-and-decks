@@ -1,0 +1,27 @@
+{
+  "maximumLineLength": 160,
+  "validateLineBreaks": "LF",
+  "validateIndentation": 4,
+
+  "requireCurlyBraces": [ "if", "else", "for", "while", "do" ],
+  "requireSpaceAfterKeywords": [ "if", "else", "for", "while", "do", "switch", "return" ],
+  "requireSpacesInFunctionExpression": {
+    "beforeOpeningCurlyBrace": true
+  },
+  "requireSpaceBeforeBinaryOperators": ["+", "-", "/", "*", "=", "==", "===", "!=", "!=="],
+  "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-"],
+  "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
+  "disallowKeywords": [ "with" ],
+  "disallowMultipleLineBreaks": true,
+  "disallowKeywordsOnNewLine": [ "else" ],
+  "requireLineFeedAtFileEnd": true,
+  "disallowSpaceAfterObjectKeys": true,
+
+  "disallowSpacesInsideObjectBrackets": null,
+  "disallowImplicitTypeConversion": ["string"],
+
+  "safeContextKeyword": "self",
+
+  "excludeFiles": [
+  ]
+}
