@@ -1,0 +1,26 @@
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+
+*.iml
+
+# User-specific stuff:
+dictionaries
+workspace.xml
+tasks.xml
+
+# Sensitive or high-churn files:
+dataSources.ids
+dataSources.xml
+sqlDataSources.xml
+dynamic.xml
+uiDesigner.xml
+
+# Gradle:
+gradle.xml
+libraries
+
+# Mongo Explorer plugin:
+mongoSettings.xml
+
+## File-based project format:
+*.ipr
+*.iws

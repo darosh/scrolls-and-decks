@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{scrolls-and-decks node_modules}" />
+    <file url="file://$PROJECT_DIR$/client/app/data/cards.service.js" libraries="{angularjs-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$/client/app/data/scrolls.service.js" libraries="{angularjs-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$/client/app/filters/filter-decks.service.js" libraries="{angularjs-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$/client/app/pages/cards/cards-left.ctrl.js" libraries="{angularjs-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$/client/app/pages/deck/deck-properties.html" libraries="{angularjs-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$/client/app/shared/services/config.service.js" libraries="{angularjs-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$/client/app/shared/services/settings.service.js" libraries="{angularjs-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$/client/app/shared/services/storage.service.js" libraries="{angularjs-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$/protractor.conf.js" libraries="{Node.js Globals}" />
+    <file url="file://$PROJECT_DIR$/tasks/build-bundles.js" libraries="{Node.js Globals}" />
+    <file url="file://$PROJECT_DIR$/tasks/build-data.js" libraries="{Node.js Globals}" />
+    <file url="file://$PROJECT_DIR$/tasks/deserialize.js" libraries="{Node.js Globals}" />
+    <file url="file://$PROJECT_DIR$/tasks/load-data.js" libraries="{Node.js Globals}" />
+    <file url="file://$PROJECT_DIR$/tasks/load-images.js" libraries="{Node.js Globals}" />
+    <file url="PROJECT" libraries="{Node.js v0.12.2 Core Modules, scrolls-and-decks bower_components}" />
+  </component>
+</project>

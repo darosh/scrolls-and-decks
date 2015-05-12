@@ -1,0 +1,76 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0" is_locked="false">
+    <option name="myName" value="Project Default" />
+    <option name="myLocal" value="false" />
+    <inspection_tool class="CoffeeScriptArgumentsOutsideFunction" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptFunctionSignatures" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptInfiniteLoop" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptLiteralNotFunction" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptSillyAssignment" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptSwitchStatementWithNoDefaultBranch" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptUnnecessaryReturn" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptUnusedLocalSymbols" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CucumberExamplesColon" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CucumberMissedExamples" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CucumberTableInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CucumberUndefinedStep" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="DartAnalysisServerGlobalInspectionTool" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="DartPathPackageReference" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="EjsUnresolvedInclude" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="GherkinBrokenTableInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="GherkinMisplacedBackground" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="30">
+            <item index="0" class="java.lang.String" itemvalue="analytics-event" />
+            <item index="1" class="java.lang.String" itemvalue="analytics-category" />
+            <item index="2" class="java.lang.String" itemvalue="md-scroll-y" />
+            <item index="3" class="java.lang.String" itemvalue="layout-fill" />
+            <item index="4" class="java.lang.String" itemvalue="hide-gt-lg" />
+            <item index="5" class="java.lang.String" itemvalue="on" />
+            <item index="6" class="java.lang.String" itemvalue="target" />
+            <item index="7" class="java.lang.String" itemvalue="ng-href" />
+            <item index="8" class="java.lang.String" itemvalue="hide-gt-sm" />
+            <item index="9" class="java.lang.String" itemvalue="hide-gt-sm" />
+            <item index="10" class="java.lang.String" itemvalue="show-gt-sm" />
+            <item index="11" class="java.lang.String" itemvalue="show-gt-lg" />
+            <item index="12" class="java.lang.String" itemvalue="layout-align" />
+            <item index="13" class="java.lang.String" itemvalue="layout-margin" />
+            <item index="14" class="java.lang.String" itemvalue="layout-gt-md" />
+            <item index="15" class="java.lang.String" itemvalue="src" />
+            <item index="16" class="java.lang.String" itemvalue="hide" />
+            <item index="17" class="java.lang.String" itemvalue="show-gt-hd" />
+            <item index="18" class="java.lang.String" itemvalue="flex-gt-sm" />
+            <item index="19" class="java.lang.String" itemvalue="flex-gt-md" />
+            <item index="20" class="java.lang.String" itemvalue="quick-repeat-list" />
+            <item index="21" class="java.lang.String" itemvalue="layout-padding" />
+            <item index="22" class="java.lang.String" itemvalue="flex" />
+            <item index="23" class="java.lang.String" itemvalue="layout" />
+            <item index="24" class="java.lang.String" itemvalue="layout-wrap" />
+            <item index="25" class="java.lang.String" itemvalue="flex-sm" />
+            <item index="26" class="java.lang.String" itemvalue="infinite-scroll-distance" />
+            <item index="27" class="java.lang.String" itemvalue="infinite-scroll-container" />
+            <item index="28" class="java.lang.String" itemvalue="app-animation-no-click" />
+            <item index="29" class="java.lang.String" itemvalue="ng-repeat-end" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="4">
+            <item index="0" class="java.lang.String" itemvalue="md-item-content" />
+            <item index="1" class="java.lang.String" itemvalue="md-card-content" />
+            <item index="2" class="java.lang.String" itemvalue="md-item" />
+            <item index="3" class="java.lang.String" itemvalue="md-dialog-content" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="MeteorUnresolvedSymbol" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
