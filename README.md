@@ -63,7 +63,7 @@ _It is [alpha](http://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha) v
 
 ### Documentation
 
-- [ScrollsTypes](https://cdn.rawgit.com/darosh/scrolls-and-decks/master/reports/typedoc/index.html) in TypeScript
+- [ScrollsTypes](https://rawgit.com/darosh/scrolls-and-decks/master/reports/typedoc/index.html) in TypeScript
 
 ### Roadmap
 
