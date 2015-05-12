@@ -3,4 +3,4 @@ languages:
   JavaScript: true
   PHP: false
   Python: false
-exclude_paths: ['gulpfile.js', 'client/types']
+exclude_paths: ['gulpfile.js', 'client/types/*']
