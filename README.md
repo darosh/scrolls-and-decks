@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/darosh/scrolls-and-decks.svg)](https://travis-ci.org/darosh/scrolls-and-decks)
 [![Code Climate](https://codeclimate.com/github/darosh/scrolls-and-decks/badges/gpa.svg)](https://codeclimate.com/github/darosh/scrolls-and-decks)
 [![Test Coverage](https://codeclimate.com/github/darosh/scrolls-and-decks/badges/coverage.svg)](https://codeclimate.com/github/darosh/scrolls-and-decks/coverage)
+[![Dependency Status](https://gemnasium.com/darosh/scrolls-and-decks.svg)](https://gemnasium.com/darosh/scrolls-and-decks)
 [![devDependency Status](https://david-dm.org/darosh/scrolls-and-decks/dev-status.svg)](https://david-dm.org/darosh/scrolls-and-decks#info=devDependencies)
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat)](https://github.com/darosh/scrolls-and-decks/blob/master/LICENSE)
