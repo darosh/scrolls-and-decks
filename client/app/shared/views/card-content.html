@@ -1,0 +1,44 @@
+<h3 class="app-hidden-links"
+    ng-if="ct.settingsCopy.name"
+    ng-style="{'margin-bottom': (ct.settingsCopy.rarity || ct.settingsCopy.type) ? '0px' : null}"><a ng-if="ct.settingsCopy.link" ng-href="{{'#/scroll/' + ct.c.s.id}}" ng-bind="ct.c.s.name"></a><span ng-if="!ct.settingsCopy.link" ng-bind="ct.c.s.name"></span></h3>
+
+<p ng-if="ct.settingsCopy.rarity || ct.settingsCopy.type || ct.settingsCopy.decks"
+   ng-style="{'margin-top': ct.settingsCopy.name ? '4px' : null}"
+   class="app-line-1 app-hidden-links">
+    <a ui-sref="cards.filter(ct.filterParams('rarity', ct.c.s.rarityText))"><small>{{ct.c.s.rarityText}}</small></a><span
+        ng-if="ct.settingsCopy.type"><span
+        ng-if="ct.settingsCopy.rarity">, </span><a
+        ui-sref="cards.filter(ct.filterParams('kind', ct.c.s.kind))"><small><b>{{ct.c.s.kind}}</b></small></a><small ng-if="ct.c.s.types">:</small>
+    <span ng-repeat="t in ct.c.s.typesArr"><a
+            ui-sref="cards.filter(ct.filterParams('type', t))"><small>{{t}}</small></a><small ng-if="!$last || (!$last && !first)">, </small></span></span>
+    <small class="app-flavor-block" ng-if="ct.settingsCopy.decks"><i ng-if="ct.c.s.decksCount !== 1" ng-bind="ct.c.s.decksCount + ' decks'"></i><i ng-if="ct.c.s.decksCount == 1">1
+        deck</i><i>, <span ng-bind="ct.c.s.price | number"></span> gold</i>, <i><a ui-sref="cards.filter(ct.filterParams('set', ct.c.s.set))" ng-bind="'set ' + ct.c.s.set"></a></i>
+    </small>
+</p>
+
+<div ng-if="ct.settingsCopy.bundle && ct.c.s.bundle" class="app-animation" app-animation="ct.c.s.bundle"></div>
+
+<md-divider
+        ng-if="!ct.settingsCopy.bundle && ((ct.settingsCopy.description && (ct.c.s.description || ct.c.s.rules.length)) && (ct.settingsCopy.rarity || ct.settingsCopy.type || ct.settingsCopy.name || ct.settingsCopy.decks))"></md-divider>
+
+<p class="app-description" ng-if="ct.settingsCopy.description && (ct.c.s.description || ct.c.s.rules.length)">
+    <i class="app-block" ng-repeat="p in ct.c.s.rules" ng-bind-html="'* ' + p.name"></i>
+    <span class="app-block app-help" ng-bind-html="ct.c.s.descriptionLink"></span>
+</p>
+
+<md-divider ng-if="ct.settingsCopy.terms && ct.c.s.terms.length"></md-divider>
+
+<p class="app-help"
+   ng-if="ct.settingsCopy.terms"
+   ng-repeat="t in ct.c.s.terms">
+    <small><b class="app-text-uppercase"><a ui-sref="cards.filter(ct.filterParams('trait', t[1][0][1]))" ng-bind="t[1][0][0]"></a><span ng-bind-html="t[1][0][2]"></span></b></small>
+    <br/>
+    <span ng-bind="t[1][1]"></span>
+</p>
+
+<md-divider
+        ng-if="(ct.settingsCopy.flavor && ct.c.s.flavor) && ((!(ct.settingsCopy.terms && ct.c.s.terms.length) && (ct.settingsCopy.description && ct.c.s.description)) || (ct.settingsCopy.terms && ct.c.s.terms.length) || !(ct.settingsCopy.bundle && ct.c.s.bundle) && (!(ct.settingsCopy.description && ct.c.s.description) && (ct.settingsCopy.rarity || ct.settingsCopy.type || ct.settingsCopy.name)))"></md-divider>
+
+<p class="app-flavor-block app-light" ng-if="ct.settingsCopy.flavor && ct.c.s.flavor">
+    <em ng-bind-html="ct.c.s.flavor"></em>
+</p>

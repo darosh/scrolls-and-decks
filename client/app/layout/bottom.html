@@ -1,0 +1,23 @@
+<md-bottom-sheet class="md-list md-has-header" ng-controller="BottomCtrl as bottomCtrl">
+    <md-subheader>Navigation</md-subheader>
+    <md-list>
+        <md-item>
+            <md-button ng-click="bottomCtrl.itemClick('cards')">
+                <i class="mdi mdi-file-document-box"></i>
+                <span class="md-inline-list-icon-label">Scrolls</span>
+            </md-button>
+        </md-item>
+        <md-item>
+            <md-button ng-click="bottomCtrl.itemClick('decks')">
+                <i class="mdi mdi-library-books"></i>
+                <span class="md-inline-list-icon-label">Decks</span>
+            </md-button>
+        </md-item>
+        <md-item>
+            <md-button ng-click="bottomCtrl.itemClick('help')">
+                <i class="mdi mdi-help"></i>
+                <span class="md-inline-list-icon-label">Help</span>
+            </md-button>
+        </md-item>
+    </md-list>
+</md-bottom-sheet>

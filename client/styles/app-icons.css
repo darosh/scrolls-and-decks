@@ -1,0 +1,32 @@
+.s16 {
+    width: 16px;
+    height: 16px;
+}
+
+.s18 {
+    width: 20px;
+    height: 20px;
+    margin-top: -4px;
+}
+
+.s20 {
+    width: 20px;
+    height: 20px;
+    margin-top: -1px;
+}
+
+.s24 {
+    width: 24px;
+    height: 24px;
+}
+
+.app-icon-overlay {
+    font-size: 20px;
+    opacity: 0.87;
+    padding-top: 1px;
+    border-radius: 100%;
+    line-height: 20px;
+    position: absolute;
+    top: 56px;
+    left: 56px;
+}

@@ -1,0 +1,21 @@
+html, body, md-tabs {
+    overflow-x: hidden;
+}
+
+#section-main {
+    overflow-y: hidden;
+}
+
+.app-optimized {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+}

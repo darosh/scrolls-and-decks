@@ -1,0 +1,22 @@
+<md-tabs md-selected="decksCtrl.selectedIndex">
+    <md-tab md-on-select="decksCtrl.selectedIndexChanged()" id="tab0-page-decks" aria-controls="tab1-content-page-decks" analytics-on="click"
+            analytics-event="Page > Decks > All decks" analytics-category="Tab" label="All decks"></md-tab>
+    <md-tab md-on-select="decksCtrl.selectedIndexChanged()" id="tab1-page-decks" aria-controls="tab1-content-page-decks" analytics-on="click"
+            analytics-event="Page > Decks > Complete decks" analytics-category="Tab" label="Complete decks"></md-tab>
+    <md-tab md-on-select="decksCtrl.selectedIndexChanged()" id="tab2-page-decks" aria-controls="tab2-content-page-decks" analytics-on="click"
+            analytics-event="Page > Decks > Incomplete decks" analytics-category="Tab" label="Incomplete decks"></md-tab>
+</md-tabs>
+
+<div ng-if="decksCtrl.filter.items.length === 0"
+     class="app-padding-b app-help">
+    <span ng-if="decksCtrl.selectedIndexCopy === 0" class="app-muted">There are no decks for current filter.</span>
+    <span ng-if="decksCtrl.selectedIndexCopy === 1 && decksCtrl.myScrolls.types.length"><span class="app-muted">You have no complete deck.</span><br/><br/><i class="mdi mdi-lightbulb"></i> Collect more scrolls or try to add or <a href="./#/help/bookmarklet">import</a> more decks.</span>
+    <span ng-if="decksCtrl.selectedIndexCopy === 1 && !decksCtrl.myScrolls.types.length" class="app-muted">You have to set <em>My scrolls</em> first.</span>
+    <span ng-if="decksCtrl.selectedIndexCopy === 2" class="app-muted">Congratulations! You have no incomplete deck.</span>
+</div>
+
+<!-- TODO(touch) should fill screen vertically (other pages too) -->
+<div md-swipe-right="toolbarCtrl.mainSwipeRight()"
+     class="tabpanel-container">
+    <div ng-include="'app/pages/decks/decks-catalog.html'"></div>
+</div>

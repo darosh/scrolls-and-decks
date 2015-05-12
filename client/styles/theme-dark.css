@@ -1,0 +1,218 @@
+.md-dark-theme, .md-dark-theme .md-no-style {
+    color: rgba(255, 255, 255, 0.64);
+}
+
+md-list.md-dark-theme .md-no-style:focus {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.md-dark-theme.md-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.48);
+}
+
+.md-dark-theme .app-simple-bg, .md-dark-theme md-card-content {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: rgb(222, 222, 222);
+}
+
+md-icon.md-dark-theme {
+    color: rgba(0, 0, 0, 1);
+}
+
+md-toolbar.md-dark-theme,
+md-bottom-sheet.md-dark-theme {
+    background-color: #494744;
+    color: rgba(255, 255, 255, 0.64);
+}
+
+[md-theme=dark] md-dialog md-content.app-dialog {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+md-toolbar.md-dark-theme .md-button {
+    color: rgba(255, 255, 255, 0.64);
+}
+
+md-bottom-sheet.md-dark-theme .md-subheader {
+    background-color: inherit;
+}
+
+.md-dark-theme .app-help a, .md-dark-theme .mdi-lightbulb, .md-dark-theme .app-hint-list li:before {
+    color: rgb(224, 170, 7);
+}
+
+.md-dark-theme .app-active-item .md-no-style {
+    color: rgb(224, 170, 7);
+}
+
+.md-dark-theme md-autocomplete {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.md-dark-theme md-autocomplete input {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.md-dark-theme md-autocomplete button md-icon path {
+    fill: rgba(255, 255, 255, 0.64);
+}
+
+md-divider.md-dark-theme {
+    border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+md-divider.md-dark-theme.app-content-divider {
+    border-top-color: rgba(255, 255, 255, 0.16);
+}
+
+.md-dark-theme .app-multi-card {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .28);
+}
+
+.md-dark-theme .growth, .md-dark-theme .hg {
+    background-color: rgba(171, 255, 171, 0.66);
+    color: rgba(0, 0, 0, .87);
+}
+
+.md-dark-theme .energy, .md-dark-theme .he {
+    background-color: rgba(255, 255, 171, 0.66);
+    color: rgba(0, 0, 0, .87);
+}
+
+.md-dark-theme .decay, .md-dark-theme .hd {
+    background-color: rgba(255, 171, 255, 0.66);
+    color: rgba(0, 0, 0, .87);
+}
+
+.md-dark-theme .order, .md-dark-theme .ho {
+    background-color: rgba(171, 216, 255, 0.66);
+    color: rgba(0, 0, 0, .87);
+}
+
+.md-dark-theme .lg, .md-dark-theme .lr0 {
+    background-color: rgba(166, 255, 166, 0.3);
+}
+
+.md-dark-theme .le, .md-dark-theme .lr1 {
+    background-color: rgba(255, 255, 166, 0.3);
+}
+
+.md-dark-theme .lo, .md-dark-theme .lr2 {
+    background-color: rgba(166, 213, 255, 0.3);
+}
+
+.md-dark-theme .ld, .md-dark-theme .lr3 {
+    background-color: rgba(255, 166, 255, 0.3);
+}
+
+.md-dark-theme .g, .md-dark-theme .r0 {
+    background-color: rgba(128, 255, 128, 0.72);
+}
+
+.md-dark-theme .e, .md-dark-theme .r1 {
+    background-color: rgba(255, 255, 128, 0.72);
+}
+
+.md-dark-theme .o, .md-dark-theme .r2 {
+    background-color: rgba(128, 196, 255, 0.72);
+}
+
+.md-dark-theme .d, .md-dark-theme .r3 {
+    background-color: rgba(255, 128, 255, 0.72);
+}
+
+.md-dark-theme md-icon {
+    opacity: 0.84;
+}
+
+md-backdrop.md-opaque.md-dark-theme {
+    background-color: rgba(0, 0, 0, 0.18);
+}
+
+.md-dark-theme .app-card-list-img {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.md-dark-theme .app-deck-icon {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.md-dark-theme .app-chart-border {
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .12);
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+    border-right: 1px solid rgba(255, 255, 255, 0.18);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.md-dark-theme .app-chart-border-horizontal {
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    border-right: 1px solid rgba(255, 255, 255, 0.18);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.md-dark-theme .app-mtr td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.md-dark-theme tr.lltotal td {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.md-dark-theme .app-tr-data .app-mhr {
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+md-input-container.md-dark-theme label {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0), -1px -1px 0 rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.md-dark-theme .app-help-ui em {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+md-switch.md-dark-theme .md-thumb {
+    background-color: rgb(98, 98, 98);
+}
+
+.md-dark-theme .app-description b, .md-dark-theme .app-flavor-block b {
+    opacity: 0.87;
+    color: rgb(255, 255, 255);
+}
+
+md-tabs md-icon.md-dark-theme {
+    color: rgba(255, 255, 255, 1);
+}
+
+body[md-theme=dark] {
+    background-color: rgb(73, 71, 68);
+}
+
+.md-dark-theme .lr0,
+.md-dark-theme .lr1,
+.md-dark-theme .lr2,
+.md-dark-theme .lr3 {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.md-dark-theme .app-fake-color > * {
+    color: rgb(222, 184, 69);
+}
+
+.md-dark-theme .app-fake-color:not(.app-active-item) > * > * {
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.md-dark-theme ::selection {
+    background: #c7bb97;
+}
+.md-dark-theme ::-moz-selection {
+    background: #c7bb97;
+}
+
+.md-dark-theme md-card[ng-click]:active,
+.md-dark-theme md-card[ng-click]:focus {
+    background-color: rgba(222, 184, 69, 0.10);
+}

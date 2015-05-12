@@ -1,0 +1,11 @@
+<ng-include src="'app/shared/views/filter-search.html'"></ng-include>
+<ng-include src="'app/shared/views/filter-resources.html'"></ng-include>
+<md-divider class="app-margin-b-2-3"></md-divider>
+<ng-include src="'app/shared/views/filter-cost.html'"></ng-include>
+<md-divider></md-divider>
+<ng-include src="'app/pages/cards/cards-left-filter-sort.html'"></ng-include>
+<md-divider class="app-filter-divider-end"></md-divider>
+<!--<div>Showing {{ct.filter.items.length}} of {{ct.filter.sorted.length}} scrolls.</div>-->
+<div class="app-padding-2-3-tb app-pull-right">
+    <md-button class="md-primary" ng-click="ct.setFilter()">Reset</md-button>
+</div>

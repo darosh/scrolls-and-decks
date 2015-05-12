@@ -1,0 +1,45 @@
+<md-content layout-gt-md="row" class="app-padding">
+    <div flex="33">
+        <md-card>
+            <md-card-content>
+                <div layout layout="column" class="app-form">
+                    <md-input-container flex>
+                        <label for="input-data">My scrolls</label>
+                        <input id="input-data"
+                               type="text"
+                               ng-change="cardsCtrl.inputCards()"
+                               ng-model="cardsCtrl.input.cards">
+                    </md-input-container>
+                    <md-button class="md-accent" aria-label="Share" target="_blank" ng-href="/#/scrolls" ui-sref="cards.import(cardsCtrl.cardsParams)">
+                        <i class="mdi mdi-share"></i>
+                    </md-button>
+                </div>
+                <div layout="row" layout-align="end">
+                    <div>
+                        <md-button class="md-primary" ng-click="cardsCtrl.resetCards()">Reset</md-button>
+                    </div>
+                    <div class="app-padding-l">
+                        <md-button class="md-accent" ng-click="cardsCtrl.setAllCards()">All</md-button>
+                    </div>
+                </div>
+            </md-card-content>
+        </md-card>
+    </div>
+</md-content>
+<md-content class="app-padding app-padding-mobile app-help app-links" style="padding-top: 0;">
+<div class="app-padding-1-3">
+    <i class="mdi mdi-lightbulb"></i> Setting <em>My scrolls</em> allows you to see missing scrolls in your collection and decks.
+    <br/>
+    <br/>
+    <i class="mdi mdi-lightbulb"></i> How to export scrolls from <a href="https://scrolls.com/" target="_blank">scrolls.com<i
+        class="mdi mdi-link"></i></a> game:
+</div>
+<ol class="app-help-ui">
+    <li>Open <em>Deck Builder</em></li>
+    <li><em>Clean Table</em></li>
+    <li>Press <em>Add Scrolls</em> 3&times;</li>
+    <li><em>Save Deck</em></li>
+    <li>Press <em>Export Deck</em> icon</li>
+    <li><em>Copy to Clipboard</em></li>
+</ol>
+</md-content>

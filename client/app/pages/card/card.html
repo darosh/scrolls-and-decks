@@ -1,0 +1,25 @@
+<md-content md-swipe-right="toolbarCtrl.mainSwipeRight()"
+            layout-gt-md="row" class="md-padding">
+    <div class="app-page-card-wrap">
+        <div layout-gt-md="row">
+            <div flex="33" class="app-card-col-1">
+                <md-card>
+                    <div ng-include="'app/shared/views/card-header.html'"></div>
+                    <md-divider></md-divider>
+                    <md-card-content class="app-card-content" ng-class="{'app-animation-attack': toolbarCtrl.settingsCopy.animate}"
+                                     ng-include="'app/shared/views/card-content.html'"></md-card-content>
+                </md-card>
+            </div>
+
+            <div flex="33" class="app-card-col-2">
+                <md-subheader>Related</md-subheader>
+                <div ng-include="'app/shared/views/cards-list.html'"></div>
+            </div>
+
+            <div flex="33" ng-if="ct.decks.length" class="app-card-col-3">
+                <md-subheader>Decks</md-subheader>
+                <div ng-include="'app/shared/views/decks-list.html'"></div>
+            </div>
+        </div>
+    </div>
+</md-content>

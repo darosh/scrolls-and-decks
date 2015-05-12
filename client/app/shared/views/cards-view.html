@@ -1,0 +1,40 @@
+<div flex class="app-switches-panel" ng-controller="SettingsCtrl as settingsCtrl">
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.image" aria-label="Image">
+        Image
+    </md-switch>
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.highlight" aria-label="Colored">
+        Colored
+    </md-switch>
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.bundle" aria-label="Preview">
+        Preview
+    </md-switch>
+    <md-divider></md-divider>
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.name" aria-label="Name">
+        Name
+    </md-switch>
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.type" aria-label="Kind, Type">
+        Kind, Type
+    </md-switch>
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.rarity" aria-label="Rarity">
+        Rarity
+    </md-switch>
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.decks" aria-label="Decks">
+        Decks, Price
+    </md-switch>
+    <md-divider></md-divider>
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.description" aria-label="Description">
+        Description
+    </md-switch>
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.flavor" aria-label="Flavor">
+        Flavor
+    </md-switch>
+    <md-divider></md-divider>
+    <div class="app-padding-2-3-tb" layout="row" layout-align="end">
+        <div>
+            <md-button class="md-primary" ng-click="settingsCtrl.setAll()">All</md-button>
+        </div>
+        <div class="app-padding-l">
+            <md-button class="md-primary" ng-click="settingsCtrl.resetAll()">Reset</md-button>
+        </div>
+    </div>
+</div>

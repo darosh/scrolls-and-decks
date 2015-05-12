@@ -1,0 +1,113 @@
+md-card md-icon, .app-simple-bg md-icon {
+    margin-left: 4px;
+}
+
+.app-multi-card {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .22);
+    margin: -5px -16px 6px;
+    height: 5px;
+    border-radius: 2px;
+}
+
+.app-push-right {
+    float: right;
+}
+
+.app-card-col-1 {
+    padding: 8px 8px 24px 8px;
+}
+
+.app-card-col-1 md-card-content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.app-card-col-2 .md-subheader {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.app-card-col-2 > div {
+    padding: 0 8px 8px 8px;
+}
+
+.app-card-col-3 .md-subheader {
+    padding-left: 8px;
+    padding-bottom: 4px;
+    padding-top: 8px;
+}
+
+.app-card-col-2 .md-subheader .md-subheader-inner,
+.app-card-col-3 .md-subheader .md-subheader-inner {
+    padding: 16px 0 4px 16px;
+}
+
+.app-card-col-3 > div {
+    padding: 0 8px 8px 8px;
+}
+
+.app-line-1 {
+    line-height: 24px;
+}
+
+.app-line-1m {
+    line-height: 26px;
+}
+
+.app-block {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.app-text-uppercase {
+    text-transform: uppercase;
+}
+
+.app-cost-block {
+    text-align: right;
+    line-height: 1.4;
+}
+
+.app-cost-block > b, .app-cost-block > a {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.app-points-block {
+    margin-bottom: -8px;
+    margin-right: 4px;
+}
+
+.app-counter-block {
+    font-size: 28px;
+    padding: 12px 0 0 16px;
+    position: absolute;
+    left: 84px;
+    top: 0;
+    line-height: 1.4;
+}
+
+.app-counter-block-large {
+    font-size: 28px;
+    padding: 96px 0 0 16px;
+    position: absolute;
+    left: 192px;
+    top: 0;
+    line-height: 1.4;
+}
+
+.app-counter {
+    font-size: 28px;
+    padding: 2px 8px 0 8px;
+    line-height: 1.4;
+}
+
+.app-card-content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.app-card-content h3{
+    line-height: 1.4;
+}

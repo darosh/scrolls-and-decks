@@ -1,0 +1,143 @@
+.app-art-l-d {
+    background: url(../images/scrolls_l_d.jpg) no-repeat;
+}
+
+.app-art-l-e {
+    background: url(../images/scrolls_l_e.jpg) no-repeat;
+}
+
+.app-art-l-g {
+    background: url(../images/scrolls_l_g.jpg) no-repeat;
+}
+
+.app-art-l-o {
+    background: url(../images/scrolls_l_o.jpg) no-repeat;
+}
+
+.app-art-m-d {
+    background: url(../images/scrolls_m_d.jpg) no-repeat;
+}
+
+.app-art-m-e {
+    background: url(../images/scrolls_m_e.jpg) no-repeat;
+}
+
+.app-art-m-g {
+    background: url(../images/scrolls_m_g.jpg) no-repeat;
+}
+
+.app-art-m-o {
+    background: url(../images/scrolls_m_o.jpg) no-repeat;
+}
+
+.app-art-s-d {
+    background: url(../images/scrolls_s_d.jpg) no-repeat;
+}
+
+.app-art-s-e {
+    background: url(../images/scrolls_s_e.jpg) no-repeat;
+}
+
+.app-art-s-g {
+    background: url(../images/scrolls_s_g.jpg) no-repeat;
+}
+
+.app-art-s-o {
+    background: url(../images/scrolls_s_o.jpg) no-repeat;
+}
+
+.app-art-webp-l-d {
+    background: url(../images/scrolls_l_d.webp) no-repeat;
+}
+
+.app-art-webp-l-e {
+    background: url(../images/scrolls_l_e.webp) no-repeat;
+}
+
+.app-art-webp-l-g {
+    background: url(../images/scrolls_l_g.webp) no-repeat;
+}
+
+.app-art-webp-l-o {
+    background: url(../images/scrolls_l_o.webp) no-repeat;
+}
+
+.app-art-webp-m-d {
+    background: url(../images/scrolls_m_d.webp) no-repeat;
+}
+
+.app-art-webp-m-e {
+    background: url(../images/scrolls_m_e.webp) no-repeat;
+}
+
+.app-art-webp-m-g {
+    background: url(../images/scrolls_m_g.webp) no-repeat;
+}
+
+.app-art-webp-m-o {
+    background: url(../images/scrolls_m_o.webp) no-repeat;
+}
+
+.app-art-webp-s-d {
+    background: url(../images/scrolls_s_d.webp) no-repeat;
+}
+
+.app-art-webp-s-e {
+    background: url(../images/scrolls_s_e.webp) no-repeat;
+}
+
+.app-art-webp-s-g {
+    background: url(../images/scrolls_s_g.webp) no-repeat;
+}
+
+.app-art-webp-s-o {
+    background: url(../images/scrolls_s_o.webp) no-repeat;
+}
+
+.app-img-placeholder {
+    background-image: repeating-linear-gradient(
+            135deg,
+            transparent,
+            transparent 8px,
+            rgba(0,0,0,0.08) 8px,
+            rgba(0,0,0,0.08) 16px
+    );
+}
+
+.app-scroll {
+    width: 84px;
+    height: 61px;
+}
+
+.app-art {
+    width: 190px;
+    height: 142px;
+    display: block;
+}
+
+.app-card-list-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.app-round {
+    margin: 16px 16px 16px 0;
+    border-radius: 100%;
+}
+
+.app-deck-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    margin: 12px 16px 12px 0;
+}
+
+.app-deck-icon div {
+    height: 32px;
+}

@@ -1,0 +1,58 @@
+<ng-include src="'app/panels/card/toolbar-right-card.html'"></ng-include>
+
+<md-content id="right-card-content" flex ng-controller="TabsCtrl as tabsCtrl" md-scroll-y>
+    <div infinite-scroll="ct.deckPaging()"
+         infinite-scroll-distance="0"
+         infinite-scroll-container="'#right-card-content'">
+        <div ng-include="'app/shared/views/card-header.html'"></div>
+        <md-divider></md-divider>
+        <div class="app-card-content app-padding-lr" ng-include="'app/shared/views/card-content.html'"></div>
+
+        <md-tabs md-stretch-tabs="never"
+                 md-selected="tabsCtrl.selectedIndex">
+            <md-tab md-on-select="tabsCtrl.selectedIndexChanged()" id="tab2-right-card" aria-controls="tab2-content-right-card" analytics-on="click"
+                    analytics-event="Right > Card > Related"
+                    analytics-category="Tab" label="Related"></md-tab>
+            <md-tab md-on-select="tabsCtrl.selectedIndexChanged()" id="tab1-right-card" aria-controls="tab1-content-right-card" analytics-on="click"
+                    analytics-event="Right > Card > Decks"
+                    analytics-category="Tab" label="Decks"></md-tab>
+            <md-tab md-on-select="tabsCtrl.selectedIndexChanged()" id="tab3-right-card" aria-controls="tab3-content-right-card" analytics-on="click"
+                    analytics-event="Right > Card > Traits"
+                    analytics-category="Tab" label="Traits"></md-tab>
+        </md-tabs>
+
+        <div class="tabpanel-container">
+            <div role="tabpanel"
+                 id="tab2-content-right-card"
+                 aria-labelledby="tab2"
+                 ng-if="tabsCtrl.selectedIndexCopy == 0">
+                <md-content class="" ng-include="'app/shared/views/cards-list.html'"></md-content>
+            </div>
+            <div role="tabpanel"
+                 id="tab1-content-right-card"
+                 aria-labelledby="tab1"
+                 ng-if="tabsCtrl.selectedIndexCopy == 1">
+                <p class="app-padding-lr app-muted app-padding-1-3-tb" ng-if="!ct.decks.length">Not used in decks.</p>
+                <md-content class="app-wrap-list-medium" ng-include="'app/shared/views/decks-list.html'"></md-content>
+            </div>
+            <div role="tabpanel"
+                 id="tab3-content-right-card"
+                 aria-labelledby="tab3"
+                 ng-if="tabsCtrl.selectedIndexCopy == 2">
+                <div class="app-padding app-help" style="padding-top: 0">
+                    <p ng-if="ct.c.s.terms.length === 0"
+                       class="app-muted app-padding-1-3-tb">
+                        This scroll has no additional info.
+                    </p>
+
+                    <p class="app-padding-1-3-tb" ng-repeat="t in ct.c.s.terms">
+                        <small><b class="app-text-uppercase"><a ui-sref="cards.filter(ct.filterParams('trait', t[1][0][1]))" ng-bind="t[1][0][0]"></a><span
+                                ng-bind-html="t[1][0][2]"></span></b></small>
+                        <br/>
+                        <span ng-bind="t[1][1]"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</md-content>

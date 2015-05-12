@@ -1,0 +1,106 @@
+[ng-click] {
+    cursor: pointer;
+}
+
+small[ng-click]:hover {
+    text-decoration: underline;
+}
+
+b[ng-click]:hover {
+    text-decoration: underline;
+}
+
+.md-tile-content {
+    padding-right: 0;
+}
+
+md-sidenav md-list-item .md-no-style {
+    padding: 0 24px;
+}
+
+md-list md-divider[md-inset].app-divider-large {
+    margin-right: 24px;
+}
+
+md-sidenav md-list md-divider[md-inset].app-divider-large {
+    margin-left: 88px;
+    margin-right: 24px;
+}
+
+md-list md-divider[md-inset].app-divider-medium {
+    margin-right: 24px;
+    margin-left: 64px;
+}
+
+md-sidenav md-list md-divider[md-inset].app-divider-medium {
+    margin-left: 73px;
+    margin-right: 24px;
+}
+
+.app-wrap-list-large {
+    padding: 4px 24px 8px 24px;
+    overflow-y: hidden;
+}
+
+.app-wrap-list-medium {
+    overflow-y: hidden;
+}
+
+md-card-content h2 {
+    margin-top: 0;
+}
+
+md-card:active, md-card:focus {
+    outline: transparent 0;
+}
+
+md-card[ng-click]:active,
+md-card[ng-click]:focus {
+    /*background-color: rgba(0, 0, 0, 0.04);*/
+    background-color: rgba(0, 150, 136, 0.2);
+}
+
+/*md-card[ng-click] {*/
+/*transition: /!*background-color linear 0.25s, *!/transform linear 0.15s;*/
+/*}*/
+
+md-card[ng-click]:active {
+    transition: transform ease-out 0.15s, box-shadow linear 0.05s;
+    transform: scale(1.025);
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+}
+
+a.app-img-link .app-art {
+    box-shadow: none;
+}
+
+a.app-img-link:active .app-art {
+    transition: transform ease-out 0.15s, box-shadow linear 0.05s;
+    transform: scale(1.025);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    /*box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);*/
+}
+
+md-icon.md-default-theme {
+    color: rgba(0, 0, 0, 1);
+}
+
+md-dialog .md-button {
+    min-width: 3.6rem;
+}
+
+md-list md-list-item button {
+    background-color: transparent !important;
+}
+
+md-list.md-dark-theme md-list-item button {
+    background-color: transparent !important;
+}
+
+md-sidenav {
+    background-color: transparent;
+}
+
+md-input-container.md-default-theme [ng-message] {
+    color: rgb(244, 67, 54);
+}

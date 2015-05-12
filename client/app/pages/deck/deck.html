@@ -1,0 +1,20 @@
+<md-tabs md-selected="cardsCtrl.selectedIndex">
+    <md-tab md-on-select="cardsCtrl.selectedIndexChanged()" id="tab0-page-deck" aria-controls="tab0-content" analytics-on="click"
+            analytics-event="Page > Deck > All scrolls" analytics-category="Tab" label="All scrolls"></md-tab>
+    <md-tab md-on-select="cardsCtrl.selectedIndexChanged()" id="tab1-page-deck" aria-controls="tab1-content" analytics-on="click"
+            analytics-event="Page > Deck > My scrolls" analytics-category="Tab" label="My scrolls"></md-tab>
+    <md-tab md-on-select="cardsCtrl.selectedIndexChanged()" id="tab2-page-deck" aria-controls="tab2-content" analytics-on="click"
+            analytics-event="Page > Deck > Missing scrolls" analytics-category="Tab" label="Missing scrolls"></md-tab>
+    <md-tab md-on-select="cardsCtrl.selectedIndexChanged()" id="tab3-page-deck" aria-controls="tab3-content" analytics-on="click"
+            analytics-event="Page > Deck > Properties" analytics-category="Tab" label="Properties"></md-tab>
+</md-tabs>
+
+<div md-swipe-right="toolbarCtrl.mainSwipeRight()">
+    <div ng-if="(cardsCtrl.filter.items.length === 0) && (cardsCtrl.selectedIndexCopy < 3)"
+         class="app-padding-b app-help">
+        <span class="app-muted">There are no scrolls in this deck.</span>
+    </div>
+
+    <div ng-if="cardsCtrl.selectedIndexCopy < 3" class="app-optimized" ng-include="'app/shared/views/cards-catalog.html'"></div>
+    <ng-include ng-show="cardsCtrl.selectedIndexCopy == 3" src="'app/pages/deck/deck-properties.html'"></ng-include>
+</div>

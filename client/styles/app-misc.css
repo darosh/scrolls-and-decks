@@ -1,0 +1,321 @@
+.app-cost-buttons div {
+    width: 29px;
+    transition: opacity linear 0.4s;
+}
+
+.app-cost-buttons div .md-button {
+    padding: 0;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.app-resource-buttons div {
+    width: 36px;
+    transition: opacity linear 0.4s;
+}
+
+.app-resource-buttons div .md-button {
+    padding: 3px;
+    height: 40px;
+    width: 100%;
+    line-height: 1;
+}
+
+.app-kind-buttons .md-button {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.app-description b, .app-flavor-block b {
+    opacity: 0.75;
+}
+
+.app-description i b {
+    font-style: normal;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.app-filter-out {
+    opacity: 0.16;
+}
+
+.app-switches-panel md-switch {
+    margin-left: 0;
+}
+
+.app-switches-panel md-switch:first-child {
+    margin-top: 0;
+}
+
+.app-panel-sort {
+    margin-top: 24px;
+    display: block;
+    margin-bottom: 24px;
+}
+
+md-radio-group.app-panel-sort:focus:not(:empty) {
+    border-color: transparent;
+}
+
+.app-panel-sort md-radio-button {
+    margin-left: 0;
+}
+
+.app-title {
+    opacity: 0.5;
+}
+
+.app-opacity-half {
+    opacity: 0.5;
+}
+
+.md-toolbar-tools sup {
+    position: relative;
+    top: -0.3em;
+    left: 0.3em;
+    font-size: 0.6em;
+    opacity: 0.5;
+}
+
+.md-toolbar-tools .mdi {
+    font-size: 22px;
+    width: 22px;
+}
+
+.app-legend .mdi {
+    font-size: 22px;
+    width: 22px;
+    margin: 0 1px 0 5px;
+}
+
+.app-nowrap {
+    white-space: nowrap;
+}
+
+.app-button-list {
+    padding-top: 18px;
+}
+
+.app-button-list .md-button {
+    text-align: left;
+    line-height: 48px;
+    display: block;
+    height: 48px;
+    padding: 0 24px;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.app-decks-highlight div {
+    height: 4px;
+}
+
+.app-flavor-block {
+    display: block;
+    text-align: right;
+    padding-right: 1px;
+}
+
+.app-light {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.app-help p {
+    margin-bottom: 0;
+}
+
+.app-links a[target] .mdi-link {
+    font-size: 10px;
+    vertical-align: top;
+}
+
+.app-help a, .mdi-lightbulb {
+    color: #009688;
+    text-decoration: none;
+}
+
+.app-hint-list {
+    padding-left: 28px;
+}
+
+.app-hint-list li {
+    list-style-type: none;
+}
+
+.app-hint-list li:before {
+    color: #009688;
+    content: '\f341';
+    display: inline-block;
+    width: 24px;
+    margin-left: -24px;
+    font-family: MaterialDesignIcons;
+}
+
+.app-active-item .md-no-style {
+    color: #1b8573;
+}
+
+.app-help a:hover {
+    text-decoration: underline;
+}
+
+.app-help md-card-content {
+    padding: 24px;
+}
+
+.app-help ul, .app-help ol {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 32px;
+    line-height: 1.6;
+}
+
+html {
+    line-height: 1.6;
+}
+
+.app-help table td, .app-help table th {
+    text-align: left;
+    height: 28px;
+}
+
+.app-help table, .app-help p {
+    max-width: 640px;
+}
+
+.app-break-all {
+    word-break: break-all;
+}
+
+.app-overflow-x {
+    overflow-x: auto;
+}
+
+.app-hidden-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.app-hidden-links a:hover {
+    text-decoration: underline;
+}
+
+.app-animation {
+    width: 100%;
+}
+
+.app-animation-attack .app-animation-can-attack {
+    cursor: help;
+}
+
+.app-animation canvas {
+    width: 100%;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.app-animation-mirror canvas {
+    transform: scaleX(-1);
+}
+
+.md-dialog-container table td, .md-dialog-container table th {
+    height: 28px;
+    text-align: left;
+}
+
+.md-dialog-container table th {
+    padding-right: 18px;
+}
+
+md-select, md-card, md-list, md-toolbar, ul, ol, p, h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+}
+
+.app-help-ui em {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    padding: 0 4px;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+/* TODO(css) 0.8.3 -> 0.9 migration "fixes" */
+.md-button {
+    min-width: inherit;
+    margin: 0;
+    font-size: inherit;
+}
+
+.app-dummy {
+    color: rgb(116, 113, 109);
+}
+
+.app-deck-add {
+    position: absolute;
+    right: 24px;
+    top: 6px;
+}
+
+.app-deck-add button {
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    line-height: 42px;
+    padding: 0;
+    margin-top: 13px;
+}
+
+.app-animation-can-attack.app-wait {
+    cursor: default;
+}
+
+.app-muted {
+    opacity: 0.6;
+}
+
+md-content md-content.md-default-theme,
+md-content md-content.md-dark-theme {
+    background-color: transparent;
+}
+
+.md-list-item-text {
+    line-height: 1.3;
+}
+
+.app-fake-color > * {
+    color: #009688;
+}
+
+.app-fake-color:not(.app-active-item) > * > * {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+small b {
+    font-size: 11.75px;
+    letter-spacing: 0.5px;
+    text-rendering: geometricPrecision;
+    font-weight: 400;
+}
+
+small b a {
+    font-weight: 500;
+}
+
+.app-edit-item .md-button.md-no-style {
+    white-space: normal;
+    padding-right: 64px;
+}
+
+::selection {
+    background: #97c7c0;
+}
+::-moz-selection {
+    background: #97c7c0;
+}

@@ -1,0 +1,14 @@
+<div flex class="app-switches-panel" ng-controller="SettingsCtrl as settingsCtrl">
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.decksHighlight" aria-label="Colored">
+        Colored
+    </md-switch>
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.decksAuthor" aria-label="Author">
+        Author
+    </md-switch>
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.decksScrolls" aria-label="Scrolls">
+        Scrolls
+    </md-switch>
+    <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.decksChart" aria-label="Chart">
+        Chart
+    </md-switch>
+</div>

@@ -1,0 +1,33 @@
+<md-content flex ng-controller="TabsCtrl as tabsCtrl">
+    <md-tabs md-stretch-tabs="never"
+             md-selected="tabsCtrl.selectedIndex">
+        <md-tab md-on-select="tabsCtrl.selectedIndexChanged()" id="tab1-side-card"
+                aria-controls="tab1-content-side-card" analytics-on="click" analytics-event="Left > Card > Recent"
+                analytics-category="Tab" label="Recent"></md-tab>
+        <md-tab md-on-select="tabsCtrl.selectedIndexChanged()" id="tab2-side-card"
+                aria-controls="tab2-content-side-card" analytics-on="click" analytics-event="Left > Card > Bookmarks"
+                analytics-category="Tab" label="Bookmarks"></md-tab>
+    </md-tabs>
+
+    <div class="tabpanel-container">
+        <div role="tabpanel"
+             ng-controller="LeftCardRecentCtrl as ct"
+             id="tab1-content-side-card"
+             class="app-wrap-list-medium"
+             aria-labelledby="tab1-side-card"
+             ng-show="tabsCtrl.selectedIndexCopy == 0">
+            <p class="app-padding-lr app-muted" ng-if="!ct.related.length">Recent list is empty.</p>
+            <ng-include src="'app/shared/views/cards-list.html'"></ng-include>
+        </div>
+        <div role="tabpanel"
+             ng-controller="LeftCardBookmarksCtrl as ct"
+             id="tab2-content-side-card"
+             class="app-wrap-list-medium"
+             aria-labelledby="tab2-side-card"
+             ng-show="tabsCtrl.selectedIndexCopy == 1">
+            <p class="app-padding-lr app-muted" ng-if="!ct.related.length">Bookmarks list is empty.<br/>Press <i class="mdi mdi-star-outline"></i> to add a
+                scroll.</p>
+            <ng-include src="'app/shared/views/cards-list.html'"></ng-include>
+        </div>
+    </div>
+</md-content>

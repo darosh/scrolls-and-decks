@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-hint>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title ng-bind="mainTitle">Scrolls &amp; Decks</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Complementary tool for scrolls.com gamers">
+    <meta name="keywords" content="Scrolls, scrolls.com, game, scroll, deck, builder, wiki, database">
+    <meta name="author" content="Jan Forst">
+    <meta property="og:title" content="Scrolls &amp; Decks"/>
+    <meta property="og:description" content="Complementary tool for scrolls.com gamers"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://darosh.github.io/scrolls-and-decks-dev"/>
+    <meta property="og:image" content="http://darosh.github.io/scrolls-and-decks-dev/images/logo.png"/>
+    <link rel="icon" href="./favicon.ico">
+    <style>
+        .ng-cloak {
+            display: none !important;
+        }
+    </style>
+    <!-- inject:style:analytics --><!-- endinject -->
+    <!-- inject:libs:css -->
+    <link rel="stylesheet" href="../bower_components/roboto-fontface/css/roboto-fontface.css">
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="../bower_components/mdi/css/materialdesignicons.min.css">
+    <!-- endinject -->
+    <!-- inject:style:css -->
+    <link rel="stylesheet" href="./styles/app-animation.css">
+    <link rel="stylesheet" href="./styles/app-art.css">
+    <link rel="stylesheet" href="./styles/app-card-deck.css">
+    <link rel="stylesheet" href="./styles/app-card-deck.css">
+    <link rel="stylesheet" href="./styles/app-card.css">
+    <link rel="stylesheet" href="./styles/app-fab.css">
+    <link rel="stylesheet" href="./styles/app-hacks.css">
+    <link rel="stylesheet" href="./styles/app-icons.css">
+    <link rel="stylesheet" href="./styles/app-layout.css">
+    <link rel="stylesheet" href="./styles/app-misc.css">
+    <link rel="stylesheet" href="./styles/app-stats.css">
+    <link rel="stylesheet" href="./styles/app-tweak.css">
+    <link rel="stylesheet" href="./styles/colors-background.css">
+    <link rel="stylesheet" href="./styles/colors-resources.css">
+    <link rel="stylesheet" href="./styles/md-bottom-sheet.css">
+    <link rel="stylesheet" href="./styles/theme-dark.css">
+    <!-- endinject -->
+</head>
+<body class="ng-cloak"
+      layout="row"
+      md-theme="{{toolbarCtrl.settingsCopy.dark ? 'dark' : 'default'}}"
+      ng-class="{'app-animation-mirror': toolbarCtrl.settingsCopy.mirror, 'app-pined-panel': toolbarCtrl.state.current.pinCard && toolbarCtrl.pinCard}"
+      ng-controller="ToolbarCtrl as toolbarCtrl"
+      md-swipe-right="toolbarCtrl.rightSwipeRight()">
+
+<img src="images/logo.png" alt="Logo" style="position: absolute; width: 256px; height: 256px;">
+
+<!-- inject:libs:js -->
+<script src="../bower_components/lodash/lodash.min.js"></script>
+<script src="../bower_components/screenfull/dist/screenfull.js"></script>
+<script src="../bower_components/angular/angular.min.js"></script>
+<!--<script src="../bower_components/angular-hint/dist/hint.js"></script>-->
+<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="../bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="../bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="../bower_components/angular-material/angular-material.min.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
+<script src="../bower_components/ngstorage/ngStorage.min.js"></script>
+<script src="../bower_components/quick-ng-repeat/quick-ng-repeat.js"></script>
+<script src="../bower_components/angulartics/dist/angulartics.min.js"></script>
+<script src="../bower_components/angulartics/dist/angulartics-ga.min.js"></script>
+<!-- endinject -->
+
+<!-- inject:scripts:js -->
+<script src="types/Scroll.js"></script>
+<script src="types/Scrolls.js"></script>
+<script src="types/Card.js"></script>
+<script src="types/Cards.js"></script>
+<script src="types/ResCount.js"></script>
+<script src="types/ResCountSorted.js"></script>
+<script src="types/Stats.js"></script>
+<script src="types/CardsAndStats.js"></script>
+<script src="types/CardsReport.js"></script>
+<script src="types/Deck.js"></script>
+<script src="types/Decks.js"></script>
+<script src="types/DeckCards.js"></script>
+<script src="types/Global.js"></script>
+
+<script src="app/core/app.module.js"></script>
+<script src="app/core/app.core.module.js"></script>
+
+<script src="app/core/compile.config.js"></script>
+<script src="app/core/exception.config.js"></script>
+<script src="app/core/theme.config.js"></script>
+
+<script src="app/data/app.data.module.js"></script>
+<script src="app/data/bookmarks.service.js"></script>
+<script src="app/data/cards.service.js"></script>
+<script src="app/data/combo-promise.service.js"></script>
+<script src="app/data/decks-resource.service.js"></script>
+<script src="app/data/decks-utils.service.js"></script>
+<script src="app/data/decks.service.js"></script>
+<script src="app/data/recent.service.js"></script>
+<script src="app/data/scrolls-resource.service.js"></script>
+<script src="app/data/scrolls.service.js"></script>
+
+<script src="app/filters/app.filters.module.js"></script>
+<script src="app/filters/filter-utils.service.js"></script>
+<script src="app/filters/filter-cards.service.js"></script>
+<script src="app/filters/filter-deck.service.js"></script>
+<script src="app/filters/filter-decks.service.js"></script>
+
+<script src="app/layout/app.layout.module.js"></script>
+<script src="app/layout/bottom.ctrl.js"></script>
+<script src="app/layout/toolbar.ctrl.js"></script>
+
+<script src="app/shared/directives/app.directives.module.js"></script>
+<script src="app/shared/directives/art.directive.js"></script>
+<script src="app/shared/directives/animation.directive.js"></script>
+<script src="app/shared/directives/focus.directive.js"></script>
+
+<script src="app/shared/services/app.services.module.js"></script>
+<script src="app/shared/services/config.service.js"></script>
+<script src="app/shared/services/settings.service.js"></script>
+<script src="app/shared/services/status.service.js"></script>
+<script src="app/shared/services/utils.service.js"></script>
+<script src="app/shared/services/utils-cards.service.js"></script>
+<script src="app/shared/services/utils-decks.service.js"></script>
+<script src="app/shared/services/utils-paging.service.js"></script>
+<script src="app/shared/services/utils-ui.service.js"></script>
+<script src="app/shared/services/webp.service.js"></script>
+
+<script src="app/shared/services/app.storage.module.js"></script>
+<script src="app/shared/services/storage.service.js"></script>
+
+<script src="app/shared/controllers/app.controllers.module.js"></script>
+<script src="app/shared/controllers/settings.ctrl.js"></script>
+<script src="app/shared/controllers/tabs.ctrl.js"></script>
+
+<script src="app/panels/app.panels.module.js"></script>
+<script src="app/panels/card/right-card.ctrl.js"></script>
+<script src="app/panels/settings/right-settings.ctrl.js"></script>
+
+<script src="app/pages/cards/cards.route.js"></script>
+<script src="app/pages/cards/cards.ctrl.js"></script>
+<script src="app/pages/cards/cards-left.ctrl.js"></script>
+
+<script src="app/pages/card/card.route.js"></script>
+<script src="app/pages/card/card.ctrl.js"></script>
+<script src="app/pages/card/card-left-bookmarks.ctrl.js"></script>
+<script src="app/pages/card/card-left-recent.ctrl.js"></script>
+
+<script src="app/pages/decks/decks.route.js"></script>
+<script src="app/pages/decks/decks.ctrl.js"></script>
+<script src="app/pages/decks/decks-left.ctrl.js"></script>
+
+<script src="app/pages/deck/deck.route.js"></script>
+<script src="app/pages/deck/deck.ctrl.js"></script>
+<script src="app/pages/deck/deck-left.ctrl.js"></script>
+
+<script src="app/pages/help/help.route.js"></script>
+<script src="app/pages/help/help.ctrl.js"></script>
+<!-- endinject -->
+
+<!-- inject:templates:js --><!-- endinject -->
+
+<md-sidenav
+        layout="column"
+        class="md-sidenav-left md-whiteframe-z2"
+        md-component-id="left"
+        md-is-locked-open="$mdMedia('gt-lg')">
+    <ng-include src="'app/layout/toolbar-left.html'"></ng-include>
+    <md-content md-scroll-y ui-view="side" flex id="left-content"></md-content>
+</md-sidenav>
+
+<div layout="column"
+     ng-class="{'md-whiteframe-z2': toolbarCtrl.state.current.pinCard && toolbarCtrl.pinCard, 'app-shift-z-index': toolbarCtrl.state.current.pinCard && toolbarCtrl.pinCard}"
+     layout-fill>
+    <section md-swipe-left="toolbarCtrl.leftSwipeLeft()"
+             layout="row"
+             flex
+             id="section-main">
+        <div layout="column" flex style="overflow: hidden">
+            <md-toolbar layout="row" layout-align="end center" class="md-primary md-whiteframe-z1"
+                        ng-include="'app/layout/toolbar-page.html'"></md-toolbar>
+            <md-content md-scroll-y
+                        tabindex="1"
+                        class="app-no-focus-outline"
+                        ng-style="{'overflow-y': toolbarCtrl.state.current.scroll && !(toolbarCtrl.state.current.pinCard && toolbarCtrl.pinCard)? 'scroll': null }"
+                        ui-view="body"
+                        flex id="page-content"></md-content>
+            <md-button ng-if="toolbarCtrl.status.fab" aria-label="Add deck" ng-click="toolbarCtrl.status.fab.click()"
+                       class="md-fab md-accent app-fab-animation app-fab"><i class="mdi"
+                                                                             ng-class="toolbarCtrl.status.fab.class"></i></md-button>
+        </div>
+    </section>
+</div>
+
+<md-sidenav layout="column"
+            md-is-locked-open="toolbarCtrl.state.current.pinCard && toolbarCtrl.pinCard"
+            class="md-sidenav-right"
+            ng-class="{'md-whiteframe-z2': !toolbarCtrl.pinCard}"
+            md-component-id="right-card"
+            ng-controller="RightCardCtrl as ct"
+            ng-include="'app/panels/card/right-card.html'">
+</md-sidenav>
+
+<md-sidenav layout="column"
+            style="z-index: 100"
+            class="md-sidenav-right md-whiteframe-z2"
+            md-component-id="right-settings"
+            ng-include="'app/panels/settings/right-settings.html'">
+</md-sidenav>
+
+<div ng-view=""></div>
+<div ng-repaet="a in [1,4,8]"></div>
+
+</body>
+</html>

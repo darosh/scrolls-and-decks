@@ -1,0 +1,50 @@
+<div class="app-filter-wrap">
+    <md-autocomplete
+            md-no-cache="true"
+            md-item-text="item.name"
+            md-selected-item="leftCtrl.filter.params.selectedItem"
+            md-search-text="leftCtrl.filter.text.search"
+            md-items="item in leftCtrl.filter.querySearch(leftCtrl.filter.text.search)"
+            placeholder="Name or author">
+        <div ng-style="{'font-weight': (item.kind || item.rarity) ? 'bold' : null, 'font-style': item.type ? 'italic' : null}"
+             md-highlight-text="leftCtrl.filter.text.search">{{item.name}}
+        </div>
+    </md-autocomplete>
+</div>
+
+<div layout-align="space-between center" class="app-resource-buttons app-margin-b-2-3" layout="row">
+    <div ng-class="leftCtrl.filter.params.g ? '' : 'app-filter-out'">
+        <md-button ng-click="leftCtrl.filter.params.g = !leftCtrl.filter.params.g" aria-label="Growth">
+            <md-icon class="s24" md-svg-src="./images/resource_growth.svg"></md-icon>
+        </md-button>
+    </div>
+    <div ng-class="leftCtrl.filter.params.e ? '' : 'app-filter-out'">
+        <md-button ng-click="leftCtrl.filter.params.e = !leftCtrl.filter.params.e" aria-label="Energy">
+            <md-icon class="s24" md-svg-src="./images/resource_energy.svg"></md-icon>
+        </md-button>
+    </div>
+    <div ng-class="leftCtrl.filter.params.o ? '' : 'app-filter-out'">
+        <md-button ng-click="leftCtrl.filter.params.o = !leftCtrl.filter.params.o" aria-label="Order">
+            <md-icon class="s24" md-svg-src="./images/resource_order.svg"></md-icon>
+        </md-button>
+    </div>
+    <div ng-class="leftCtrl.filter.params.d ? '' : 'app-filter-out'">
+        <md-button ng-click="leftCtrl.filter.params.d = !leftCtrl.filter.params.d" aria-label="Decay">
+            <md-icon class="s24" md-svg-src="./images/resource_decay.svg"></md-icon>
+        </md-button>
+    </div>
+</div>
+
+<md-divider></md-divider>
+
+<md-radio-group class="app-panel-sort" ng-model="leftCtrl.filter.params.sort">
+    <md-radio-button value="name">Name</md-radio-button>
+    <md-radio-button value="author">Author</md-radio-button>
+    <md-radio-button value="resource">Resource</md-radio-button>
+    <md-radio-button value="cards">Scrolls, Price</md-radio-button>
+    <md-radio-button value="price">Price</md-radio-button>
+</md-radio-group>
+
+<md-divider class="app-filter-divider"></md-divider>
+
+<div>Showing {{leftCtrl.filter.items.length}} of {{leftCtrl.filter.sorted.length}} decks.</div>

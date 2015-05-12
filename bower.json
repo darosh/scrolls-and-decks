@@ -1,0 +1,30 @@
+{
+  "name": "scrolls-and-decks",
+  "private": true,
+  "dependencies": {
+    "angular": "v1.4.0-rc.1",
+    "angular-material": "v0.9.0-master-61b6240",
+    "angular-animate": "v1.4.0-rc.1",
+    "angular-aria": "v1.4.0-rc.1",
+    "angular-resource": "v1.4.0-rc.1",
+    "angular-sanitize": "v1.4.0-rc.1",
+    "angular-ui-router": "0.2.13",
+    "lodash": "3.8.0",
+    "ngInfiniteScroll": "1.2.1",
+    "ngstorage": "0.3.0",
+    "quick-ng-repeat": "allaud/quick-ng-repeat",
+    "roboto-fontface": "~0.4.2",
+    "angulartics": "~0.17.2",
+    "mdi": "~1.0.8-beta",
+    "screenfull": "~2.0.0",
+    "angular-messages": "v1.4.0-rc.1"
+  },
+  "resolutions": {
+    "angular": "v1.4.0-rc.1",
+    "angular-animate": "v1.4.0-rc.1",
+    "angular-aria": "v1.4.0-rc.1"
+  },
+  "devDependencies": {
+    "karma-read-json": "~1.1.0"
+  }
+}

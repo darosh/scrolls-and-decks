@@ -1,0 +1,23 @@
+.app-card-deck md-card-content {
+    padding-top: 0;
+}
+
+.app-card-deck h3 {
+    margin-bottom: 4px;
+    line-height: 1.4;
+    margin-top: 12px;
+}
+
+.app-author-block {
+    line-height: 140%;
+    padding-right: 8px;
+}
+
+.app-cards-count {
+    position: relative;
+    top: 1px;
+}
+
+.app-card-deck-divider {
+    margin: 16px 0;
+}

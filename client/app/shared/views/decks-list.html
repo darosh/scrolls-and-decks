@@ -1,0 +1,16 @@
+<md-list>
+    <md-list-item class="app-fake-color"
+                  aria-label="Deck"
+                  ng-class="{'app-active-item': ct.deckId == d.id}"
+                  ng-repeat-start="d in ct.decks"
+                  ng-click="ct.openDeck(d)">
+        <div class="app-deck-icon" layout="row">
+            <div class="g" ng-style="{width: d.growthPercent + '%'}"></div>
+            <div class="e" ng-style="{width: d.energyPercent + '%'}"></div>
+            <div class="o" ng-style="{width: d.orderPercent + '%'}"></div>
+            <div class="d" ng-style="{width: d.decayPercent + '%'}"></div>
+        </div>
+        <div class="md-list-item-text" ng-bind="d.deck"></div>
+    </md-list-item>
+    <md-divider ng-repeat-end md-inset ng-if="!$last" class="app-divider-medium"></md-divider>
+</md-list>

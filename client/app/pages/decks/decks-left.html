@@ -1,0 +1,34 @@
+<md-content flex ng-controller="TabsCtrl as tabsCtrl">
+    <md-tabs md-stretch-tabs="never"
+             md-selected="tabsCtrl.selectedIndex">
+        <md-tab md-on-select="tabsCtrl.selectedIndexChanged()" id="tab1-side-decks" aria-controls="tab1-content-side-decks" analytics-on="click" analytics-event="Left > Decks > Filter"
+                analytics-category="Tab" label="Filter"></md-tab>
+        <md-tab md-on-select="tabsCtrl.selectedIndexChanged()" id="tab2-side-decks" aria-controls="tab2-content-side-decks" analytics-on="click" analytics-event="Left > Decks > Stats"
+                analytics-category="Tab" label="Stats"></md-tab>
+        <md-tab md-on-select="tabsCtrl.selectedIndexChanged()" id="tab3-side-decks" aria-controls="tab2-content-side-decks" analytics-on="click" analytics-event="Left > Decks > View"
+                analytics-category="Tab" label="View"></md-tab>
+    </md-tabs>
+
+    <div class="tabpanel-container">
+        <div role="tabpanel"
+             id="tab1-content-side-decks"
+             class="app-padding"
+             aria-labelledby="tab1-side-decks"
+             ng-show="tabsCtrl.selectedIndexCopy == 0">
+            <ng-include src="'app/pages/decks/decks-left-filter.html'"></ng-include>
+        </div>
+        <div role="tabpanel"
+             id="tab2-content-side-decks"
+             aria-labelledby="tab2-side-decks"
+             ng-show="tabsCtrl.selectedIndexCopy == 1">
+            <ng-include src="'app/pages/decks/decks-left-stats.html'"></ng-include>
+        </div>
+        <div role="tabpanel"
+             id="tab3-content-side-decks"
+             class="app-padding"
+             aria-labelledby="tab3-side-decks"
+             ng-show="tabsCtrl.selectedIndexCopy == 2">
+            <ng-include src="'app/pages/decks/decks-left-view.html'"></ng-include>
+        </div>
+    </div>
+</md-content>

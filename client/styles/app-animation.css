@@ -1,0 +1,97 @@
+.app-fab-animation {
+    right: 24px;
+}
+
+.app-fab-animation.ng-enter {
+    -webkit-transition: 0.3s ease-out right 0.3s;
+    -moz-transition: 0.3s ease-out right 0.3s;
+    transition: 0.3s ease-out right 0.3s;
+    right: -64px;
+}
+
+.app-fab-animation.ng-enter.ng-enter-active {
+    right: 24px;
+}
+
+.app-fab-animation.ng-leave {
+    -webkit-transition: 0.2s ease-in all 0.2s;
+    -moz-transition: 0.2s ease-in all 0.2s;
+    transition: 0.2s ease-in all 0.2s;
+    right: 24px;
+    opacity: 1;
+}
+
+.app-fab-animation.ng-leave.ng-leave-active {
+    right: -64px;
+    opacity: 0;
+}
+
+/* TODO(animation)
+.app-list-animation {
+    -webkit-transition: top 0.16s;
+    transition: top 0.16s;
+    position: relative;
+    top: 0;
+}
+
+.app-list-animation.ng-enter md-item-content{
+    -webkit-transition: height 0.16s, opacity 0.1s;
+    transition: height 0.16s, opacity 0.1s;
+    height: 0;
+    opacity: 0.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.app-list-animation.ng-enter.ng-enter-active md-item-content{
+    height: 80px;
+    opacity: 1;
+}
+
+.app-list-animation.ng-leave md-item-content{
+    -webkit-transition: height 0.16s, opacity 0.1s;
+    transition: height 0.16s, opacity 0.1s;
+    height: 80px;
+    opacity: 0.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.app-list-animation.ng-leave.ng-leave-active md-item-content{
+    height: 0;
+    opacity: 0;
+}
+*/
+
+.repeat-animation.ng-enter{
+    -webkit-transition:0.133s ease-in-out opacity;
+    transition:0.133s ease-in-out opacity;
+}
+
+.repeat-animation.ng-enter{ opacity:0; }
+
+.repeat-animation.ng-enter.ng-enter-active { opacity:1; }
+
+.button-slide-animation.ng-enter {
+    -webkit-transition:0.15s linear all;
+    transition:0.15s linear all;
+    opacity:0;
+    width: 0;
+}
+
+.button-slide-animation.ng-enter.ng-enter-active {
+    opacity:1;
+    width: 54px;
+}
+
+.button-slide-animation.ng-leave {
+    -webkit-transition:0.15s linear all;
+    transition:0.15s linear all;
+    opacity:1;
+    width: 54px;
+}
+
+.button-slide-animation.ng-leave.ng-leave-active {
+    opacity:0;
+    width: 0;
+}

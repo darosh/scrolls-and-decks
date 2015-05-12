@@ -1,0 +1,46 @@
+<md-dialog md-theme="{{ dialog.theme }}" aria-label="Filter examples">
+    <md-dialog-content>
+        <h2>Filter examples</h2>
+
+        <table>
+            <tbody>
+            <tr>
+                <th>Name</th>
+                <td>stone, rat</td>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <td>1, 367</td>
+            </tr>
+            <tr>
+                <th>Kind</th>
+                <td>creature, spell</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>human, knight</td>
+            </tr>
+            <tr>
+                <th>Trait</th>
+                <td>armor, ranged</td>
+            </tr>
+            <tr>
+                <th>Points</th>
+                <td>1/2/2, 0/-/3, 2/?/3+, 4/2/3-</td>
+            </tr>
+            <tr>
+                <th>Rarity</th>
+                <td>common, uncommon, rare</td>
+            </tr>
+            <tr>
+                <th>Set</th>
+                <td>set 1, set 2</td>
+            </tr>
+            </tbody>
+        </table>
+    </md-dialog-content>
+    <div class="md-actions" layout="row">
+        <md-button ng-if="dialog.$type == 'confirm'" ng-click="dialog.abort()">{{ dialog.cancel }}</md-button>
+        <md-button ng-click="dialog.hide()" class="md-primary">{{ dialog.ok }}</md-button>
+    </div>
+</md-dialog>

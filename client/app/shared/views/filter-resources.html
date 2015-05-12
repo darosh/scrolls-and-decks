@@ -1,0 +1,27 @@
+<div layout-align="space-between center" class="app-resource-buttons app-margin-b-2-3" layout="row">
+    <div ng-class="ct.filter.params.g ? '' : 'app-filter-out'">
+        <md-button ng-click="ct.filter.setResource('g', $event)" aria-label="Growth">
+            <md-icon class="s24" md-svg-src="./images/resource_growth.svg"></md-icon>
+        </md-button>
+    </div>
+    <div ng-class="ct.filter.params.e ? '' : 'app-filter-out'">
+        <md-button ng-click="ct.filter.setResource('e', $event)" aria-label="Energy">
+            <md-icon class="s24" md-svg-src="./images/resource_energy.svg"></md-icon>
+        </md-button>
+    </div>
+    <div ng-class="ct.filter.params.o ? '' : 'app-filter-out'">
+        <md-button ng-click="ct.filter.setResource('o', $event)" aria-label="Order">
+            <md-icon class="s24" md-svg-src="./images/resource_order.svg"></md-icon>
+        </md-button>
+    </div>
+    <div ng-class="ct.filter.params.d ? '' : 'app-filter-out'">
+        <md-button ng-click="ct.filter.setResource('d', $event)" aria-label="Decay">
+            <md-icon class="s24" md-svg-src="./images/resource_decay.svg"></md-icon>
+        </md-button>
+    </div>
+    <div>
+        <md-button ng-click="ct.filter.params.star = (ct.filter.params.star+1)%3" aria-label="Star">
+            <i class="mdi app-mdi-large" ng-class="{'mdi-star': ct.filter.params.star == 1, 'mdi-star-outline': ct.filter.params.star == 2, 'mdi-star-half': ct.filter.params.star == 0}"></i>
+        </md-button>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="app-filter-wrap" layout="row">
+    <div flex>
+        <md-autocomplete
+                md-no-cache="true"
+                md-item-text="item.name"
+                md-delay="25"
+                md-selected-item="ct.filter.params.selectedItem"
+                md-search-text="ct.filter.text.search"
+                md-items="item in ct.filter.querySearch(ct.filter.text.search)"
+                placeholder="Name, kind, type, points, &hellip;">
+            <div ng-style="{'font-weight': (item.kind || item.rarity) ? 'bold' : null, 'font-style': (item.type || item.set || item.trait) ? 'italic' : null}"
+                 md-highlight-text="ct.filter.text.search">{{item.name}}
+            </div>
+        </md-autocomplete>
+    </div>
+    <div style="padding-left: 12px; padding-top: 1px; font-size: 20px;">
+        <md-button ng-click="toolbarCtrl.filterHelp($event)"
+                   aria-label="Filter examples"
+                   style="height: 40px;"><i class="mdi mdi-help"></i></md-button>
+    </div>
+</div>

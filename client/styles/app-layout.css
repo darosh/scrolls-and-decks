@@ -1,0 +1,209 @@
+.app-pined-panel md-backdrop.md-sidenav-backdrop {
+    z-index: 66;
+}
+
+md-sidenav.md-sidenav-left {
+    z-index: 100;
+}
+
+/*md-sidenav.md-sidenav-right {*/
+    /*z-index: 64;*/
+/*}*/
+
+@media (min-width: 2500px) {
+    div[show-gt-hd] {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    .app-card-flex-wrap {
+        max-width: 20% !important;
+    }
+
+    .app-pined-panel .app-card-flex-wrap {
+        max-width: 25% !important;
+    }
+}
+
+@media (min-width: 600px) {
+    .app-pined-panel [layout=row] > [flex-gt-sm="50"] {
+        max-width: 100%;
+        -webkit-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 960px) {
+    .app-pined-panel [layout=row] > [flex-gt-md="25"] {
+        max-width: 50%;
+        -webkit-flex: 0 0 50%;
+        flex: 0 0 50%;
+    }
+}
+
+.app-shift-z-index {
+    z-index: 65;
+}
+
+.app-padding {
+    padding: 24px;
+}
+
+.app-padding-l {
+    padding: 0 0 0 24px;
+}
+
+.app-padding-lr {
+    padding: 0 24px;
+}
+
+.app-padding-2-3 {
+    padding: 16px;
+}
+
+.app-padding-2-3-tb {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.app-padding-1-3-tb {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.app-padding-1-3 {
+    padding: 8px;
+}
+
+.app-padding-b {
+    padding: 28px;
+}
+
+.app-padding-t {
+    padding-top: 24px;
+}
+
+.app-card-edit {
+    padding-top: 8px;
+}
+
+.app-card-edit button {
+    margin-left: 4px;
+    margin-bottom: 8px;
+}
+
+.app-card-edit button .mdi {
+    position: relative;
+    top: 4px;
+}
+
+.app-card-edit md-divider {
+    margin-top: 0;
+}
+
+.app-top-shift {
+    margin-top: 4px;
+}
+
+.app-relative {
+    position: relative;
+}
+
+.app-right {
+    text-align: right;
+}
+
+.app-pull-left {
+    float: left;
+}
+
+.app-pull-right {
+    float: right;
+}
+
+md-sidenav.md-locked-open.md-sidenav-left,
+md-sidenav.md-sidenav-right {
+    width: 328px;
+    min-width: 328px;
+    max-width: 328px;
+}
+
+.app-fw {
+    width: 100%;
+}
+
+.app-filter-wrap {
+    padding-bottom: 16px;
+    padding-top: 7px;
+}
+
+.app-filter-divider {
+    margin-top: 9px;
+    margin-bottom: 24px;
+}
+
+.app-filter-divider-end {
+    margin-top: 9px;
+}
+
+.app-mdi-large {
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.app-margin-b {
+    margin-bottom: 24px;
+}
+
+.app-margin-b-2-3 {
+    margin-bottom: 16px;
+}
+
+.app-page-card-wrap {
+    max-width: 1188px;
+    width: 100%;
+}
+
+.md-mini .mdi {
+    font-size: 24px;
+}
+
+.app-form button, .app-form a {
+    height: 40px;
+    width: 40px;
+    margin-top: 18px;
+    font-size: 20px;
+    line-height: 42px;
+}
+
+md-item-content .md-button {
+    width: 40px;
+    height: 40px;
+}
+
+md-item-content .md-button .mdi {
+    font-size: 24px;
+}
+
+md-item-content .app-pull-left {
+    width: 158px;
+}
+
+@media (max-width: 599px) {
+    md-card {
+        margin: 0;
+    }
+
+    .app-padding-mobile {
+        padding: 16px;
+    }
+}
+
+.app-no-focus-outline:focus {
+    outline: 0;
+}
+
+.app-silly-render-fix > div {
+    min-height: 36px;
+}

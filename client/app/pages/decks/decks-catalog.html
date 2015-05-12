@@ -1,0 +1,79 @@
+<md-content flex>
+    <div class="md-padding">
+        <div flex infinite-scroll="decksCtrl.paging()" infinite-scroll-distance="0" infinite-scroll-container="'#page-content'">
+            <div layout="row" layout-wrap class="app-optimized">
+                <div class="app-card-flex-wrap app-padding-1-3"
+                     ng-class="decksCtrl.lazy.length < 25 ? 'repeat-animation' : ''"
+                     flex-sm="100" flex-gt-sm="50" flex-gt-md="25"
+                     quick-ng-repeat="d in decksCtrl.lazy track by d.id" quick-repeat-list="items">
+                    <md-card class="app-card-deck" ng-click="decksCtrl.openDeck(d)">
+                        <div layout="row" class="app-decks-highlight" ng-if="decksCtrl.settingsCopy.decksHighlight">
+                            <div class="g" ng-style="{width: d.growthPercent + '%'}"></div>
+                            <div class="e" ng-style="{width: d.energyPercent + '%'}"></div>
+                            <div class="o" ng-style="{width: d.orderPercent + '%'}"></div>
+                            <div class="d" ng-style="{width: d.decayPercent + '%'}"></div>
+                        </div>
+                        <md-divider ng-if="decksCtrl.settingsCopy.decksHighlight"></md-divider>
+
+                        <md-card-content>
+                            <div ng-if="decksCtrl.settingsCopy.decksChart && d.types.length">
+                                <div class="app-card-deck-divider"></div>
+                                <div layout="row" layout-align="space-between end">
+                                    <div ng-repeat="(k, t) in d.stats.count.total">
+                                        <div ng-style="{visibility: !d.stats.count.total[k] ? 'hidden' : null}">
+                                            <div class="app-chart-border">
+                                                <div ng-repeat="(q, c) in d.stats.count"
+                                                     ng-if="::q !== 'total'"
+                                                     ng-class="::q"
+                                                     class="app-chart"
+                                                     ng-style="{visibility: d.stats.count[q][k] ? '' : 'hidden',height: (50 * (d.stats.count[q][k] / d.stats.max)) + 'px'}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <md-divider></md-divider>
+                            </div>
+
+                            <h3 ng-bind="::d.deck"></h3>
+
+                            <div layout="row">
+                                <div flex class="app-author-block">
+                                    <small ng-if="decksCtrl.settingsCopy.decksAuthor">by {{d.author}}</small>
+                                </div>
+                                <div>
+                                    <b class="app-cards-count" ng-bind="::d.types.length"></b>
+                                    <md-icon ng-if="::d.growth"
+                                             class="s20"
+                                             md-svg-src="./images/resource_growth.svg"></md-icon>
+
+                                    <md-icon ng-if="::d.energy"
+                                             class="s20"
+                                             md-svg-src="./images/resource_energy.svg"></md-icon>
+
+                                    <md-icon ng-if="::d.order"
+                                             class="s20"
+                                             md-svg-src="./images/resource_order.svg"></md-icon>
+
+                                    <md-icon ng-if="::d.decay"
+                                             class="s20"
+                                             md-svg-src="./images/resource_decay.svg"></md-icon>
+                                </div>
+                            </div>
+
+                            <div ng-if="decksCtrl.settingsCopy.decksScrolls && d.types.length">
+                                <md-divider class="app-card-deck-divider"></md-divider>
+
+                                <div class="app-right">
+                                    <i>{{d.havePercent}}% scrolls, {{d.price | number}}/{{d.priceTotal | number}} gold</i>
+                                </div>
+                            </div>
+
+                        </md-card-content>
+                    </md-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</md-content>

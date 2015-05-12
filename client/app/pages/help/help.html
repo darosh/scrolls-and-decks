@@ -1,0 +1,352 @@
+<md-content md-swipe-right="toolbarCtrl.mainSwipeRight()"
+            class="md-padding">
+    <div class="app-help app-links">
+        <div id="about" class="app-padding-1-3">
+            <md-card>
+                <md-card-content>
+                    <h2>About</h2>
+
+                    <p>
+                        This web application is unofficial complementary tool for <a href="https://scrolls.com/" target="_blank">scrolls.com<i
+                            class="mdi mdi-link"></i></a> gamers.
+                        <br/>
+                        Scrolls game content and materials are trademarks and copyrights of <a href="https://mojang.com/" target="_blank">Mojang, AB<i
+                            class="mdi mdi-link"></i></a>.
+                        <br/>
+                        This web application is not affiliated with or endorsed by Mojang, AB in any way.
+                    </p>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <!--<div id="features" class="app-padding-1-3">-->
+        <!--<md-card>-->
+        <!--<md-card-content>-->
+        <!--<h2>Features</h2>-->
+
+        <!--&lt;!&ndash;TODO(copywriter)&ndash;&gt;-->
+        <!--&lt;!&ndash;TODO(copywriter) add bookmarkability note&ndash;&gt;-->
+        <!--<p>TBD</p>-->
+
+
+        <!--<h3>Scrolls</h3>-->
+        <!--<ul>-->
+        <!--<li><b>Browse</b>: All, My, and Missing scrolls-->
+        <!--<br/><i>(personal collection must be inserted manually in order to see missing scrolls)</i>-->
+        <!--</li>-->
+        <!--<li><b>Search</b> by: Name</li>-->
+        <!--<li><b>Filter</b> by: Resource, Bookmark, Cost, Name, Kind, Type, Rarity, Set, Points-->
+        <!--<br/><i>(action, hit and count points, for example:-->
+        <!--1/2/2, 0/-/3, 2/?/3+, 4/2/3-)</i></li>-->
+        <!--<li><b>Sort</b> by: Cost, Resource, Name, Kind, Type, Decks, Scrolls Price-->
+        <!--<br/><i>(price from in-game Black Market)</i></li>-->
+        <!--<li><b>View</b> customization: Image, Colored, Name, Type, Rarity, Decks, Price, Description, Flavor</li>-->
+        <!--<li><b>Stats</b>: Overall, Kind, Type, Rarity-->
+        <!--<br/><i>(value in stats works as filter shortcut)</i></li>-->
+        <!--<li><b>Related</b> scrolls-->
+        <!--<br/><i>(based on Type or Kind)</i></li>-->
+        <!--<li><b>Decks</b> where the scroll is used</li>-->
+        <!--<li><b>Bookmark</b> scrolls</li>-->
+        <!--</ul>-->
+
+        <!--<h3>Decks</h3>-->
+        <!--<ul>-->
+        <!--<li><b>In-game decks</b>: Starter, Preconstructed</li>-->
+        <!--<li><b>Browse</b>: All, Complete, Incomplete decks</li>-->
+        <!--<li><b>Import</b> decks using import bookmarklet or share link</li>-->
+        <!--<li><b>Share</b> decks via share link</li>-->
+        <!--<li><b>Build</b> your own deck</li>-->
+        <!--<li><b>Search</b> by Name, Author</li>-->
+        <!--<li><b>Filter</b> by Resource</li>-->
+        <!--<li><b>Sort by</b> by Name, Author, Resource, Scrolls, Price</li>-->
+        <!--<li><b>View</b> customization: Colored, Author, Scrolls</li>-->
+        <!--</ul>-->
+        <!--</md-card-content>-->
+        <!--</md-card>-->
+        <!--</div>-->
+
+        <div id="bookmarklet" class="app-padding-1-3">
+            <md-card>
+                <md-card-content>
+                    <h2>Deck import bookmarklet</h2>
+
+                    <ol>
+                        <li>
+                            Drag and drop the following link
+                            <a ng-href="javascript: {{bm}}" class="app-help-ui"><em style="font-style: normal">Import deck</em></a>
+                            to you browser's bookmark bar
+                        </li>
+                        <li>
+                            Open page with deck in one of supported format listed bellow
+                        </li>
+                        <li>
+                            Click the <b>Import deck</b> bookmark on your bookmark bar
+                        </li>
+                    </ol>
+
+
+                    <!--TODO(copy) http://www.labnol.org/software/google-chrome-bookmarklets/27894/-->
+
+                    <h3>Supported deck format examples</h3>
+
+                    <ul>
+                        <li><a href="http://scrolldier.com/deck/1467" target="_blank">scrolldier.com/deck/1467<i class="mdi mdi-link"></i></a></li>
+                        <li>
+                            <a href="http://www.scrollsguide.com/deckbuilder/#2051" target="_blank" class="app-break-all">www.scrollsguide.com/deckbuilder/#2051<i
+                                    class="mdi mdi-link"></i></a>
+                        </li>
+                    </ul>
+
+                    <h3>Deck databases</h3>
+
+                    <ul>
+                        <li><a href="http://scrolldier.com/decks/" target="_blank">scrolldier.com/decks/<i class="mdi mdi-link"></i></a></li>
+                    </ul>
+
+                    <h3>Deck selections</h3>
+
+                    <ul>
+                        <li><a href="http://www.scrollsguide.com/news/6004/the-12-decks-of-scrolls-2014" target="_blank">The 12 Decks of Scrolls 2014<i
+                                class="mdi mdi-link"></i></a>
+                        </li>
+                        <li><a href="http://www.scrollsguide.com/news/3838/the-12-decks-of-scrolls" target="_blank">The 12 Decks of Scrolls<i
+                                class="mdi mdi-link"></i></a>
+                        </li>
+                    </ul>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <div id="legend" class="app-padding-1-3">
+            <md-card>
+                <md-card-content>
+                    <h2>Legend</h2>
+
+                    <p class="app-legend">
+                        <md-icon md-svg-src="./images/resource_growth.svg" alt="Growth" class="s24"></md-icon>
+                        &mdash; Growth resource
+                        <br/>
+                        <md-icon md-svg-src="./images/resource_energy.svg" alt="Energy" class="s24"></md-icon>
+                        &mdash; Energy resource
+                        <br/>
+                        <md-icon md-svg-src="./images/resource_order.svg" alt="Order" class="s24"></md-icon>
+                        &mdash; Order resource
+                        <br/>
+                        <md-icon md-svg-src="./images/resource_decay.svg" alt="Decay" class="s24"></md-icon>
+                        &mdash; Decay resource
+                        <br/>
+                        <md-icon md-svg-src="./images/resource_wild.svg" alt="Decay" class="s24"></md-icon>
+                        &mdash; Wild resource
+                        <br/>
+                        <i class="mdi mdi-star"></i>
+                        &mdash; Bookmarked
+                        <br/>
+                        <i class="mdi mdi-star-outline"></i>
+                        &mdash; Not-bookmarked
+                        <br/>
+                        <i class="mdi mdi-star-half"></i>
+                        &mdash; Bookmarked and Not-bookmarked (used in filter)
+                        <br/>
+                        <i class="mdi mdi-share"></i>
+                        &mdash; Share link (to <i>My scrolls</i> collection, deck, or scroll)
+                        <br/>
+                        <i class="mdi mdi-link"></i>
+                        &mdash; Open link in a new tab
+                        <br/>
+                        <i class="mdi mdi-magnify"></i>
+                        &mdash; Search
+                        <br/>
+                        <i class="mdi mdi-help"></i>
+                        &mdash; Help
+                        <br/>
+                        <i class="mdi mdi-settings"></i>
+                        &mdash; Settings
+                        <br/>
+                        <i class="mdi mdi-lightbulb" style="font-size: 16px;"></i>
+                        &mdash; Hint
+                    </p>
+
+                    <div class="app-padding-t">
+                        <md-divider></md-divider>
+                    </div>
+
+                    <p>Resource icons are &ldquo;flat&rdquo; vectorized adaptation of <a href="https://scrolls.com/media" target="_blank">original icons<i
+                            class="mdi mdi-link"></i></a>.</p>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <div id="hints" class="app-padding-1-3">
+            <md-card>
+                <md-card-content>
+                    <h2>Hints</h2>
+
+                    <ul class="app-hint-list">
+                        <li>Click on scroll image or name in right panel opens detail page (with recent and bookmarked scrolls)</li>
+                        <li class="app-help-ui">To open scroll directly hold one of following keys <em>Ctrl</em>, <em>Alt</em>, or <em>Option</em>
+                            during click on a card</li>
+                        <li>Click on unit preview triggers attack animation</li>
+                        <li class="app-help-ui">Try <a href="./#/scrolls">Scrolls</a> > <em>View</em> > <em>All</em> to see more information at once</li>
+                        <li class="app-help-ui">Every trait, property in scroll detail and number in stats is linked to filter</li>
+                        <li class="app-help-ui">Holding <em>Ctrl</em>, <em>Alt</em>, or <em>Option</em> keys during click on resource or cost filter sets other items to inverted state</li>
+                        <li>Use the <a href="./#/help/bookmarklet">import bookmarklet</a> together with setting <em>My scrolls</em> at <a href="./#/scrolls">Scrolls</a> > <span class="app-help-ui"><em>Properties</em></span></li>
+                        <li class="app-help-ui">All your deck data are store locally, use <em><i class="mdi mdi-share"></i></em> icon to get shareable link at deck <em>Properties</em> tab</li>
+                        <li class="app-help-ui">Check additional settings under <em><i class="mdi mdi-settings"></i></em> icon</li>
+                    </ul>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <div id="content" class="app-padding-1-3">
+            <md-card>
+                <md-card-content>
+                    <h2>Content and application</h2>
+
+                    <div class="app-overflow-x">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>Version</th>
+                                <th>Updated</th>
+                                <th>Source</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>Content</th>
+                                <td>{{scrolls.version}}</td>
+                                <td>{{scrolls.modified | date:'short'}}</td>
+                                <td>
+                                    <a ng-href="{{config.contentSource}}" target="_blank">Data<i
+                                            class="mdi mdi-link"></i></a>
+                                </td>
+                            </tr>
+                            <!--TODO(uncomment for release)-->
+                            <!--<tr>-->
+                            <!--<th>Application</th>-->
+                            <!--<td>{{config.version}}</td>-->
+                            <!--<td>{{config.build | date:'short'}}</td>-->
+                            <!--<td>-->
+                            <!--<a ng-href="{{config.repository}}" target="_blank">Code<i-->
+                            <!--class="mdi mdi-link"></i></a>-->
+                            <!--</td>-->
+                            <!--</tr>-->
+                            </tbody>
+                        </table>
+                    </div>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <div id="log" class="app-padding-1-3">
+            <md-card>
+                <md-card-content>
+                    <h2>Change log</h2>
+
+                    <ul>
+                        <!--<li>4/?/15: Public beta release</li>-->
+                        <li>4/?/15: Public alpha release</li>
+                    </ul>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <div id="issues" class="app-padding-1-3">
+            <md-card>
+                <md-card-content>
+                    <h2>Issues and suggestions</h2>
+
+                    <p>
+                        Feel free to use <a class="md-primary" ng-href="{{config.issues}}" target="_blank">issue tracker on GitHub<i
+                            class="mdi mdi-link"></i></a>.
+                    </p>
+
+                    <p>
+                        Please note current development status is <a href="http://en.wikipedia.org/wiki/Software_release_life_cycle#Alpha" target="_blank">ALPHA<i
+                            class="mdi mdi-link"></i> </a> and right now <a href="https://www.google.com/chrome/" target="_blank">Chrome<i
+                            class="mdi mdi-link"></i></a> is the only recommended browser. Other browsers may have layout, performance and functional issues.
+                    </p>
+
+                    <p>
+                        High level roadmap is published on <a ng-href="{{config.repository}}#roadmap" target="_blank">GitHub<i class="mdi mdi-link"></i></a>.
+                    </p>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <div id="data" class="app-padding-1-3">
+            <md-card>
+                <md-card-content>
+                    <h2>User data</h2>
+
+                    <p>
+                        This web application stores all user data locally in browser using <a ng-href="http://en.wikipedia.org/wiki/Web_storage"
+                                                                                              target="_blank">HTML5 Web storage<i class="mdi mdi-link"></i></a>
+                        (<em>localStorage</em>). Some user data like deck or user card collection can be share via
+                        link.
+                    </p>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <div id="privacy" class="app-padding-1-3">
+            <md-card>
+                <md-card-content>
+                    <h2>Privacy</h2>
+
+                    <p>
+                        This web application is using <a href="http://www.google.com/analytics/" target="_blank">Google Analytics<i
+                            class="mdi mdi-link"></i></a> to
+                        collect non-personal anonymous data about user interaction with this web application like clicked links and user interface elements.
+                        Unique auto-generated numerical user identification is stored in <a ng-href="http://en.wikipedia.org/wiki/Web_storage"
+                                                                                            target="_blank">HTML5 Web storage<i class="mdi mdi-link"></i></a>
+                        (<em>localStorage</em>).
+                    </p>
+                </md-card-content>
+            </md-card>
+        </div>
+
+
+        <div id="acknowledgement" class="app-padding-1-3">
+            <md-card>
+                <md-card-content>
+                    <h2>Acknowledgement</h2>
+
+                    <p>This app is inspired by <a href="http://scrollsguide.com/" target="_blank">scrollsguide.com<i class="mdi mdi-link"></i></a> and <a
+                            href="http://scrolldier.com/" target="_blank">scrolldier.com<i class="mdi mdi-link"></i></a> sites and would not be possible without
+                        the following 3<sup>rd</sup> party components.</p>
+
+                    <ul>
+                        <li><a href="https://angularjs.org/" target="_blank">AngularJS<i class="mdi mdi-link"></i></a></li>
+                        <li><a href="https://material.angularjs.org/" target="_blank">Angular Material<i class="mdi mdi-link"></i></a></li>
+                        <li><a href="https://github.com/angular-ui/ui-router" target="_blank">Angular UI Router<i class="mdi mdi-link"></i></a></li>
+                        <li><a href="https://github.com/luisfarzati/angulartics" target="_blank">Angulartics<i class="mdi mdi-link"></i></a></li>
+                        <!--<li><a href="https://github.com/ftlabs/fastclick" target="_blank">FastClick<i class="mdi mdi-link"></i></a></li>-->
+                        <li><a href="https://lodash.com/" target="_blank">lodash<i class="mdi mdi-link"></i></a></li>
+                        <li><a href="https://github.com/Templarian/MaterialDesign-Webfont" target="_blank">Material Design Webfont<i
+                                class="mdi mdi-link"></i></a>
+                        </li>
+                        <li><a href="https://github.com/sroze/ngInfiniteScroll" target="_blank">ngInfiniteScroll<i class="mdi mdi-link"></i></a></li>
+                        <li><a href="https://github.com/gsklee/ngStorage" target="_blank">ngStorage<i class="mdi mdi-link"></i></a></li>
+                        <li><a href="https://github.com/allaud/quick-ng-repeat" target="_blank">quick-ng-repeat<i class="mdi mdi-link"></i></a></li>
+                        <li><a href="https://github.com/choffmeister/roboto-fontface-bower" target="_blank">Roboto font<i class="mdi mdi-link"></i></a></li>
+                        <li><a href="https://github.com/sindresorhus/screenfull.js" target="_blank">screenfull.js<i class="mdi mdi-link"></i></a></li>
+                    </ul>
+                </md-card-content>
+            </md-card>
+        </div>
+
+        <div id="code" class="app-padding-1-3">
+            <md-card>
+                <md-card-content>
+                    <h2>Source code</h2>
+
+                    <p>
+                        Available on GitHub: <a ng-href="{{config.repository}}" target="_blank">{{config.repository}}<i class="mdi mdi-link"></i></a>.
+                    </p>
+                </md-card-content>
+            </md-card>
+        </div>
+    </div>
+</md-content>

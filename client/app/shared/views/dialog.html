@@ -1,0 +1,11 @@
+<md-dialog md-theme="{{ dialog.theme }}" aria-label="{{ dialog.ariaLabel }}">
+    <md-dialog-content>
+        <h2>{{ dialog.title }}</h2>
+
+        <p ng-bind-html="dialog.content"></p>
+    </md-dialog-content>
+    <div class="md-actions" layout="row">
+        <md-button ng-if="dialog.$type == 'confirm'" ng-click="dialog.abort()">{{ dialog.cancel }}</md-button>
+        <md-button ng-click="dialog.hide()" class="md-primary">{{ dialog.ok }}</md-button>
+    </div>
+</md-dialog>

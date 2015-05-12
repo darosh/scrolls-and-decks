@@ -1,0 +1,37 @@
+<div ng-class="ct.settingsCopy.highlight ? ('h' + ct.c.s.r) : 'app-simple-bg'"
+     layout="row"
+     class="app-relative app-hidden-links">
+    <div flex ng-show="ct.c.c > 1" ng-if="!ct.settingsCopy.image"
+         class="app-counter" ng-bind-html="ct.c.c + '&times;'">
+    </div>
+    <div class="app-img-placeholder">
+        <a class="app-img-link" ng-if="ct.settingsCopy.link" ng-href="{{'#/scroll/' + ct.c.s.id}}"><div ng-if="ct.settingsCopy.image" class="app-art" ng-style="{'background-position': ct.c.s.L}" ng-class="ct.c.s.Lc"></div></a>
+        <div ng-if="ct.settingsCopy.image && !ct.settingsCopy.link" class="app-art" ng-style="{'background-position': ct.c.s.L}" ng-class="ct.c.s.Lc"></div>
+    </div>
+    <div flex layout-padding ng-if="!ct.settingsCopy.image && ct.c.s.p"
+         class="app-line-1m"
+         ng-style="{'text-align': (ct.c.c > 1) ? 'center':'left'}">
+        <a ui-sref="cards.filter(ct.filterParams(null, ct.c.s.ap+'/'+ct.c.s.ac+'/'+ct.c.s.hp))"><b ng-bind="ct.c.s.ap+' / '+ct.c.s.ac+' / '+ct.c.s.hp"></b></a>
+    </div>
+    <div ng-show="ct.c.c > 1" ng-if="ct.settingsCopy.image"
+         class="app-counter-block-large" ng-bind-html="ct.c.c + '&times;'">
+    </div>
+    <div flex layout-padding class="app-cost-block">
+        <a ui-sref="cards.filter(ct.filterParams('cost', ct.c.s.growth, 'r0'))" ng-if="ct.c.s.growth">{{ct.c.s.growth}}
+            <md-icon md-svg-src="./images/resource_growth.svg" alt="Growth" class="s24 app-push-right"></md-icon>
+        </a>
+        <a ui-sref="cards.filter(ct.filterParams('cost', ct.c.s.energy, 'r1'))" ng-if="ct.c.s.energy">{{ct.c.s.energy}}
+            <md-icon md-svg-src="./images/resource_energy.svg" alt="Energy" class="s24 app-push-right"></md-icon>
+        </a>
+        <a ui-sref="cards.filter(ct.filterParams('cost', ct.c.s.order, 'r2'))" ng-if="ct.c.s.order">{{ct.c.s.order}}
+            <md-icon md-svg-src="./images/resource_order.svg" alt="Order" class="s24 app-push-right"></md-icon>
+        </a>
+        <a ui-sref="cards.filter(ct.filterParams('cost', ct.c.s.decay, 'r3'))" ng-if="ct.c.s.decay">{{ct.c.s.decay}}
+            <md-icon md-svg-src="./images/resource_decay.svg" alt="Decay" class="s24 app-push-right"></md-icon>
+        </a>
+        <div class="app-points-block"
+             ng-if="ct.settingsCopy.image && ct.c.s.p">
+            <a ui-sref="cards.filter(ct.filterParams(null, ct.c.s.ap+'/'+ct.c.s.ac+'/'+ct.c.s.hp))"><b ng-bind="ct.c.s.ap+' / '+ct.c.s.ac+' / '+ct.c.s.hp"></b></a>
+        </div>
+    </div>
+</div>

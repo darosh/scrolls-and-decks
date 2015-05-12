@@ -1,0 +1,97 @@
+<md-content>
+    <div class="md-padding">
+        <div flex infinite-scroll="cardsCtrl.paging()" 
+             infinite-scroll-distance="0" 
+             infinite-scroll-container="'#page-content'">
+            <div layout="row" layout-wrap class="app-optimized">
+                <div class="app-card-flex-wrap app-padding-1-3"
+                     ng-class="cardsCtrl.lazy.length < 25 ? 'repeat-animation' : ''"
+                     flex-sm="100" flex-gt-sm="50" flex-gt-md="25"
+                     quick-ng-repeat="c in cardsCtrl.lazy track by c.s.id"
+                     quick-repeat-list="items">
+                    <md-card ng-click="cardsCtrl.showCard(c, $event)">
+                        <div ng-class="cardsCtrl.settingsCopy.highlight ? ('h' + c.s.r) : 'app-simple-bg'" layout="row" class="app-relative">
+                            <div flex ng-show="c.c > 1" ng-if="!cardsCtrl.settingsCopy.image"
+                                 class="app-counter">{{c.c}}&times;</div>
+                            <div class="app-img-placeholder">
+                                <div ng-if="cardsCtrl.settingsCopy.image" class="app-scroll" app-art="{{::c.s.M}}" ng-class="::c.s.Mc"></div>
+                            </div>
+                            <div flex layout-padding ng-if="!cardsCtrl.settingsCopy.image && c.s.p"
+                                 class="app-line-1m"
+                                 ng-style="{'text-align': (c.c > 1) ? 'center':'left'}">
+                                <b>{{::c.s.ap}} / {{::c.s.ac}} / {{::c.s.hp}}</b>
+                            </div>
+                            <div ng-show="c.c > 1" ng-if="cardsCtrl.settingsCopy.image"
+                                 class="app-counter-block">
+                                {{c.c}}&times;
+                            </div>
+                            <div flex class="app-cost-block" layout-padding>
+                                <b ng-if="::c.s.energy">{{::c.s.energy}}
+                                    <md-icon md-svg-src="./images/resource_energy.svg" alt="Energy" class="s24 app-push-right"></md-icon>
+                                </b>
+                                <b ng-if="::c.s.growth">{{::c.s.growth}}
+                                    <md-icon md-svg-src="./images/resource_growth.svg" alt="Growth" class="s24 app-push-right"></md-icon>
+                                </b>
+                                <b ng-if="::c.s.order">{{::c.s.order}}
+                                    <md-icon md-svg-src="./images/resource_order.svg" alt="Order" class="s24 app-push-right"></md-icon>
+                                </b>
+                                <b ng-if="::c.s.decay">{{::c.s.decay}}
+                                    <md-icon md-svg-src="./images/resource_decay.svg" alt="Decay" class="s24 app-push-right"></md-icon>
+                                </b>
+
+                                <div class="app-points-block"
+                                     ng-if="cardsCtrl.settingsCopy.image && c.s.p">
+                                    <b>{{::c.s.ap}} / {{::c.s.ac}} / {{::c.s.hp}}</b>
+                                </div>
+                            </div>
+                        </div>
+                        <md-divider
+                                class="app-content-divider"
+                                ng-if="(cardsCtrl.settingsCopy.bundle && c.s.bundle) || cardsCtrl.filter.edit || cardsCtrl.settingsCopy.name || cardsCtrl.settingsCopy.type || cardsCtrl.settingsCopy.decks || (cardsCtrl.settingsCopy.description && (c.s.description || c.s.rules.length)) || (cardsCtrl.settingsCopy.flavor && c.s.flavor) || cardsCtrl.settingsCopy.rarity"></md-divider>
+
+                        <md-card-content class="app-card-content">
+                            <div ng-if="cardsCtrl.filter.edit && !cardsCtrl.selectedIndexCopy" class="app-card-edit app-right">
+                                <md-button class="md-mini md-accent" ng-click="cardsCtrl.minus($event, c.s.id, c)" aria-label="Minus"><i class="mdi mdi-minus"></i></md-button>
+                                <md-button style="margin-right: -8px;" ng-disabled="c.c == 3" class="md-mini md-accent" ng-click="cardsCtrl.plus($event, c.s.id, c)" aria-label="Plus"><i class="mdi mdi-plus"></i></md-button>
+                                <md-divider
+                                        ng-if="cardsCtrl.settingsCopy.name || cardsCtrl.settingsCopy.type || cardsCtrl.settingsCopy.decks || (cardsCtrl.settingsCopy.description && (c.s.description || c.s.rules.length)) || (cardsCtrl.settingsCopy.flavor && c.s.flavor) || cardsCtrl.settingsCopy.rarity"></md-divider>
+                            </div>
+
+                            <h3 ng-if="cardsCtrl.settingsCopy.name"
+                                ng-style="{'margin-bottom': (cardsCtrl.settingsCopy.rarity || cardsCtrl.settingsCopy.type) ? '0px' : null}">{{::c.s.name}}</h3>
+
+                            <p ng-if="cardsCtrl.settingsCopy.rarity || cardsCtrl.settingsCopy.type || cardsCtrl.settingsCopy.decks"
+                               ng-style="{'margin-top': cardsCtrl.settingsCopy.name ? '4px' : null}"
+                               style="line-height: 24px;">
+                                <small ng-if="cardsCtrl.settingsCopy.rarity">{{::c.s.rarityText}}</small><span ng-if="cardsCtrl.settingsCopy.type"><span ng-if="cardsCtrl.settingsCopy.rarity">, </span><small><b>{{c.s.kind}}</b></small><small
+                                        ng-if="c.s.types">: {{c.s.types}}
+                                </small></span>
+                                <small class="app-flavor-block" ng-if="cardsCtrl.settingsCopy.decks"><i
+                                        ng-if="::c.s.decksCount !== 1">{{::c.s.decksCount}} decks</i><i ng-if="::c.s.decksCount == 1">1 deck</i><i>, {{::c.s.price | number}} gold</i></small>
+                            </p>
+                            <div ng-if="cardsCtrl.settingsCopy.bundle && c.s.bundle" class="app-animation" app-animation="c.s.bundle" app-animation-no-click="true"></div>
+                            <md-divider
+                                    ng-if="!(cardsCtrl.settingsCopy.bundle && c.s.bundle) && ((cardsCtrl.settingsCopy.description && (c.s.description || c.s.rules.length)) && (cardsCtrl.settingsCopy.rarity || cardsCtrl.settingsCopy.type || cardsCtrl.settingsCopy.name || cardsCtrl.settingsCopy.decks))"></md-divider>
+                            <p class="app-description" ng-if="cardsCtrl.settingsCopy.description && (c.s.description || c.s.rules.length)">
+                                <i class="app-block" ng-repeat="p in ::c.s.rules"
+                                   ng-bind-html="'* ' + p.name"></i>
+                                <span class="app-block" ng-bind-html="::c.s.description"></span>
+                            </p>
+                            <md-divider
+                                    ng-if="(cardsCtrl.settingsCopy.flavor && c.s.flavor) && ((cardsCtrl.settingsCopy.description && (c.s.description || c.s.rules.length)) || (!(cardsCtrl.settingsCopy.description && c.s.description) && !(cardsCtrl.settingsCopy.bundle && c.s.bundle) && (cardsCtrl.settingsCopy.rarity || cardsCtrl.settingsCopy.type || cardsCtrl.settingsCopy.name)))"></md-divider>
+                            <p class="app-flavor-block app-light" ng-if="cardsCtrl.settingsCopy.flavor && c.s.flavor">
+                                <em ng-bind-html="::c.s.flavor"></em>
+                            </p>
+
+                            <div class="app-multi-card md-whiteframe-z1" ng-if="c.c > 1"></div>
+                            <div class="app-multi-card md-whiteframe-z1" ng-if="c.c > 2"></div>
+                        </md-card-content>
+                    </md-card>
+                </div>
+            </div>
+            <div hide show-gt-hd class="app-padding-2-3" ng-if="lazy.length < cards.length">
+                <md-button ng-click="paging()">Load more</md-button>
+            </div>
+        </div>
+    </div>
+</md-content>

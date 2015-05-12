@@ -1,0 +1,36 @@
+<ng-include src="'app/panels/settings/toolbar-right-settings.html'"></ng-include>
+
+<md-content class="app-padding app-padding-2-3-tb"
+            flex
+            ng-controller="RightSettingsCtrl">
+    <div class="app-switches-panel app-padding-2-3-tb" ng-controller="SettingsCtrl as settingsCtrl">
+        <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.dark" aria-label="Dark theme">
+            Dark theme
+        </md-switch>
+        <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.animate" aria-label="Animate previews">
+            Animate previews
+        </md-switch>
+        <md-switch ng-change="settingsCtrl.change()" ng-model="settingsCtrl.settings.mirror" aria-label="Mirror previews">
+            Mirror previews
+        </md-switch>
+        <md-switch ng-if="fullScreenEnabled" ng-change="fullScreen()" ng-model="screenfull.isFullscreen" aria-label="Full screen">
+            Full screen
+        </md-switch>
+    </div>
+    <md-divider></md-divider>
+    <div class="app-padding-2-3-tb">
+        <md-button class="md-primary" ng-click="resetSettings()">Reset settings and views</md-button>
+    </div>
+    <md-divider></md-divider>
+    <div class="app-padding-2-3-tb">
+        <md-button class="md-primary" ng-click="resetDecks()">Reset decks</md-button>
+    </div>
+    <md-divider></md-divider>
+    <div class="app-padding-2-3-tb">
+        <md-button class="md-primary" ng-click="resetBookmarks()">Reset bookmarks</md-button>
+    </div>
+    <md-divider></md-divider>
+    <div class="app-padding-2-3-tb">
+        <md-button class="md-primary" ng-click="resetRecent()">Reset recent</md-button>
+    </div>
+</md-content>

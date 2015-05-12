@@ -1,0 +1,47 @@
+<md-list>
+    <div style="position: relative;"
+         ng-repeat-start="c in ct.related track by c.s.id">
+        <md-list-item
+                aria-label="Scroll"
+                class="app-fake-color app-list-animation"
+                ng-click="ct.showCard(c)"
+                ng-class="{'app-active-item': ct.status.card.s.id == c.s.id, 'app-edit-item': ct.edit}">
+            <div class="app-img-placeholder app-round"
+                 ng-class="{'md-whiteframe-z1': ct.status.card.s.id == c.s.id}">
+                <div ng-style="{'background-position': c.s.S}"
+                     ng-class="c.s.Sc"
+                     class="app-card-list-img"
+                     layout="row">
+                </div>
+            </div>
+            <div ng-if="ct.showResource"
+                 class="app-push-right app-icon-overlay">
+                <b ng-if="c.s.energy">
+                    <md-icon md-svg-src="./images/resource_energy.svg" alt="Energy" class="s18"></md-icon>
+                </b>
+                <b ng-if="c.s.growth">
+                    <md-icon md-svg-src="./images/resource_growth.svg" alt="Growth" class="s18"></md-icon>
+                </b>
+                <b ng-if="c.s.order">
+                    <md-icon md-svg-src="./images/resource_order.svg" alt="Order" class="s18"></md-icon>
+                </b>
+                <b ng-if="c.s.decay">
+                    <md-icon md-svg-src="./images/resource_decay.svg" alt="Decay" class="s18"></md-icon>
+                </b>
+            </div>
+            <div class="md-list-item-text">
+                <div>
+                    {{c.s.name}}
+                    <br/>
+                    <small>
+                        <b ng-bind="c.s.kind"></b><span ng-if="c.s.types">: <span ng-bind="c.s.types"></span></span>
+                    </small>
+                </div>
+            </div>
+        </md-list-item>
+        <div ng-if="ct.edit" class="app-deck-add">
+            <md-button class="md-accent" aria-label="Plus" ng-click="ct.addCard(c)"><i class="mdi mdi-plus"></i></md-button>
+        </div>
+    </div>
+    <md-divider ng-repeat-end md-inset ng-if="!$last" class="app-divider-large"></md-divider>
+</md-list>

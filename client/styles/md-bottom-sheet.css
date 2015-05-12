@@ -1,0 +1,34 @@
+md-bottom-sheet.md-list md-item {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 48px;
+}
+
+md-bottom-sheet md-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+}
+
+md-bottom-sheet md-item .mdi {
+    font-size: 20px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    opacity: 0.75;
+    position: relative;
+    top: 2px;
+}
+
+md-bottom-sheet .md-inline-list-icon-label {
+    margin-left: 6px;
+}
+
+md-bottom-sheet .md-button {
+    margin: .6rem 6px;
+    padding-right: 12px;
+}

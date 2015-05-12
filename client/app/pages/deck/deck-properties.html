@@ -1,0 +1,100 @@
+<md-content layout-gt-md="row" class="app-padding">
+    <div flex="33">
+        <md-card>
+            <md-card-content>
+                <div layout layout="column" class="app-form">
+                    <md-input-container flex>
+                        <label for="input-data">Data</label>
+                        <input id="input-data" type="text"
+                               app-focus="cardsCtrl.focusData"
+                               ng-focus="cardsCtrl.selectAll($event)"
+                               ng-change="cardsCtrl.inputDataChanged()"
+                               ng-model="cardsCtrl.filter.json">
+
+                        <div ng-messages="cardsCtrl.filter.error" role="alert">
+                            <div ng-message="invalidJson">Invalid data format!</div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div layout layout="column" class="app-form">
+                    <md-input-container flex>
+                        <label for="input-share">Share</label>
+                        <input id="input-share" type="text"
+                               ng-readonly="true"
+                               ng-focus="cardsCtrl.selectAll($event)"
+                               ng-model="cardsCtrl.share">
+                    </md-input-container>
+                    <md-button
+                            ui-sref="deck.import(cardsCtrl.params)"
+                            target="_blank"
+                            class="md-accent"
+                            aria-label="Share">
+                        <i class="mdi mdi-share"></i>
+                    </md-button>
+                </div>
+                <div layout layout="column" class="app-form">
+                    <md-input-container flex>
+                        <label for="input-deck">Deck</label>
+                        <input id="input-deck"
+                               type="text"
+                               ng-change="cardsCtrl.inputDeckChanged()"
+                               ng-model="cardsCtrl.filter.deck.deck">
+                    </md-input-container>
+                    <md-button
+                            ng-if="cardsCtrl.filter.deck.deck"
+                            class="md-accent"
+                            ng-click="cardsCtrl.search(cardsCtrl.filter.deck.deck)"
+                            aria-label="Search">
+                        <i class="mdi mdi-magnify"></i>
+                    </md-button>
+                </div>
+                <div layout layout="column" class="app-form">
+                    <md-input-container flex>
+                        <label for="input-author">Author</label>
+                        <input id="input-author" type="text"
+                               ng-change="cardsCtrl.inputAuthorChanged()"
+                               ng-model="cardsCtrl.filter.deck.author">
+                    </md-input-container>
+                    <md-button
+                            ng-if="cardsCtrl.filter.deck.author"
+                            class="md-accent"
+                            ng-click="cardsCtrl.search(cardsCtrl.filter.deck.author)"
+                            aria-label="Search">
+                        <i class="mdi mdi-magnify"></i>
+                    </md-button>
+                </div>
+                <div layout layout="column" class="app-form">
+                    <md-input-container flex>
+                        <label for="input-origin">Origin</label>
+                        <input id="input-origin" type="text"
+                               ng-change="cardsCtrl.inputOriginChanged()"
+                               ng-model="cardsCtrl.filter.deck.origin">
+                    </md-input-container>
+                    <md-button class="md-accent"
+                               ng-if="cardsCtrl.filter.deck.origin"
+                               ng-disabled="!cardsCtrl.filter.deck.origin"
+                               aria-label="Open"
+                               ng-href="{{cardsCtrl.filter.deck.origin}}"
+                               target="_blank">
+                        <i class="mdi mdi-link"></i>
+                    </md-button>
+                </div>
+
+                <div layout="row" layout-align="end">
+                    <div>
+                        <md-button class="md-primary" ng-click="cardsCtrl.deleteDeck()">Delete</md-button>
+                    </div>
+                    <!--<div class="app-padding-l">-->
+                    <!--<md-button class="md-primary"  ng-click="cardsCtrl.resetDeck()">Reset</md-button>-->
+                    <!--</div>-->
+                    <div class="app-padding-l">
+                        <md-button class="md-primary"
+                                   ng-disabled="cardsCtrl.cloning"
+                                   ng-click="cardsCtrl.cloneDeck()">Clone
+                        </md-button>
+                    </div>
+                </div>
+            </md-card-content>
+        </md-card>
+    </div>
+</md-content>

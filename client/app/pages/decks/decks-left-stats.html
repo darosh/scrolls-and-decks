@@ -1,0 +1,32 @@
+<div class="app-padding app-top-shift app-muted" ng-if="leftCtrl.filter.stats.length == 0">
+    No stats available.
+</div>
+<div class="app-padding app-top-shift">
+    <table class="app-fw">
+        <tbody>
+        <tr class="app-tr-data" ng-repeat="t in leftCtrl.filter.stats track by t.val">
+            <th class="app-cell-resources">
+                <md-icon ng-if="t.g"
+                         class="s16"
+                         md-svg-src="./images/resource_growth.svg"></md-icon>
+                <md-icon ng-if="t.e"
+                         class="s16"
+                         md-svg-src="./images/resource_energy.svg"></md-icon>
+                <md-icon ng-if="t.o"
+                         class="s16"
+                         md-svg-src="./images/resource_order.svg"></md-icon>
+                <md-icon ng-if="t.d"
+                         class="s16"
+                         md-svg-src="./images/resource_decay.svg"></md-icon>
+            </th>
+            <td class="app-mhr">
+                <div ng-style="{width: 100 * (t.count / leftCtrl.filter.stats[0].count) + '%'}"
+                     class="app-chart-border-horizontal app-chart-bg-light"></div>
+            </td>
+            <td class="app-right app-cell-total">
+                <small>{{t.count}}</small>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,15 @@
+bower_components/*
+node_modules/*
+
+build/*
+temp/*
+
+reports/*
+
+analytics.js
+scrolls.com.json
+
+*.dll
+*.exe
+
+!reports/typedoc

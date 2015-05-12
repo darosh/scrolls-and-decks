@@ -1,0 +1,47 @@
+.growth, .hg {
+    background-color: rgba(217, 255, 217, 0.7);
+}
+
+.energy, .he {
+    background-color: rgba(255, 255, 217, 0.7);
+}
+
+.decay, .hd {
+    background-color: rgba(255, 217, 255, 0.7);
+}
+
+.order, .ho {
+    background-color: rgba(217, 237, 255, 0.7);
+}
+
+.g, .r0 {
+    background-color: rgba(128, 255, 128, 0.5);
+}
+
+.e, .r1 {
+    background-color: rgba(255, 255, 128, 0.5);
+}
+
+.o, .r2 {
+    background-color: rgba(128, 196, 255, 0.5);
+}
+
+.d, .r3 {
+    background-color: rgba(255, 128, 255, 0.5);
+}
+
+.lg, .lr0 {
+    background-color: rgba(217, 255, 217, 0.5);
+}
+
+.le, .lr1 {
+    background-color: rgba(255, 255, 217, 0.5);
+}
+
+.lo, .lr2 {
+    background-color: rgba(217, 237, 255, 0.5);
+}
+
+.ld, .lr3 {
+    background-color: rgba(255, 217, 255, 0.5);
+}

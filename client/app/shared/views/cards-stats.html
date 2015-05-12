@@ -1,0 +1,480 @@
+<div class="app-padding app-top-shift app-muted" ng-if="ct.filter.stats.max <= 0">
+    No stats available.
+</div>
+<div class="app-padding app-top-shift app-hidden-links">
+    <table class="app-stats-hor"
+           ng-if="ct.filter.stats.max > 0">
+        <tbody>
+        <tr class="app-mtr">
+            <td></td>
+            <td class="app-td-chart" ng-repeat="(k, t) in ct.filter.stats.count.total">
+                <div>
+                    <div class="app-chart-bg"
+                         ng-style="{height: (93 * ((ct.filter.stats.max - ct.filter.stats.count.total[k]) / ct.filter.stats.max)) + 'px'}">
+                    </div>
+                    <div class="app-chart-border"
+                         ng-style="{opacity: !ct.filter.stats.count.total[k] ? 0 : 1}">
+                        <div ng-if="q !== 'total'"
+                             ng-repeat="(q, c) in ct.filter.stats.count"
+                             ng-class="q"
+                             class="app-chart"
+                             ng-style="{height: (93 * (ct.filter.stats.count[q][k] / ct.filter.stats.max)) + 'px'}">
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+        <tr class="app-mtr app-tr-head">
+            <td>
+            </td>
+            <td ng-repeat="(k, t) in ct.filter.stats.count.total">
+                <small><em ng-bind="k"></em></small>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr class="app-tr-data" ng-repeat="(k, c) in ct.filter.stats.count"
+            ng-class="'ll' + k"
+            ng-if="ct.filter.stats.total[k] && !((ct.filter.stats.resources == 1) && (k == 'total'))">
+            <td>
+                <md-icon ng-if="k == 'r0'"
+                         class="s16"
+                         md-svg-src="./images/resource_growth.svg"></md-icon>
+
+                <md-icon ng-if="k == 'r1'"
+                         class="s16"
+                         md-svg-src="./images/resource_energy.svg"></md-icon>
+
+                <md-icon ng-if="k == 'r2'"
+                         class="s16"
+                         md-svg-src="./images/resource_order.svg"></md-icon>
+
+                <md-icon ng-if="k == 'r3'"
+                         class="s16"
+                         md-svg-src="./images/resource_decay.svg"></md-icon>
+            </td>
+            <td class="total"
+                ng-class="'l' + k"
+                ng-repeat="(q, v) in c track by $index">
+                <a ui-sref="cards.filter(ct.filterParams('cost', q, k))">
+                    <small ng-bind="v"></small>
+                </a>
+            </td>
+            <td>
+                <a ui-sref="cards.filter(ct.filterParams('cost', 0, k))">
+                    <small ng-bind="ct.filter.stats.total[k]"></small>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div ng-if="ct.filter.stats.max > 0"
+     class="app-hidden-links"
+     ng-controller="TabsCtrl as subTabsCtrl">
+    <md-tabs md-stretch-tabs="never"
+             md-selected="subTabsCtrl.selectedIndex">
+        <md-tab md-on-select="subTabsCtrl.selectedIndexChanged()" id="tab1-tab-stats" aria-controls="tab1-content-tab-stats" analytics-on="click"
+                analytics-event="Left > Cards > Stats > Kind" analytics-category="Tab" label="Kind"></md-tab>
+        <md-tab md-on-select="subTabsCtrl.selectedIndexChanged()" id="tab2-tab-stats" aria-controls="tab2-content-tab-stats" analytics-on="click"
+                analytics-event="Left > Cards > Stats > Type" analytics-category="Tab" label="Type"></md-tab>
+        <md-tab md-on-select="subTabsCtrl.selectedIndexChanged()" id="tab4-tab-stats" aria-controls="tab4-content-tab-stats" analytics-on="click"
+                analytics-event="Left > Cards > Stats > Trait" analytics-category="Tab" label="Trait"></md-tab>
+        <md-tab md-on-select="subTabsCtrl.selectedIndexChanged()" id="tab3-tab-stats" aria-controls="tab3-content-tab-stats" analytics-on="click"
+                analytics-event="Left > Cards > Stats > Rarity" analytics-category="Tab" label="Rarity"></md-tab>
+        <md-tab md-on-select="subTabsCtrl.selectedIndexChanged()" id="tab5-tab-stats" aria-controls="tab5-content-tab-stats" analytics-on="click"
+                analytics-event="Left > Cards > Stats > Attack" analytics-category="Tab" label="Attack"></md-tab>
+        <md-tab md-on-select="subTabsCtrl.selectedIndexChanged()" id="tab6-tab-stats" aria-controls="tab6-content-tab-stats" analytics-on="click"
+                analytics-event="Left > Cards > Stats > Countdown" analytics-category="Tab" label="Countdown"></md-tab>
+        <md-tab md-on-select="subTabsCtrl.selectedIndexChanged()" id="tab7-tab-stats" aria-controls="tab7-content-tab-stats" analytics-on="click"
+                analytics-event="Left > Cards > Stats > Health" analytics-category="Tab" label="Health"></md-tab>
+    </md-tabs>
+
+    <div ng-if="subTabsCtrl.selectedIndexCopy == 0" class="app-padding">
+        <table ng-if="ct.filter.stats.max > 0">
+            <tbody>
+            <tr class="app-mtr app-tr-data">
+                <td></td>
+                <td ng-repeat="(k, t) in ct.filter.stats.kind"
+                    ng-if="ct.filter.stats.total[k] && !((ct.filter.stats.resources == 1) && (k == 'total'))">
+                    <md-icon ng-if="k == 'r0'"
+                             class="s16"
+                             md-svg-src="./images/resource_growth.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r1'"
+                             class="s16"
+                             md-svg-src="./images/resource_energy.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r2'"
+                             class="s16"
+                             md-svg-src="./images/resource_order.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r3'"
+                             class="s16"
+                             md-svg-src="./images/resource_decay.svg"></md-icon>
+                </td>
+            </tr>
+            <tr class="app-tr-data"
+                ng-repeat="(k, t) in ct.filter.stats.kind.total">
+                <th class="app-td-stats-h">
+                    <a ui-sref="cards.filter(ct.filterParams('kind', k))">
+                        <small ng-bind="k"></small>
+                    </a>
+                </th>
+                <td class="app-td-stats-b"
+                    ng-repeat="(z, n) in ct.filter.stats.kind track by $index"
+                    ng-class="'l' + z"
+                    ng-if="ct.filter.stats.total[z]  && !((ct.filter.stats.resources == 1) && (z == 'total'))">
+                    <a ui-sref="cards.filter(ct.filterParams('kind', k, z))">
+                        <small ng-bind="n[k]"></small>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div ng-if="subTabsCtrl.selectedIndexCopy == 1" class="app-padding">
+        <table ng-if="ct.filter.stats.max > 0">
+            <tbody>
+            <tr class="app-mtr app-tr-data">
+                <td></td>
+                <td ng-repeat="(k, t) in ct.filter.stats.type"
+                    ng-if="ct.filter.stats.total[k] && !((ct.filter.stats.resources == 1) && (k == 'total'))">
+                    <md-icon ng-if="k == 'r0'"
+                             class="s16"
+                             md-svg-src="./images/resource_growth.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r1'"
+                             class="s16"
+                             md-svg-src="./images/resource_energy.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r2'"
+                             class="s16"
+                             md-svg-src="./images/resource_order.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r3'"
+                             class="s16"
+                             md-svg-src="./images/resource_decay.svg"></md-icon>
+                </td>
+            </tr>
+            <tr class="app-tr-data"
+                ng-repeat="t in ct.filter.stats.type.total" ng-init="ind = $index">
+                <th class="app-td-stats-h">
+                    <a ui-sref="cards.filter(ct.filterParams('type', t[0]))">
+                        <small ng-bind="t[0]"></small>
+                    </a>
+                </th>
+                <td class="app-td-stats-b"
+                    ng-repeat="(z, n) in ct.filter.stats.type track by $index"
+                    ng-class="'l' + z"
+                    ng-if="ct.filter.stats.total[z] && !((ct.filter.stats.resources == 1) && (z == 'total'))">
+                    <a ui-sref="cards.filter(ct.filterParams('type', t[0], z))">
+                        <small ng-bind="n[t[0]] || n[ind][1]"></small>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div ng-if="subTabsCtrl.selectedIndexCopy == 2" class="app-padding">
+        <table ng-if="ct.filter.stats.max > 0">
+            <tbody>
+            <tr class="app-mtr app-tr-data">
+                <td></td>
+                <td ng-repeat="(k, t) in ct.filter.stats.trait"
+                    ng-if="ct.filter.stats.total[k] && !((ct.filter.stats.resources == 1) && (k == 'total'))">
+                    <md-icon ng-if="k == 'r0'"
+                             class="s16"
+                             md-svg-src="./images/resource_growth.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r1'"
+                             class="s16"
+                             md-svg-src="./images/resource_energy.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r2'"
+                             class="s16"
+                             md-svg-src="./images/resource_order.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r3'"
+                             class="s16"
+                             md-svg-src="./images/resource_decay.svg"></md-icon>
+                </td>
+            </tr>
+            <tr class="app-tr-data"
+                ng-repeat="t in ct.filter.stats.trait.total" ng-init="ind = $index">
+                <th class="app-td-stats-h">
+                    <a ui-sref="cards.filter(ct.filterParams('trait', t[0]))">
+                        <small ng-bind="t[0]"></small>
+                    </a>
+                </th>
+                <td class="app-td-stats-b"
+                    ng-repeat="(z, n) in ct.filter.stats.trait track by $index"
+                    ng-class="'l' + z"
+                    ng-if="ct.filter.stats.total[z] && !((ct.filter.stats.resources == 1) && (z == 'total'))">
+                    <a ui-sref="cards.filter(ct.filterParams('trait', t[0], z))">
+                        <small ng-bind="n[t[0]]  || n[ind][1]"></small>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div ng-if="subTabsCtrl.selectedIndexCopy == 3" class="app-padding">
+        <table ng-if="ct.filter.stats.max > 0">
+            <tbody>
+            <tr class="app-mtr app-tr-data">
+                <td></td>
+                <td ng-repeat="(k, t) in ct.filter.stats.rarity"
+                    ng-if="ct.filter.stats.total[k] && !((ct.filter.stats.resources == 1) && (k == 'total'))">
+                    <md-icon ng-if="k == 'r0'"
+                             class="s16"
+                             md-svg-src="./images/resource_growth.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r1'"
+                             class="s16"
+                             md-svg-src="./images/resource_energy.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r2'"
+                             class="s16"
+                             md-svg-src="./images/resource_order.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r3'"
+                             class="s16"
+                             md-svg-src="./images/resource_decay.svg"></md-icon>
+                </td>
+            </tr>
+            <tr class="app-tr-data"
+                ng-repeat="(k, t) in ct.filter.stats.rarity.total">
+                <th class="app-td-stats-h">
+                    <a ui-sref="cards.filter(ct.filterParams('rarity', ['Common','Uncommon','Rare'][k]))">
+                        <small ng-bind="['Common','Uncommon','Rare'][k]"></small>
+                    </a>
+                </th>
+                <td class="app-td-stats-b app-right"
+                    ng-repeat="(z, n) in ct.filter.stats.rarity track by $index"
+                    ng-class="'l' + z"
+                    ng-if="ct.filter.stats.total[z] && !((ct.filter.stats.resources == 1) && (z == 'total'))">
+                    <a ui-sref="cards.filter(ct.filterParams('rarity', ['Common','Uncommon','Rare'][k], z))">
+                        <small ng-bind="n[k]"></small>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div ng-if="subTabsCtrl.selectedIndexCopy == 4" class="app-padding">
+        <table class="app-stats-hor"
+               ng-if="ct.filter.stats.max > 0">
+            <tbody>
+            <tr class="app-mtr">
+                <td></td>
+                <td class="app-td-chart" ng-repeat="(k, t) in ct.filter.stats.attack.total">
+                    <div>
+                        <div class="app-chart-bg"
+                             ng-style="{height: (93 * ((ct.filter.stats.attack.max - ct.filter.stats.attack.total[k]) / ct.filter.stats.max)) + 'px'}">
+                        </div>
+                        <div class="app-chart-border"
+                             ng-style="{opacity: !ct.filter.stats.count.total[k] ? 0 : 1}">
+                            <div ng-if="q !== 'total'"
+                                 ng-repeat="(q, c) in ct.filter.stats.attack"
+                                 ng-class="q"
+                                 class="app-chart"
+                                 ng-style="{height: (93 * (ct.filter.stats.attack[q][k] / ct.filter.stats.attack.max)) + 'px'}">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="app-mtr app-tr-head">
+                <td>
+                </td>
+                <td ng-repeat="(k, t) in ct.filter.stats.attack.total">
+                    <small><em ng-bind="k"></em></small>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class="app-tr-data" ng-repeat="(k, c) in ct.filter.stats.attack"
+                ng-class="'ll' + k"
+                ng-if="ct.filter.stats.total[k] && !((ct.filter.stats.resources == 1) && (k == 'total'))">
+                <td>
+                    <md-icon ng-if="k == 'r0'"
+                             class="s16"
+                             md-svg-src="./images/resource_growth.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r1'"
+                             class="s16"
+                             md-svg-src="./images/resource_energy.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r2'"
+                             class="s16"
+                             md-svg-src="./images/resource_order.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r3'"
+                             class="s16"
+                             md-svg-src="./images/resource_decay.svg"></md-icon>
+                </td>
+                <td class="total"
+                    ng-class="'l' + k"
+                    ng-repeat="(q, v) in c track by $index">
+                    <a ui-sref="cards.filter(ct.filterParams('?', q + '/?/?', k))">
+                        <small ng-bind="v"></small>
+                    </a>
+                </td>
+                <td>
+                    <a ui-sref="cards.filter(ct.filterParams('?', '?/?/?', k))">
+                        <small ng-bind="ct.filter.stats.attack.total[k]"></small>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div ng-if="subTabsCtrl.selectedIndexCopy == 5" class="app-padding">
+        <table class="app-stats-hor"
+               ng-if="ct.filter.stats.max > 0">
+            <tbody>
+            <tr class="app-mtr">
+                <td></td>
+                <td class="app-td-chart" ng-repeat="(k, t) in ct.filter.stats.counter.total">
+                    <div>
+                        <div class="app-chart-bg"
+                             ng-style="{height: (93 * ((ct.filter.stats.counter.max - ct.filter.stats.counter.total[k]) / ct.filter.stats.max)) + 'px'}">
+                        </div>
+                        <div class="app-chart-border"
+                             ng-style="{opacity: !ct.filter.stats.count.total[k] ? 0 : 1}">
+                            <div ng-if="q !== 'total'"
+                                 ng-repeat="(q, c) in ct.filter.stats.counter"
+                                 ng-class="q"
+                                 class="app-chart"
+                                 ng-style="{height: (93 * (ct.filter.stats.counter[q][k] / ct.filter.stats.counter.max)) + 'px'}">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="app-mtr app-tr-head">
+                <td>
+                </td>
+                <td ng-repeat="(k, t) in ct.filter.stats.counter.total">
+                    <small><em ng-bind="k"></em></small>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class="app-tr-data" ng-repeat="(k, c) in ct.filter.stats.counter"
+                ng-class="'ll' + k"
+                ng-if="ct.filter.stats.total[k] && !((ct.filter.stats.resources == 1) && (k == 'total'))">
+                <td>
+                    <md-icon ng-if="k == 'r0'"
+                             class="s16"
+                             md-svg-src="./images/resource_growth.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r1'"
+                             class="s16"
+                             md-svg-src="./images/resource_energy.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r2'"
+                             class="s16"
+                             md-svg-src="./images/resource_order.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r3'"
+                             class="s16"
+                             md-svg-src="./images/resource_decay.svg"></md-icon>
+                </td>
+                <td class="total"
+                    ng-class="'l' + k"
+                    ng-repeat="(q, v) in c track by $index">
+                    <a ui-sref="cards.filter(ct.filterParams('?', '?/' + q + '/?', k))">
+                        <small ng-bind="v"></small>
+                    </a>
+                </td>
+                <td>
+                    <a ui-sref="cards.filter(ct.filterParams('?', '?/?/?', k))">
+                        <small ng-bind="ct.filter.stats.counter.total[k]"></small>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div ng-if="subTabsCtrl.selectedIndexCopy == 6" class="app-padding">
+        <table class="app-stats-hor"
+               ng-if="ct.filter.stats.max > 0">
+            <tbody>
+            <tr class="app-mtr">
+                <td></td>
+                <td class="app-td-chart" ng-repeat="(k, t) in ct.filter.stats.health.total">
+                    <div>
+                        <div class="app-chart-bg"
+                             ng-style="{height: (93 * ((ct.filter.stats.health.max - ct.filter.stats.health.total[k]) / ct.filter.stats.max)) + 'px'}">
+                        </div>
+                        <div class="app-chart-border"
+                             ng-style="{opacity: !ct.filter.stats.count.total[k] ? 0 : 1}">
+                            <div ng-if="q !== 'total'"
+                                 ng-repeat="(q, c) in ct.filter.stats.health"
+                                 ng-class="q"
+                                 class="app-chart"
+                                 ng-style="{height: (93 * (ct.filter.stats.health[q][k] / ct.filter.stats.health.max)) + 'px'}">
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="app-mtr app-tr-head">
+                <td>
+                </td>
+                <td ng-repeat="(k, t) in ct.filter.stats.health.total">
+                    <small><em ng-bind="k"></em></small>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr class="app-tr-data" ng-repeat="(k, c) in ct.filter.stats.health"
+                ng-class="'ll' + k"
+                ng-if="ct.filter.stats.total[k] && !((ct.filter.stats.resources == 1) && (k == 'total'))">
+                <td>
+                    <md-icon ng-if="k == 'r0'"
+                             class="s16"
+                             md-svg-src="./images/resource_growth.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r1'"
+                             class="s16"
+                             md-svg-src="./images/resource_energy.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r2'"
+                             class="s16"
+                             md-svg-src="./images/resource_order.svg"></md-icon>
+
+                    <md-icon ng-if="k == 'r3'"
+                             class="s16"
+                             md-svg-src="./images/resource_decay.svg"></md-icon>
+                </td>
+                <td class="total"
+                    ng-class="'l' + k"
+                    ng-repeat="(q, v) in c track by $index">
+                    <a ui-sref="cards.filter(ct.filterParams('?', '?/?/' + q, k))">
+                        <small ng-bind="v"></small>
+                    </a>
+                </td>
+                <td>
+                    <a ui-sref="cards.filter(ct.filterParams('?', '?/?/?', k))">
+                        <small ng-bind="ct.filter.stats.health.total[k]"></small>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

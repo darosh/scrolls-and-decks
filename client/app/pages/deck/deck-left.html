@@ -1,0 +1,36 @@
+<md-content flex>
+    <div infinite-scroll="ct.deckPaging()"
+         infinite-scroll-distance="0"
+         infinite-scroll-container="'#left-content'">
+        <md-tabs md-selected="ct.selectedIndex">
+            <md-tab md-on-select="ct.selectedIndexChanged()" id="tab0-side-deck" aria-controls="tab1-content-side-deck" analytics-on="click"
+                    analytics-event="Left > Deck > Stats" analytics-category="Tab" label="Stats"></md-tab>
+            <md-tab md-on-select="ct.selectedIndexChanged()" id="tab1-side-deck" aria-controls="tab2-content-side-deck" analytics-on="click"
+                    analytics-event="Left > Deck > Edit" analytics-category="Tab" label="Edit"></md-tab>
+            <md-tab md-on-select="ct.selectedIndexChanged()" id="tab2-side-deck" aria-controls="tab1-content-side-deck" analytics-on="click"
+                    analytics-event="Left > Deck > View" analytics-category="Tab" label="View"></md-tab>
+        </md-tabs>
+
+        <div class="tabpanel-container">
+            <div role="tabpanel"
+                 id="tab0-content-side-deck"
+                 aria-labelledby="tab1-side-cards"
+                 ng-show="ct.selectedIndexCopy == 0">
+                <ng-include src="'app/shared/views/cards-stats.html'"></ng-include>
+            </div>
+            <div role="tabpanel"
+                 id="tab1-content-side-deck"
+                 aria-labelledby="tab2-side-cards"
+                 ng-if="ct.selectedIndexCopy == 1">
+                <ng-include src="'app/pages/deck/deck-left-edit.html'"></ng-include>
+            </div>
+            <div role="tabpanel"
+                 id="tab2-content-side-deck"
+                 class="app-padding"
+                 aria-labelledby="tab0-side-cards"
+                 ng-if="ct.selectedIndexCopy == 2">
+                <ng-include src="'app/shared/views/cards-view.html'"></ng-include>
+            </div>
+        </div>
+    </div>
+</md-content>
