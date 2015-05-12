@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "0.12"
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - npm install -g codeclimate-test-reporter
+
+after_script:
+  - cat ./tests/output/unit-coverage/F*/lcov.info | codeclimate
