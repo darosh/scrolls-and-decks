@@ -671,7 +671,7 @@ gulp.task('sloc', ['sloc:js', 'sloc:ts', 'sloc:test', 'sloc:css', 'sloc:html'], 
 
 // DEPLOY
 
-gulp.task('deploy', ['build'], function () {
+gulp.task('deploy', !argv.nobuild ? ['build'] : [], function () {
     return gulp.src('./build/**/*')
         .pipe($.ghPages({message: pkg.version, cacheDir: 'temp/publish'}));
 });
