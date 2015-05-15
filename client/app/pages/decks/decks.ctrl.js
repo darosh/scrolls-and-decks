@@ -75,7 +75,7 @@
                 return;
             }
 
-            if ((si === undefined) && !self.lazy.length) {
+            if (angular.isUndefined(si) && !self.lazy.length) {
                 return;
             }
 

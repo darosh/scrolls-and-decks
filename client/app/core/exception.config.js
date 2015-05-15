@@ -2,11 +2,12 @@
     'use strict';
 
     function exception($provide) {
-        function handler($delegate, $analytics) {
-            function decorator(exception, cause) {
-                $delegate(exception, cause);
+        function handler($delegate, $analytics, $log) {
+            function decorator(exceptionObject, cause) {
+                $delegate(exceptionObject, cause);
+                $log.error(exceptionObject, cause);
                 //noinspection JSUnresolvedFunction
-                $analytics.eventTrack(exception.stack, {category: 'Exception'});
+                $analytics.eventTrack(exceptionObject.stack, {category: 'Exception'});
             }
 
             return decorator;

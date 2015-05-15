@@ -20,7 +20,7 @@
 
         deferred.set = function (type) {
             deferred.promise.then(function () {
-                if (deferred.   look[type]) {
+                if (deferred.look[type]) {
                     deferred.look[type] = false;
                     var i = deferred.types.indexOf(type);
                     deferred.types.splice(i, 1);

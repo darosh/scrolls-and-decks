@@ -3,9 +3,9 @@
 
     // https://developers.google.com/speed/webp/faq#how_can_i_detect_browser_support_using_javascript
 
-    function WebP($q) {
+    function WebP($q, $window) {
         var deferred = $q.defer();
-        var img = new Image();
+        var img = new $window.Image();
 
         img.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA';
         img.onload = img.onerror = function () {

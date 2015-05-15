@@ -120,5 +120,4 @@
     }
 
     angular.module('app').controller('LeftDeckCtrl', LeftDeckCtrl);
-})
-();
+})();

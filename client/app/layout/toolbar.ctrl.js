@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    function ToolbarCtrl($rootScope,
+    function ToolbarCtrl($rootScope, $document,
                          $mdBottomSheet, $mdSidenav, $mdDialog, $state, $analytics,
                          Status, Settings) {
         this.state = $state;
@@ -29,11 +29,13 @@
                 .title('Import scrolls collection')
                 .ok('Ok');
 
+            /*eslint-disable no-underscore-dangle */
             delete d._options.template;
             d._options.templateUrl = 'app/shared/views/filter-search-help.html';
-            d._options.parent = angular.element(document.body);
+            d._options.parent = angular.element($document.body);
             d._options.targetEvent = ev;
-            d._options.clickOutsideToClose  = true;
+            d._options.clickOutsideToClose = true;
+            /*eslint-enable no-underscore-dangle */
 
             return $mdDialog.show(d);
         }
@@ -62,7 +64,7 @@
 
         function openRight(tab) {
             $mdSidenav('right-settings').toggle().then(function () {
-                if (tab !== undefined) {
+                if (angular.isDefined(tab)) {
                     $rootScope.$emit('settingsTab', tab);
                 }
             });

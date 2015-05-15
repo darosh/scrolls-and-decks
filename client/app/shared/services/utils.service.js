@@ -24,6 +24,7 @@
             return deferred;
         }
 
+        /*eslint-disable */
         function bookmarklet(url) {
             var bm = (function () {
                 window.SADurl = '{URL}';
@@ -41,6 +42,7 @@
 
             return '(' + bm.replace(/\n/g, ' ').replace(/  +/g, ' ').replace('{URL}', url) + ')()';
         }
+        /*eslint-enable */
     }
 
     angular.module('app.services').factory('Utils', Utils);

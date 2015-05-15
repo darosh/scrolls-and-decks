@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    function RightCardCtrl($rootScope, $timeout, $document,
+    function RightCardCtrl($rootScope, $timeout, $window, $document,
                            $state, $mdSidenav, $analytics,
                            Scrolls, Bookmarks, Recent,
                            FilterCards, FilterUtils, Status, Config) {
@@ -71,16 +71,16 @@
                 var ro = $mdSidenav('right-card');
 
                 if (ro.isOpen()) {
-                    setTimeout(function () {
+                    $window.setTimeout(function () {
                         $document[0].getElementById('right-card-content').scrollTop = 0;
                         $timeout(function () {
                             Recent.add(card.s.id);
                         }, 333.333);
                     });
                 } else {
-                    setTimeout(function () {
+                    $window.setTimeout(function () {
                         ro.open().then(function () {
-                            setTimeout(function () {
+                            $window.setTimeout(function () {
                                 $document[0].getElementById('right-card-content').scrollTop = 0;
                                 $timeout(function () {
                                     Recent.add(card.s.id);

@@ -72,7 +72,7 @@
                     t[k] = parseInt(v);
                 });
 
-                confirm().then(function () {
+                confirmDialog().then(function () {
                     self.input.cards = angular.toJson({types: t});
                 });
             }
@@ -83,7 +83,7 @@
             });
         }
 
-        function confirm() {
+        function confirmDialog() {
             var d = $mdDialog.confirm()
                 .theme(Settings.settings.dark ? 'dark' : 'default')
                 .title('Import scrolls collection')
@@ -93,10 +93,12 @@
                 .cancel('Cancel')
                 .ok('Import');
 
+            /*eslint-disable no-underscore-dangle */
             delete d._options.template;
             d._options.templateUrl = 'app/shared/views/dialog.html';
             d._options.clickOutsideToClose = true;
             d._options.ariaLabel = d._options.title;
+            /*eslint-enable no-underscore-dangle */
 
             return $mdDialog.show(d);
         }
@@ -181,7 +183,7 @@
                 return;
             }
 
-            if ((si === undefined) && !self.lazy.length) {
+            if (angular.isUndefined(si) && !self.lazy.length) {
                 return;
             }
 

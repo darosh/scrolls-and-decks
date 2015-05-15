@@ -3,7 +3,7 @@
 
     function appAnimation($resource, $q, $document, $window) {
         var standDeferred = $q.defer();
-        var standImg = new Image();
+        var standImg = new $window.Image();
         standImg.src = 'images/unitstand.png';
         standDeferred.img = standImg;
         standImg.onload = function () {
@@ -42,8 +42,8 @@
                 return (
                 rect.top >= 0 &&
                 rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                rect.bottom <= ($window.innerHeight || $document.documentElement.clientHeight) &&
+                rect.right <= ($window.innerWidth || $document.documentElement.clientWidth)
                 );
             }
 
@@ -76,10 +76,10 @@
                 attacking = false;
 
                 var id = scope.appAnimation;
-                var spritesImg = new Image();
+                var spritesImg = new $window.Image();
                 var data;
 
-                setTimeout(function () {
+                $window.setTimeout(function () {
                     data = $resource('data/bundles/' + id + '/data.json', {}, {get: {method: 'GET', cache: true}}).get();
                     var deferred = $q.defer();
 
@@ -90,7 +90,7 @@
                     };
 
                     $q.all([data.$promise, standDeferred.promise, deferred.promise]).then(function () {
-                        setTimeout(ready, 0);
+                        $window.setTimeout(ready, 0);
                     });
                 }, 0);
 
@@ -104,14 +104,18 @@
                     }
 
                     function animate(cid) {
+                        /*eslint-disable angular/ng_no_private_call*/
                         if (scope.$$destroyed || (cid !== scope.appAnimation)) {
                             return;
                         }
+                        /*eslint-enable angular/ng_no_private_call*/
 
                         $window.requestAnimationFrame(function () {
+                            /*eslint-disable angular/ng_no_private_call*/
                             if (scope.$$destroyed || (cid !== scope.appAnimation)) {
                                 return;
                             }
+                            /*eslint-enable angular/ng_no_private_call*/
 
                             var time = (new Date()).getTime();
 
@@ -154,7 +158,7 @@
                                 }
                             }
 
-                            setTimeout(function () {
+                            $window.setTimeout(function () {
                                 animate(cid);
                             }, delay);
                         });

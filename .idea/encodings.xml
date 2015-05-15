@@ -3,6 +3,7 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/core/app.core.module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/app/core/exception.config.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/core/theme.config.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/data/bookmarks.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/data/cards.service.js" charset="UTF-8" />

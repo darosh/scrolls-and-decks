@@ -1,13 +1,13 @@
 (function () {
     'use strict';
 
-    function DeckCtrl($scope, $q, $timeout, $document,
+    function DeckCtrl($scope, $q, $timeout, $window, $document,
                       $state, $mdDialog, quickRepeatList,
                       Decks, FilterDeck, Settings, UtilsPaging, UtilsUi, Storage) {
         var self = this;
         var deckCards;
         var params = {destroyed: false, running: false};
-        var previousIndex = 0;
+        //var previousIndex = 0;
         var deferred = $q.defer();
 
         this.settingsCopy = Settings.settingsCopy;
@@ -72,7 +72,7 @@
             }, 0);
         }
 
-        function confirm() {
+        function confirmDialog() {
             var d = $mdDialog.confirm()
                 .theme(Settings.settings.dark ? 'dark' : 'default')
                 .title('Import deck')
@@ -106,7 +106,7 @@
                 var existing = ScrollsTypes.GetDeckByHash(deck.getDeckHash());
 
                 if (existing) {
-                    confirm().then(function () {
+                    confirmDialog().then(function () {
                         importDeck();
                     }, function () {
                         $state.go('deck.id', {id: existing.id});
@@ -115,9 +115,9 @@
                     importDeck(deck);
                 }
             } else if ($state.params.id) {
-                Decks.getDeck($state.params.id, function (deck) {
-                    if (deck) {
-                        self.deck = deck;
+                Decks.getDeck($state.params.id, function (existingDeck) {
+                    if (existingDeck) {
+                        self.deck = existingDeck;
 
                         if (self.deck.deck) {
                             UtilsUi.setTitle('Deck:', self.deck.deck);
@@ -184,9 +184,9 @@
             self.params.origin = self.deck.origin;
             self.params.types = self.params.types.join(',');
 
-            var url = document.createElement('a');
-            url.href = window.location.href;
-            url.hash = $state.href('deck.import', self.params).replace(/%2C/g, ',')/*.replace(/%252F/g,'/').replace(/%3A/g,':')*/;
+            var url = $document.createElement('a');
+            url.href = $window.location.href;
+            url.hash = $state.href('deck.import', self.params).replace(/%2C/g, ','); /*.replace(/%252F/g,'/').replace(/%3A/g,':')*/
             self.share = url.href;
         }
 
@@ -271,12 +271,12 @@
                 return;
             }
 
-            if ((si === undefined) && !self.lazy.length) {
+            if (angular.isUndefined(si) && !self.lazy.length) {
                 return;
             }
 
             FilterDeck.items = FilterDeck.sorted = deckCards.cards[self.selectedIndex].c;
-            previousIndex = self.selectedIndex;
+            //previousIndex = self.selectedIndex;
             params.si = si || self.selectedIndex;
             FilterDeck.stats = deckCards.cards[self.selectedIndex].s;
 

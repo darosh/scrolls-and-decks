@@ -12,7 +12,7 @@
         return {
             toParams: toParams,
             fromParams: fromParams,
-            query: query,
+            query: getQuery,
             setFilter: setFilter,
             filterParams: filterParams,
             setResource: setResource,
@@ -171,7 +171,7 @@
             return ret;
         }
 
-        function query(self, sorted, stats) {
+        function getQuery(self, sorted, stats) {
             return function (query) {
                 if (!query || self.disabled) {
                     return [];
@@ -259,12 +259,12 @@
                         }
                     });
 
-                    _.each(sets, function (v, k) {
-                        var n = 'Set ' + k;
+                    _.each(sets, function (v, kk) {
+                        var n = 'Set ' + kk;
                         var i = n.toLowerCase().indexOf(query);
 
                         if (i > -1) {
-                            ss.push({name: n, set: parseInt(k)});
+                            ss.push({name: n, set: parseInt(kk)});
                         }
                     });
 
@@ -318,7 +318,7 @@
                 self.params.o = (r === 'r2') || (r === 'total');
                 self.params.d = (r === 'r3') || (r === 'total');
 
-                if (t === undefined) {
+                if (angular.isUndefined(t)) {
                     self.params.star = 0;
                 }
             };
