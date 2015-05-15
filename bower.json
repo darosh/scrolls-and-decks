@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "angular": "v1.4.0-rc.2",
-    "angular-material": "v0.9.0-master-61b6240",
+    "angular-material": "v0.9.3-master-76e3672",
     "angular-animate": "v1.4.0-rc.2",
     "angular-aria": "v1.4.0-rc.2",
     "angular-resource": "v1.4.0-rc.2",
