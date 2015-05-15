@@ -1,20 +1,25 @@
-plugins:
-  - angular
-
-rules:
-  angular/ng_controller_name:
-    - 2
-    - '/[A-Z].*Ctrl$/'
-  quotes:
-    - 2
-    - 'single'
-  no-use-before-define: false
-  angular/ng_controller_as_vm: false
-  angular/ng_controller_as: false
-  no-underscore-dangle: false
-  new-cap: false
-
-globals:
-  angular: true
-  _: true
-  ScrollsTypes: true
+{
+  "plugins": [
+    "angular"
+  ],
+  "rules": {
+    "angular/ng_controller_name": [
+      2,
+      "/[A-Z].*Ctrl$/"
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "no-use-before-define": true,
+    "angular/ng_controller_as_vm": false,
+    "angular/ng_controller_as": false,
+    "no-underscore-dangle": false,
+    "new-cap": false
+  },
+  "globals": {
+    "angular": true,
+    "_": true,
+    "ScrollsTypes": true
+  }
+}
