@@ -2,7 +2,9 @@
     'use strict';
 
     function BottomCtrl($mdBottomSheet) {
-        this.itemClick = function (target) {
+        var vm = this;
+
+        vm.itemClick = function (target) {
             $mdBottomSheet.hide(target);
         };
     }

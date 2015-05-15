@@ -4,10 +4,12 @@
     function LeftCardsCtrl($scope, $location, $timeout,
                            $mdSidenav,
                            FilterCards, FilterUtils) {
+        var vm = this;
+
         var sf = FilterUtils.setFilter(FilterCards);
-        this.filter = FilterCards;
-        this.setFilter = setFilter;
-        this.filterParams = FilterUtils.filterParams;
+        vm.filter = FilterCards;
+        vm.setFilter = setFilter;
+        vm.filterParams = FilterUtils.filterParams;
 
         $scope.$on('$stateChangeSuccess', stateChanged);
 

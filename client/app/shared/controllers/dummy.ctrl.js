@@ -2,17 +2,19 @@
     'use strict';
 
     function DummyCtrl() {
+        var vm = this;
+
         //noinspection JSUnusedGlobalSymbols
-        this.ct = {};
+        vm.ct = {};
         //noinspection JSUnusedGlobalSymbols
-        this.toolbarCtrl = {};
-        this.leftCtrl = {};
-        this.cardsCtrl = {};
-        this.decksCtrl = {};
-        this.barCtrl = {};
-        this.filterParams = {};
+        vm.toolbarCtrl = {};
+        vm.leftCtrl = {};
+        vm.cardsCtrl = {};
+        vm.decksCtrl = {};
+        vm.barCtrl = {};
+        vm.filterParams = {};
         // TODO(refactor) remove globally?
-        this.setFilter = {};
+        vm.setFilter = {};
     }
 
     angular.module('app.controllers').controller('DummyCtrl', DummyCtrl);

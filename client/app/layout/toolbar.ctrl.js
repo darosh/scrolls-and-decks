@@ -4,24 +4,26 @@
     function ToolbarCtrl($rootScope, $document,
                          $mdBottomSheet, $mdSidenav, $mdDialog, $state, $analytics,
                          Status, Settings) {
-        this.state = $state;
-        this.openBottom = openBottom;
-        this.openRight = openRight;
-        this.closeRight = closeRight;
-        this.closeRightCard = closeRightCard;
-        this.toggleLeft = toggleLeft;
-        this.status = Status;
+        var vm = this;
+
+        vm.state = $state;
+        vm.openBottom = openBottom;
+        vm.openRight = openRight;
+        vm.closeRight = closeRight;
+        vm.closeRightCard = closeRightCard;
+        vm.toggleLeft = toggleLeft;
+        vm.status = Status;
         //noinspection JSUnusedGlobalSymbols
-        this.mainSwipeRight = openLeft;
+        vm.mainSwipeRight = openLeft;
         //noinspection JSUnusedGlobalSymbols
-        this.mainSwipeLeft = closeLeft;
+        vm.mainSwipeLeft = closeLeft;
         //noinspection JSUnusedGlobalSymbols
-        this.leftSwipeLeft = closeLeft;
+        vm.leftSwipeLeft = closeLeft;
         //noinspection JSUnusedGlobalSymbols
-        this.rightSwipeRight = rightSwipeRight;
-        this.settingsCopy = Settings.settingsCopy;
-        this.filterHelp = filterHelp;
-        this.pinCard = false;
+        vm.rightSwipeRight = rightSwipeRight;
+        vm.settingsCopy = Settings.settingsCopy;
+        vm.filterHelp = filterHelp;
+        vm.pinCard = false;
 
         function filterHelp(ev) {
             var d = $mdDialog.alert()

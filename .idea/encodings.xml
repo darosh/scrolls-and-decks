@@ -16,6 +16,7 @@
     <file url="file://$PROJECT_DIR$/client/app/filters/filter-deck.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/filters/filter-decks.service.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/filters/filter-utils.service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/app/layout/bottom.ctrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/layout/toolbar.ctrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/pages/card/card-left-bookmarks.ctrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/pages/card/card-left-recent.ctrl.js" charset="UTF-8" />
@@ -27,6 +28,7 @@
     <file url="file://$PROJECT_DIR$/client/app/pages/deck/deck-left.ctrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/pages/deck/deck.ctrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/pages/deck/deck.route.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/app/pages/decks/decks-left.ctrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/pages/decks/decks.ctrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/pages/decks/decks.route.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/pages/help/help.ctrl.js" charset="UTF-8" />

@@ -2,10 +2,12 @@
     'use strict';
 
     function SettingsCtrl(Settings, Config) {
-        this.change = Settings.updateCopy;
-        this.settings = Settings.settings;
-        this.setAll = setAll;
-        this.resetAll = resetAll;
+        var vm = this;
+
+        vm.change = Settings.updateCopy;
+        vm.settings = Settings.settings;
+        vm.setAll = setAll;
+        vm.resetAll = resetAll;
 
         function resetAll() {
             angular.extend(Settings.settings, Config.settingsCards);

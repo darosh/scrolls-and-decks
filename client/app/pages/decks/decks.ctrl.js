@@ -5,19 +5,20 @@
                        $state, quickRepeatList,
                        Decks,
                        Status, Storage, FilterDecks, Settings, UtilsPaging, UtilsDecks, UtilsUi) {
-        var self = this;
+        var vm = this;
         var params = {running: false, destroyed: false};
         var previousIndex = 0;
         var previousSort = null;
-        this.selectedIndex = 0;
-        this.selectedIndexCopy = 0;
-        this.selectedIndexChanged = UtilsUi.getTabDelay(self, updated);
-        this.paging = paging;
-        this.settingsCopy = Settings.settingsCopy;
-        this.openDeck = openDeck;
-        this.addDeck = addDeck;
-        this.filter = FilterDecks;
-        this.myScrolls = Storage.cards;
+
+        vm.selectedIndex = 0;
+        vm.selectedIndexCopy = 0;
+        vm.selectedIndexChanged = UtilsUi.getTabDelay(vm, updated);
+        vm.paging = paging;
+        vm.settingsCopy = Settings.settingsCopy;
+        vm.openDeck = openDeck;
+        vm.addDeck = addDeck;
+        vm.filter = FilterDecks;
+        vm.myScrolls = Storage.cards;
         FilterDecks.items = null;
         FilterDecks.sorted = null;
         UtilsUi.setTitle('Decks');
@@ -63,7 +64,7 @@
 
         function init() {
             params.limit = 35;
-            self.lazy = [];
+            vm.lazy = [];
         }
 
         function paging(si) {
@@ -75,16 +76,16 @@
                 return;
             }
 
-            if (angular.isUndefined(si) && !self.lazy.length) {
+            if (angular.isUndefined(si) && !vm.lazy.length) {
                 return;
             }
 
-            if ((self.selectedIndex !== previousIndex) || !FilterDecks.sorted) {
+            if ((vm.selectedIndex !== previousIndex) || !FilterDecks.sorted) {
                 if (previousSort) {
-                    FilterDecks.sorted = UtilsDecks.sort(previousSort, Decks[self.selectedIndex]);
+                    FilterDecks.sorted = UtilsDecks.sort(previousSort, Decks[vm.selectedIndex]);
                     FilterDecks.sorted = UtilsDecks.sort(FilterDecks.params.sort, FilterDecks.sorted);
                 } else {
-                    FilterDecks.sorted = UtilsDecks.sort(FilterDecks.params.sort, Decks[self.selectedIndex]);
+                    FilterDecks.sorted = UtilsDecks.sort(FilterDecks.params.sort, Decks[vm.selectedIndex]);
                 }
             } else {
                 FilterDecks.sorted = UtilsDecks.sort(FilterDecks.params.sort, FilterDecks.sorted);
@@ -92,16 +93,16 @@
 
             FilterDecks.items = UtilsDecks.filter(FilterDecks.sorted, FilterDecks.params, FilterDecks.text);
 
-            previousIndex = self.selectedIndex;
+            previousIndex = vm.selectedIndex;
             previousSort = FilterDecks.params.sort;
-            params.si = si || self.selectedIndex;
-            FilterDecks.stats = Decks.stats[self.selectedIndex];
+            params.si = si || vm.selectedIndex;
+            FilterDecks.stats = Decks.stats[vm.selectedIndex];
 
-            if (!UtilsPaging.setNext(self, params, FilterDecks)) {
+            if (!UtilsPaging.setNext(vm, params, FilterDecks)) {
                 return;
             }
 
-            var iteration = UtilsPaging.getPagingIteration(self, FilterDecks, params, quickRepeatList);
+            var iteration = UtilsPaging.getPagingIteration(vm, FilterDecks, params, quickRepeatList);
 
             if (!params.running) {
                 iteration();
@@ -114,7 +115,7 @@
             }
 
             init();
-            self.paging(self.selectedIndex);
+            vm.paging(vm.selectedIndex);
         }
     }
 

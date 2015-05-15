@@ -6,14 +6,14 @@
                       ScrollsDecks, Scrolls,
                       FilterUtils, UtilsUi, FilterCards, Recent, Status, Config) {
 
-        var self = this;
+        var vm = this;
         var sf = FilterUtils.setFilter(FilterCards);
-        this.settingsCopy = angular.copy(Config.settingsCardFull);
-        this.filter = FilterCards;
-        this.showCard = showCard;
-        this.openDeck = openDeck;
-        this.setFilter = setFilter;
-        this.filterParams = FilterUtils.filterParams;
+        vm.settingsCopy = angular.copy(Config.settingsCardFull);
+        vm.filter = FilterCards;
+        vm.showCard = showCard;
+        vm.openDeck = openDeck;
+        vm.setFilter = setFilter;
+        vm.filterParams = FilterUtils.filterParams;
         Status.fab = null;
         $rootScope.$on('openCard', openCard);
         $rootScope.$on('$stateChangeSuccess', update);
@@ -28,7 +28,7 @@
 
         //noinspection JSUnusedLocalSymbols
         function openCard(event, card) {
-            self.showCard(card);
+            vm.showCard(card);
         }
 
         function openDeck(deck) {
@@ -47,9 +47,9 @@
                 var c = ScrollsDecks.Scrolls.look[$state.params.id];
 
                 if (c) {
-                    self.c = Status.card = {s: c};
-                    self.decks = _.values(c.decks);
-                    self.related = ScrollsTypes.RelatedCards(new ScrollsTypes.Card(c), Scrolls);
+                    vm.c = Status.card = {s: c};
+                    vm.decks = _.values(c.decks);
+                    vm.related = ScrollsTypes.RelatedCards(new ScrollsTypes.Card(c), Scrolls);
                     UtilsUi.setTitle('Scroll:', '#' + $state.params.id);
 
                     $timeout(function () {

@@ -12,8 +12,6 @@
       "single"
     ],
     "no-use-before-define": true,
-    "angular/ng_controller_as_vm": false,
-    "angular/ng_controller_as": false,
     "no-underscore-dangle": false,
     "new-cap": false
   },

@@ -5,11 +5,11 @@
                        $mdDialog, $analytics, quickRepeatList,
                        CardsDecks, Bookmarks, Scrolls,
                        FilterCards, Storage, Status, Settings, UtilsUi, UtilsCards, UtilsPaging) {
-        var self = this;
+        var vm = this;
         var params = {destroyed: false, running: false};
         var previousIndex = 0;
         var previousSort = null;
-        var tabDelay = UtilsUi.getTabDelay(self, updated);
+        var tabDelay = UtilsUi.getTabDelay(vm, updated);
 
         start();
         Status.fab = null;
@@ -34,8 +34,8 @@
 
         function index() {
             $timeout(function () {
-                if ((self.selectedIndex > 0) && (self.selectedIndex < 3)) {
-                    Status.fab = {class: 'mdi-pencil', click: self.showProperties};
+                if ((vm.selectedIndex > 0) && (vm.selectedIndex < 3)) {
+                    Status.fab = {class: 'mdi-pencil', click: vm.showProperties};
                 } else {
                     Status.fab = null;
                 }
@@ -45,19 +45,19 @@
         }
 
         function start() {
-            self.filter = FilterCards;
-            self.selectedIndex = 0;
-            self.selectedIndexCopy = 0;
-            self.selectedIndexChanged = index;
-            self.paging = paging;
-            self.settingsCopy = Settings.settingsCopy;
-            self.showCard = UtilsUi.showCard;
-            self.showProperties = showProperties;
-            self.setAllCards = setAllCards;
-            self.resetCards = resetCards;
-            self.cardsParams = {types: ''};
-            self.input = {cards: angular.toJson(Storage.cards)};
-            self.inputCards = inputCards;
+            vm.filter = FilterCards;
+            vm.selectedIndex = 0;
+            vm.selectedIndexCopy = 0;
+            vm.selectedIndexChanged = index;
+            vm.paging = paging;
+            vm.settingsCopy = Settings.settingsCopy;
+            vm.showCard = UtilsUi.showCard;
+            vm.showProperties = showProperties;
+            vm.setAllCards = setAllCards;
+            vm.resetCards = resetCards;
+            vm.cardsParams = {types: ''};
+            vm.input = {cards: angular.toJson(Storage.cards)};
+            vm.inputCards = inputCards;
             UtilsUi.setTitle('Scrolls');
             FilterCards.items = null;
             FilterCards.sorted = null;
@@ -73,7 +73,7 @@
                 });
 
                 confirmDialog().then(function () {
-                    self.input.cards = angular.toJson({types: t});
+                    vm.input.cards = angular.toJson({types: t});
                 });
             }
 
@@ -104,25 +104,25 @@
         }
 
         function inputCards(noStorage) {
-            if (!self.input.cards) {
+            if (!vm.input.cards) {
                 return;
             }
 
             try {
-                var o = angular.fromJson(self.input.cards);
+                var o = angular.fromJson(vm.input.cards);
 
                 if (!noStorage) {
                     Storage.set('cards', o);
                 }
 
-                self.cardsParams.types = o.types.join(',');
+                vm.cardsParams.types = o.types.join(',');
             } catch (ign) {
                 // TODO(improve) add input error message
             }
         }
 
         function resetCards() {
-            self.input.cards = angular.toJson({types: []});
+            vm.input.cards = angular.toJson({types: []});
             inputCards();
         }
 
@@ -136,13 +136,13 @@
                     arr.push(v.id);
                 });
 
-                self.input.cards = angular.toJson({types: arr});
+                vm.input.cards = angular.toJson({types: arr});
                 inputCards();
             });
         }
 
         function showProperties() {
-            self.selectedIndex = 3;
+            vm.selectedIndex = 3;
         }
 
         function filterText(newValue, oldValue) {
@@ -171,7 +171,7 @@
 
         function init() {
             params.limit = 35;
-            self.lazy = [];
+            vm.lazy = [];
         }
 
         function paging(si) {
@@ -183,21 +183,21 @@
                 return;
             }
 
-            if (angular.isUndefined(si) && !self.lazy.length) {
+            if (angular.isUndefined(si) && !vm.lazy.length) {
                 return;
             }
 
-            if (self.selectedIndex > 2) {
-                previousIndex = self.selectedIndex;
+            if (vm.selectedIndex > 2) {
+                previousIndex = vm.selectedIndex;
                 return;
             }
 
-            if ((self.selectedIndex !== previousIndex) || !FilterCards.sorted) {
+            if ((vm.selectedIndex !== previousIndex) || !FilterCards.sorted) {
                 if (previousSort) {
-                    FilterCards.sorted = UtilsCards.sort(previousSort, CardsDecks.Cards[self.selectedIndex].c);
+                    FilterCards.sorted = UtilsCards.sort(previousSort, CardsDecks.Cards[vm.selectedIndex].c);
                     FilterCards.sorted = UtilsCards.sort(FilterCards.params.sort, FilterCards.sorted);
                 } else {
-                    FilterCards.sorted = UtilsCards.sort(FilterCards.params.sort, CardsDecks.Cards[self.selectedIndex].c);
+                    FilterCards.sorted = UtilsCards.sort(FilterCards.params.sort, CardsDecks.Cards[vm.selectedIndex].c);
                 }
             } else {
                 FilterCards.sorted = UtilsCards.sort(FilterCards.params.sort, FilterCards.sorted);
@@ -205,19 +205,19 @@
 
             FilterCards.items = UtilsCards.filter(FilterCards.sorted, FilterCards.params, FilterCards.text, Bookmarks);
 
-            previousIndex = self.selectedIndex;
+            previousIndex = vm.selectedIndex;
             previousSort = FilterCards.params.sort;
-            params.si = si || self.selectedIndex;
-            FilterCards.stats = CardsDecks.Cards[self.selectedIndex].s;
+            params.si = si || vm.selectedIndex;
+            FilterCards.stats = CardsDecks.Cards[vm.selectedIndex].s;
 
-            if ((self.lazy.length < (params.limit - 5)) && self.lazy.length) {
+            if ((vm.lazy.length < (params.limit - 5)) && vm.lazy.length) {
                 return;
             }
 
             params.limit += 25;
             params.limit = (params.limit > FilterCards.items.length) ? FilterCards.items.length : params.limit;
 
-            var iteration = UtilsPaging.getPagingIteration(self, FilterCards, params, quickRepeatList);
+            var iteration = UtilsPaging.getPagingIteration(vm, FilterCards, params, quickRepeatList);
 
             if (!params.running) {
                 iteration();
@@ -226,9 +226,9 @@
 
         function updated() {
             init();
-            self.paging(self.selectedIndex);
+            vm.paging(vm.selectedIndex);
 
-            if ((self.selectedIndex < 3) && (FilterCards.items.length !== FilterCards.sorted.length)) {
+            if ((vm.selectedIndex < 3) && (FilterCards.items.length !== FilterCards.sorted.length)) {
                 UtilsUi.setTitle('Scrolls:', FilterCards.items.length + ' of ' + FilterCards.sorted.length);
             } else {
                 UtilsUi.setTitle('Scrolls');

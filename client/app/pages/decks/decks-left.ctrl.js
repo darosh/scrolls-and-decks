@@ -2,7 +2,8 @@
     'use strict';
 
     function LeftDecksCtrl(FilterDecks) {
-        this.filter = FilterDecks;
+        var vm = this;
+        vm.filter = FilterDecks;
     }
 
     angular.module('app').controller('LeftDecksCtrl', LeftDecksCtrl);

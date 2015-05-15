@@ -5,25 +5,26 @@
                           $state,
                           Bookmarks, Cards,
                           FilterDeck, FilterCards, FilterUtils, UtilsUi, UtilsCards, Status) {
-        var self = this;
+        var vm = this;
         var allRelated;
         var running = false;
         var sf = FilterUtils.setFilter(FilterCards);
-        var tabDelay = UtilsUi.getTabDelay(self, updated);
+        var tabDelay = UtilsUi.getTabDelay(vm, updated);
         var first = false;
-        this.filter = FilterDeck;
-        this.showResource = true;
-        this.edit = true;
-        this.status = Status;
-        this.showCard = UtilsUi.showCard;
-        this.selectedIndex = 0;
-        this.selectedIndexCopy = 0;
-        this.selectedIndexChanged = index;
+
+        vm.filter = FilterDeck;
+        vm.showResource = true;
+        vm.edit = true;
+        vm.status = Status;
+        vm.showCard = UtilsUi.showCard;
+        vm.selectedIndex = 0;
+        vm.selectedIndexCopy = 0;
+        vm.selectedIndexChanged = index;
         //noinspection JSUnusedGlobalSymbols
-        this.deckPaging = deckPaging;
-        this.setFilter = setFilter;
-        this.addCard = addCard;
-        this.filterParams = FilterUtils.filterParams;
+        vm.deckPaging = deckPaging;
+        vm.setFilter = setFilter;
+        vm.addCard = addCard;
+        vm.filterParams = FilterUtils.filterParams;
         FilterDeck.querySearch = FilterUtils.query(FilterDeck, Cards[0].c, Cards[0].s);
 
         $rootScope.$watch(function () {
@@ -35,8 +36,8 @@
         }, filterText);
 
         if ($state.current.name === 'deck.new') {
-            this.selectedIndex = 1;
-            this.selectedIndexCopy = 1;
+            vm.selectedIndex = 1;
+            vm.selectedIndexCopy = 1;
             updated();
         } else {
             $timeout(function () {
@@ -49,14 +50,14 @@
         }
 
         function showEdit() {
-            self.selectedIndex = 1;
+            vm.selectedIndex = 1;
             Status.fab = null;
         }
 
         function index() {
             if (first) {
                 $timeout(function () {
-                    if (self.selectedIndex !== 1) {
+                    if (vm.selectedIndex !== 1) {
                         Status.fab = {class: 'mdi-pencil', click: showEdit};
                     } else {
                         Status.fab = null;
@@ -94,11 +95,11 @@
             var i = 0;
 
             function iteration() {
-                if (self.related && (i < 8) && (self.related.length < allRelated.length)) {
+                if (vm.related && (i < 8) && (vm.related.length < allRelated.length)) {
                     running = true;
 
                     $timeout(function () {
-                        self.related.push(allRelated[self.related.length]);
+                        vm.related.push(allRelated[vm.related.length]);
                         i++;
                         iteration();
                     }, 20);
@@ -107,15 +108,15 @@
                 }
             }
 
-            if ((self.selectedIndexCopy === 1) && !running) {
+            if ((vm.selectedIndexCopy === 1) && !running) {
                 iteration();
             }
         }
 
         function updated() {
-            self.filter.edit = self.selectedIndex === 1;
+            vm.filter.edit = vm.selectedIndex === 1;
             allRelated = UtilsCards.filter(Cards[0].c, FilterDeck.params, FilterDeck.text, Bookmarks);
-            self.related = _.take(allRelated, 15);
+            vm.related = _.take(allRelated, 15);
         }
     }
 

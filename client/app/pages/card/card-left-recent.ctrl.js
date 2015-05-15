@@ -3,10 +3,12 @@
 
     function LeftCardRecentCtrl($rootScope,
                                 Recent, Status) {
-        this.related = Recent.scrolls;
-        this.showResource = true;
-        this.showCard = showCard;
-        this.status = Status;
+        var vm = this;
+
+        vm.related = Recent.scrolls;
+        vm.showResource = true;
+        vm.showCard = showCard;
+        vm.status = Status;
 
         function showCard(c) {
             $rootScope.$emit('openCard', c);

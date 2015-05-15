@@ -2,9 +2,11 @@
     'use strict';
 
     function TabsCtrl(UtilsUi) {
-        this.selectedIndex = 0;
-        this.selectedIndexCopy = 0;
-        this.selectedIndexChanged = UtilsUi.getTabDelay(this, angular.noop);
+        var vm = this;
+
+        vm.selectedIndex = 0;
+        vm.selectedIndexCopy = 0;
+        vm.selectedIndexChanged = UtilsUi.getTabDelay(vm, angular.noop);
     }
 
     angular.module('app.controllers').controller('TabsCtrl', TabsCtrl);

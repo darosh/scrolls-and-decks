@@ -20,7 +20,7 @@
   "disallowSpacesInsideObjectBrackets": null,
   "disallowImplicitTypeConversion": ["string"],
 
-  "safeContextKeyword": "self",
+  "safeContextKeyword": "vm",
 
   "excludeFiles": [
   ]
