@@ -184,7 +184,7 @@
             self.params.origin = self.deck.origin;
             self.params.types = self.params.types.join(',');
 
-            var url = $document.createElement('a');
+            var url = angular.element('<a>')[0];
             url.href = $window.location.href;
             url.hash = $state.href('deck.import', self.params).replace(/%2C/g, ','); /*.replace(/%252F/g,'/').replace(/%3A/g,':')*/
             self.share = url.href;
