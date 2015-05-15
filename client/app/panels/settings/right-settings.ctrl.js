@@ -3,20 +3,22 @@
 
     function RightSettingsCtrl($scope, $timeout, $window,
                                Settings, Storage, Recent, Bookmarks, Config) {
-        $scope.resetDecks = resetDecks;
-        $scope.resetSettings = resetSettings;
-        $scope.resetBookmarks = resetBookmarks;
-        $scope.resetRecent = resetRecent;
-        $scope.fullScreen = fullScreen;
-        $scope.fullScreenEnabled = $window.screenfull.enabled;
-        $scope.screenfull = {
+        var vm = this;
+
+        vm.resetDecks = resetDecks;
+        vm.resetSettings = resetSettings;
+        vm.resetBookmarks = resetBookmarks;
+        vm.resetRecent = resetRecent;
+        vm.fullScreen = fullScreen;
+        vm.fullScreenEnabled = $window.screenfull.enabled;
+        vm.screenfull = {
             isFullscreen: $window.screenfull.isFullscreen
         };
 
         //noinspection JSUnresolvedVariable
         angular.element($window.document).on($window.screenfull.raw.fullscreenchange, function () {
             $scope.$apply(function () {
-                $scope.screenfull.isFullscreen = $window.screenfull.isFullscreen;
+                vm.screenfull.isFullscreen = $window.screenfull.isFullscreen;
             });
         });
 
