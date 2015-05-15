@@ -377,6 +377,12 @@ gulp.task('jscs', function () {
         .pipe($.jscs());
 });
 
+gulp.task('eslint', function () {
+    return gulp.src([paths.scripts.src])
+        .pipe($.eslint())
+        .pipe($.eslint.format());
+});
+
 gulp.task('version', function (cb) {
     version();
     cb();
@@ -461,7 +467,7 @@ gulp.task('e2e', ['protractor-install', 'serve'], function (done) {
     });
 });
 
-gulp.task('test', ['jshint', 'tslint', 'jscs', 'unit', 'e2e']);
+gulp.task('test', ['jshint', 'tslint', 'jscs', 'eslint', 'unit', 'e2e']);
 
 // SERVE
 
