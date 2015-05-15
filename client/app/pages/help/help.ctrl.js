@@ -5,10 +5,12 @@
                       $state,
                       Scrolls,
                       UtilsUi, Utils, Config, Status) {
+        var vm = this;
+
         UtilsUi.setTitle('Help');
-        $scope.config = Config;
-        $scope.scrolls = Scrolls;
-        $scope.bm = Utils.bookmarklet(Config.currentInstance);
+        vm.config = Config;
+        vm.scrolls = Scrolls;
+        vm.bm = Utils.bookmarklet(Config.currentInstance);
         Status.fab = null;
         $scope.$on('$locationChangeSuccess', scrollDelayMore);
         $scope.$on('$viewContentLoaded', scrollDelay);

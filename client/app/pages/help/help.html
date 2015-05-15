@@ -73,7 +73,7 @@
                     <ol>
                         <li>
                             Drag and drop the following link
-                            <a ng-href="javascript: {{bm}}" class="app-help-ui"><em style="font-style: normal">Import deck</em></a>
+                            <a ng-href="javascript: {{vm.bm}}" class="app-help-ui"><em style="font-style: normal">Import deck</em></a>
                             to you browser's bookmark bar
                         </li>
                         <li>
@@ -221,19 +221,19 @@
                             <tbody>
                             <tr>
                                 <th>Content</th>
-                                <td>{{scrolls.version}}</td>
-                                <td>{{scrolls.modified | date:'short'}}</td>
+                                <td>{{vm.scrolls.version}}</td>
+                                <td>{{vm.scrolls.modified | date:'short'}}</td>
                                 <td>
-                                    <a ng-href="{{config.contentSource}}" target="_blank">Data<i
+                                    <a ng-href="{{vm.config.contentSource}}" target="_blank">Data<i
                                             class="mdi mdi-link"></i></a>
                                 </td>
                             </tr>
                             <tr>
                                 <th>Application</th>
-                                <td>{{config.version}}</td>
-                                <td>{{config.build | date:'short'}}</td>
+                                <td>{{vm.config.version}}</td>
+                                <td>{{vm.config.build | date:'short'}}</td>
                                 <td>
-                                    <a ng-href="{{config.repository}}" target="_blank">Code<i
+                                    <a ng-href="{{vm.config.repository}}" target="_blank">Code<i
                                             class="mdi mdi-link"></i></a>
                                 </td>
                             </tr>
@@ -264,7 +264,7 @@
                     <h2>Issues and suggestions</h2>
 
                     <p>
-                        Feel free to use <a class="md-primary" ng-href="{{config.issues}}" target="_blank">issue tracker on GitHub<i
+                        Feel free to use <a class="md-primary" ng-href="{{vm.config.issues}}" target="_blank">issue tracker on GitHub<i
                             class="mdi mdi-link"></i></a>.
                     </p>
 
@@ -275,7 +275,7 @@
                     </p>
 
                     <p>
-                        High level roadmap is published on <a ng-href="{{config.repository}}#roadmap" target="_blank">GitHub<i class="mdi mdi-link"></i></a>.
+                        High level roadmap is published on <a ng-href="{{vm.config.repository}}#roadmap" target="_blank">GitHub<i class="mdi mdi-link"></i></a>.
                     </p>
                 </md-card-content>
             </md-card>
@@ -349,7 +349,7 @@
                     <h2>Source code</h2>
 
                     <p>
-                        Available on GitHub: <a ng-href="{{config.repository}}" target="_blank">{{config.repository}}<i class="mdi mdi-link"></i></a>.
+                        Available on GitHub: <a ng-href="{{vm.config.repository}}" target="_blank">{{vm.config.repository}}<i class="mdi mdi-link"></i></a>.
                     </p>
                 </md-card-content>
             </md-card>

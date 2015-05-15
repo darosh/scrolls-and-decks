@@ -9,6 +9,7 @@
                     body: {
                         templateUrl: 'app/pages/help/help.html',
                         controller: 'HelpCtrl',
+                        controllerAs: 'vm',
                         resolve: {
                             Scrolls: function (Scrolls) {
                                 return Scrolls.promise;
