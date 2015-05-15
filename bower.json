@@ -11,7 +11,7 @@
     "angular-ui-router": "0.2.13",
     "lodash": "3.8.0",
     "ngInfiniteScroll": "1.2.1",
-    "ngstorage": "0.3.0",
+    "ngstorage": "0.3.3",
     "quick-ng-repeat": "allaud/quick-ng-repeat",
     "roboto-fontface": "~0.4.2",
     "angulartics": "~0.17.2",
