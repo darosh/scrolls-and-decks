@@ -107,7 +107,7 @@
 
                 if (existing) {
                     confirmDialog().then(function () {
-                        importDeck();
+                        importDeck(deck);
                     }, function () {
                         $state.go('deck.id', {id: existing.id});
                     });
