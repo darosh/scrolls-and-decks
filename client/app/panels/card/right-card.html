@@ -1,4 +1,4 @@
-<ng-include src="'app/panels/card/toolbar-right-card.html'"></ng-include>
+<md-toolbar ng-include="'app/panels/card/toolbar-right-card.html'" layout="row" layout-align="end center" class="md-whiteframe-z1"></md-toolbar>
 
 <md-content id="right-card-content" flex ng-controller="TabsCtrl as tabsCtrl" md-scroll-y>
     <div infinite-scroll="ct.deckPaging()"

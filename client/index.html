@@ -169,7 +169,8 @@
         class="md-sidenav-left md-whiteframe-z2"
         md-component-id="left"
         md-is-locked-open="$mdMedia('gt-lg')">
-    <ng-include src="'app/layout/toolbar-left.html'"></ng-include>
+    <md-toolbar ng-include="'app/layout/toolbar-left.html'" class="md-primary md-whiteframe-z1" layout="row"></md-toolbar>
+
     <md-content md-scroll-y ui-view="side" flex id="left-content"></md-content>
 </md-sidenav>
 

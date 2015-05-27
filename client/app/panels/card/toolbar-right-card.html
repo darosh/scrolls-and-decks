@@ -1,25 +1,23 @@
-<md-toolbar layout="row" layout-align="end center" class="md-whiteframe-z1">
-    <div>
-        <md-button class="md-toolbar-tools" aria-label="Star" ng-click="ct.set(ct.c.s.id)">
-            <i class="mdi" ng-class="ct.look[ct.c.s.id] ? 'mdi-star' : 'mdi-star-outline'"></i>
-        </md-button>
-    </div>
-    <div>
-        <span class="app-title">Scroll: </span><span class="app-subtitle">#{{ct.c.s.id}}</span>
-    </div>
-    <div flex></div>
-    <div>
-        <md-button class="md-toolbar-tools" ng-href="{{'#/scroll/' + ct.c.s.id}}" aria-label="Open">
-            <i class="mdi mdi-share"></i>
-        </md-button>
-    </div>
-    <div hide show-gt-sm>
-        <md-button class="md-toolbar-tools" aria-label="Pin" ng-click="toolbarCtrl.pinCard = !toolbarCtrl.pinCard">
-            <i class="mdi" ng-class="toolbarCtrl.pinCard ? 'mdi-pin-off' : 'mdi-pin'"></i>
-        </md-button>
-    </div>
-    <div class="button-slide-animation" ng-if="!toolbarCtrl.pinCard">
-        <md-button class="md-toolbar-tools" ng-click="toolbarCtrl.closeRightCard()" aria-label="Close"><i class="mdi mdi-close"></i>
-        </md-button>
-    </div>
-</md-toolbar>
+<div>
+    <md-button class="md-toolbar-tools" aria-label="Star" ng-click="ct.set(ct.c.s.id)">
+        <i class="mdi" ng-class="ct.look[ct.c.s.id] ? 'mdi-star' : 'mdi-star-outline'"></i>
+    </md-button>
+</div>
+<div>
+    <span class="app-title">Scroll: </span><span class="app-subtitle">#{{ct.c.s.id}}</span>
+</div>
+<div flex></div>
+<div>
+    <md-button class="md-toolbar-tools" ng-href="{{'#/scroll/' + ct.c.s.id}}" aria-label="Open">
+        <i class="mdi mdi-share"></i>
+    </md-button>
+</div>
+<div hide show-gt-sm>
+    <md-button class="md-toolbar-tools" aria-label="Pin" ng-click="toolbarCtrl.pinCard = !toolbarCtrl.pinCard">
+        <i class="mdi" ng-class="toolbarCtrl.pinCard ? 'mdi-pin-off' : 'mdi-pin'"></i>
+    </md-button>
+</div>
+<div class="button-slide-animation" ng-if="!toolbarCtrl.pinCard">
+    <md-button class="md-toolbar-tools" ng-click="toolbarCtrl.closeRightCard()" aria-label="Close"><i class="mdi mdi-close"></i>
+    </md-button>
+</div>
