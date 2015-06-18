@@ -1,6 +1,6 @@
 {
   "name": "scrolls-and-decks",
-  "version": "0.5.1305",
+  "version": "0.5.1307",
   "description": "Scrolls and Decks",
   "author": "Jan Forst <ensonador@gmail.com>",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "karma": "node ./node_modules/karma/bin/karma"
   },
   "devDependencies": {
-    "angular-mocks": "^1.4.0",
+    "angular-mocks": "^1.4.1",
     "bower": "^1.4.1",
     "browser-sync": "^2.7.0",
     "coveralls": "^2.11.2",
