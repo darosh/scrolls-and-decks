@@ -22,8 +22,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 28,
-      "price": 374,
+      "img": 44,
+      "price": 245,
       "bundle": 448
     },
     {
@@ -48,8 +48,8 @@
           "When a Relentless unit destroys another unit, it keeps attacking with its remaining Attack value."
         ]
       ],
-      "img": 29,
-      "price": 59,
+      "img": 45,
+      "price": 69,
       "bundle": 449
     },
     {
@@ -71,11 +71,11 @@
       "rules": [
         [
           "Poisonous",
-          "When a creature damages or is damaged by Infected Gravelock in melee combat, that creature becomes poisoned."
+          "When a creature attacks Infected Gravelock in melee combat, or is damaged by Infected Gravelock, that creature becomes poisoned."
         ]
       ],
-      "img": 24,
-      "price": 85,
+      "img": 41,
+      "price": 81,
       "bundle": 450
     },
     {
@@ -100,8 +100,8 @@
           "When a Relentless unit destroys another unit, it keeps attacking with its remaining Attack value."
         ]
       ],
-      "img": 28,
-      "price": 749,
+      "img": 43,
+      "price": 330,
       "bundle": 451
     },
     {
@@ -123,11 +123,11 @@
       "rules": [
         [
           "Regeneration 1",
-          "Heals 1 each round."
+          "Heals 1 each round, and removes poison."
         ]
       ],
-      "img": 29,
-      "price": 120
+      "img": 44,
+      "price": 54
     },
     {
       "id": 15,
@@ -146,8 +146,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 30,
-      "price": 70
+      "img": 45,
+      "price": 100
     },
     {
       "id": 16,
@@ -166,8 +166,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 30,
-      "price": 50
+      "img": 45,
+      "price": 47
     },
     {
       "id": 17,
@@ -186,8 +186,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 31,
-      "price": 82
+      "img": 46,
+      "price": 49
     },
     {
       "id": 18,
@@ -206,13 +206,13 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 32,
-      "price": 309
+      "img": 47,
+      "price": 133
     },
     {
       "id": 19,
       "name": "Metempsychosis",
-      "desc": "Target unit you control is resummoned on the same tile. It's Countdown is set to its previous value.",
+      "desc": "Target unit you control is resummoned on the same tile. Its Countdown is set to its previous value.",
       "flavor": "Consider the egg. The image of unfulfilled potential, and you eat them for breakfast...",
       "kind": "SPELL",
       "types": "",
@@ -226,8 +226,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 31,
-      "price": 155
+      "img": 46,
+      "price": 203
     },
     {
       "id": 20,
@@ -246,8 +246,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 32,
-      "price": 50
+      "img": 47,
+      "price": 38
     },
     {
       "id": 21,
@@ -266,13 +266,13 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 33,
-      "price": 75
+      "img": 48,
+      "price": 97
     },
     {
       "id": 22,
       "name": "Brother of the Wolf",
-      "desc": "When Brother of the Wolf's Countdown is 0, you may reset its Countdown to summon a <Ragged\\nWolf> on an adjacent tile.",
+      "desc": "When Brother of the Wolf's Countdown is 0, you may increase Countdown by 2 to summon a\\n<Ragged Wolf> on an adjacent tile.",
       "flavor": "Befriending wolves isn't hard. Failure, however, can be costly.",
       "kind": "CREATURE",
       "types": "Human,Kinfolk",
@@ -286,8 +286,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 34,
-      "price": 131,
+      "img": 49,
+      "price": 118,
       "bundle": 452
     },
     {
@@ -307,8 +307,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 33,
-      "price": 49
+      "img": 48,
+      "price": 47
     },
     {
       "id": 24,
@@ -332,8 +332,8 @@
           "This unit targets certain tiles instead of attacking forward."
         ]
       ],
-      "img": 30,
-      "price": 98,
+      "img": 46,
+      "price": 39,
       "bundle": 453
     },
     {
@@ -353,8 +353,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 31,
-      "price": 898
+      "img": 47,
+      "price": 632
     },
     {
       "id": 26,
@@ -373,14 +373,14 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 64,
-      "price": 75
+      "img": 79,
+      "price": 44
     },
     {
       "id": 27,
       "name": "Burn",
       "desc": "Deal 3 [magic damage] to target unit. If that unit is destroyed, draw 1 scroll.",
-      "flavor": "\"If you can't handle the fire, cool yourself in the kettle.\" \\n- Old machine priest saying.",
+      "flavor": "\"If you can't handle the fire, cool yourself in the kettle.\" \\n- Old machine priest saying",
       "kind": "SPELL",
       "types": "Destruction",
       "rarity": 1,
@@ -393,8 +393,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 32,
-      "price": 199
+      "img": 48,
+      "price": 143
     },
     {
       "id": 29,
@@ -413,8 +413,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 35,
-      "price": 1015
+      "img": 50,
+      "price": 347
     },
     {
       "id": 30,
@@ -433,8 +433,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 36,
-      "price": 1178
+      "img": 51,
+      "price": 358
     },
     {
       "id": 32,
@@ -458,8 +458,8 @@
           "This unit targets certain tiles instead of attacking forward."
         ]
       ],
-      "img": 33,
-      "price": 96,
+      "img": 49,
+      "price": 98,
       "bundle": 454
     },
     {
@@ -479,8 +479,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 37,
-      "price": 339,
+      "img": 52,
+      "price": 100,
       "bundle": 455
     },
     {
@@ -505,8 +505,8 @@
           "When Quake is played, subsequent castings of Quake have their cost increased by 2."
         ]
       ],
-      "img": 38,
-      "price": 724
+      "img": 53,
+      "price": 309
     },
     {
       "id": 35,
@@ -525,8 +525,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 34,
-      "price": 46
+      "img": 50,
+      "price": 43
     },
     {
       "id": 36,
@@ -545,8 +545,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 34,
-      "price": 189
+      "img": 49,
+      "price": 115
     },
     {
       "id": 37,
@@ -565,8 +565,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 35,
-      "price": 306
+      "img": 50,
+      "price": 144
     },
     {
       "id": 38,
@@ -590,8 +590,8 @@
           "When a Relentless unit destroys another unit, it keeps attacking with its remaining Attack value."
         ]
       ],
-      "img": 39,
-      "price": 1164,
+      "img": 54,
+      "price": 298,
       "bundle": 456
     },
     {
@@ -620,8 +620,8 @@
           "Physical damage dealt to Iron Ogre is reduced by 1."
         ]
       ],
-      "img": 35,
-      "price": 584,
+      "img": 51,
+      "price": 287,
       "bundle": 457
     },
     {
@@ -641,8 +641,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 40,
-      "price": 130,
+      "img": 55,
+      "price": 43,
       "bundle": 458
     },
     {
@@ -662,8 +662,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 41,
-      "price": 439,
+      "img": 56,
+      "price": 230,
       "bundle": 459
     },
     {
@@ -692,8 +692,8 @@
           "When Kinfolk Jarl comes into play, adjacent units have their Attack increased by +1 until end of turn."
         ]
       ],
-      "img": 42,
-      "price": 199,
+      "img": 57,
+      "price": 170,
       "bundle": 460
     },
     {
@@ -713,8 +713,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 43,
-      "price": 496
+      "img": 58,
+      "price": 273
     },
     {
       "id": 44,
@@ -733,8 +733,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 44,
-      "price": 209,
+      "img": 59,
+      "price": 129,
       "bundle": 461
     },
     {
@@ -754,8 +754,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 45,
-      "price": 149
+      "img": 60,
+      "price": 89
     },
     {
       "id": 47,
@@ -774,8 +774,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 53,
-      "price": 1298
+      "img": 69,
+      "price": 555
     },
     {
       "id": 48,
@@ -794,8 +794,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 36,
-      "price": 65
+      "img": 51,
+      "price": 69
     },
     {
       "id": 49,
@@ -819,8 +819,8 @@
           "Creature comes in play with Countdown set to 0."
         ]
       ],
-      "img": 46,
-      "price": 139,
+      "img": 61,
+      "price": 97,
       "bundle": 462
     },
     {
@@ -840,8 +840,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 37,
-      "price": 100
+      "img": 52,
+      "price": 48
     },
     {
       "id": 51,
@@ -860,8 +860,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 38,
-      "price": 220,
+      "img": 53,
+      "price": 210,
       "bundle": 463
     },
     {
@@ -881,8 +881,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 39,
-      "price": 244,
+      "img": 54,
+      "price": 139,
       "bundle": 464
     },
     {
@@ -902,8 +902,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 74,
-      "price": 104,
+      "img": 89,
+      "price": 54,
       "bundle": 465
     },
     {
@@ -923,8 +923,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 40,
-      "price": 735,
+      "img": 55,
+      "price": 230,
       "bundle": 466
     },
     {
@@ -944,8 +944,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 41,
-      "price": 230
+      "img": 56,
+      "price": 211
     },
     {
       "id": 56,
@@ -964,8 +964,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 47,
-      "price": 391
+      "img": 62,
+      "price": 365
     },
     {
       "id": 57,
@@ -984,8 +984,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 42,
-      "price": 218
+      "img": 57,
+      "price": 129
     },
     {
       "id": 58,
@@ -1004,8 +1004,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 48,
-      "price": 599
+      "img": 63,
+      "price": 350
     },
     {
       "id": 59,
@@ -1024,8 +1024,8 @@
       "decay": 5,
       "set": 1,
       "rules": [],
-      "img": 27,
-      "price": 99,
+      "img": 44,
+      "price": 134,
       "bundle": 467
     },
     {
@@ -1047,11 +1047,11 @@
       "rules": [
         [
           "Regeneration 1",
-          "Heals 1 each round."
+          "Heals 1 each round, and removes poison."
         ]
       ],
-      "img": 49,
-      "price": 149,
+      "img": 64,
+      "price": 60,
       "bundle": 468
     },
     {
@@ -1071,8 +1071,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 43,
-      "price": 1589,
+      "img": 58,
+      "price": 490,
       "bundle": 469
     },
     {
@@ -1092,8 +1092,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 44,
-      "price": 43
+      "img": 59,
+      "price": 55
     },
     {
       "id": 63,
@@ -1117,8 +1117,8 @@
           "Creature comes in play with Countdown set to 0."
         ]
       ],
-      "img": 50,
-      "price": 66,
+      "img": 65,
+      "price": 60,
       "bundle": 470
     },
     {
@@ -1138,8 +1138,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 45,
-      "price": 154
+      "img": 60,
+      "price": 99
     },
     {
       "id": 65,
@@ -1158,8 +1158,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 51,
-      "price": 204,
+      "img": 66,
+      "price": 144,
       "bundle": 471
     },
     {
@@ -1179,8 +1179,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 36,
-      "price": 60,
+      "img": 52,
+      "price": 95,
       "bundle": 472
     },
     {
@@ -1200,8 +1200,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 37,
-      "price": 99
+      "img": 53,
+      "price": 68
     },
     {
       "id": 68,
@@ -1229,8 +1229,8 @@
           "Physical damage dealt to Cannon Automaton is reduced by 1."
         ]
       ],
-      "img": 26,
-      "price": 140,
+      "img": 25,
+      "price": 110,
       "bundle": 637
     },
     {
@@ -1250,8 +1250,8 @@
       "decay": 1,
       "set": 1,
       "rules": [],
-      "img": 25,
-      "price": 62,
+      "img": 42,
+      "price": 74,
       "bundle": 474
     },
     {
@@ -1271,8 +1271,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 38,
-      "price": 530
+      "img": 54,
+      "price": 999
     },
     {
       "id": 71,
@@ -1291,8 +1291,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 46,
-      "price": 110
+      "img": 61,
+      "price": 94
     },
     {
       "id": 73,
@@ -1311,8 +1311,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 47,
-      "price": 39
+      "img": 62,
+      "price": 46
     },
     {
       "id": 74,
@@ -1331,8 +1331,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 73,
-      "price": 272,
+      "img": 88,
+      "price": 190,
       "bundle": 475
     },
     {
@@ -1357,8 +1357,8 @@
           "Creature comes in play with Countdown set to 0."
         ]
       ],
-      "img": 52,
-      "price": 188,
+      "img": 67,
+      "price": 149,
       "bundle": 476
     },
     {
@@ -1378,8 +1378,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 53,
-      "price": 263
+      "img": 68,
+      "price": 147
     },
     {
       "id": 77,
@@ -1398,8 +1398,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 39,
-      "price": 99
+      "img": 55,
+      "price": 120
     },
     {
       "id": 78,
@@ -1418,14 +1418,14 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 66,
-      "price": 144
+      "img": 81,
+      "price": 50
     },
     {
       "id": 79,
       "name": "Machine Priest",
       "desc": "Machine Priest does not attack. Structures and Automatons you control have +1 Attack.",
-      "flavor": "",
+      "flavor": "Deep within the mountainous assembly halls, the Litany Mechanica is sung day and night.",
       "kind": "CREATURE",
       "types": "Human,Tribesman",
       "rarity": 1,
@@ -1438,8 +1438,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 40,
-      "price": 278,
+      "img": 56,
+      "price": 114,
       "bundle": 477
     },
     {
@@ -1459,8 +1459,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 41,
-      "price": 177
+      "img": 57,
+      "price": 100
     },
     {
       "id": 81,
@@ -1479,8 +1479,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 42,
-      "price": 585
+      "img": 58,
+      "price": 350
     },
     {
       "id": 82,
@@ -1499,14 +1499,14 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 43,
-      "price": 339,
+      "img": 59,
+      "price": 138,
       "bundle": 478
     },
     {
       "id": 83,
       "name": "Golem Skin",
-      "desc": "When Golem Skin comes into play, enchanted creature gains Attack and Health equal to the number of structures you control. Structures you control take 2 damage.",
+      "desc": "When Golem Skin comes into play, enchanted creature gains Attack and Health equal to the number of structures you control. Structures you control take 2 [magic damage].",
       "flavor": "When you wear machines, laundry day is your greatest worry.",
       "kind": "ENCHANTMENT",
       "types": "",
@@ -1520,8 +1520,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 44,
-      "price": 47
+      "img": 60,
+      "price": 38
     },
     {
       "id": 84,
@@ -1540,8 +1540,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 54,
-      "price": 110
+      "img": 69,
+      "price": 39
     },
     {
       "id": 85,
@@ -1560,8 +1560,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 45,
-      "price": 89
+      "img": 61,
+      "price": 98
     },
     {
       "id": 86,
@@ -1585,8 +1585,8 @@
           "Physical damage dealt to enchanted unit is reduced by ${AMOUNT}."
         ]
       ],
-      "img": 48,
-      "price": 170
+      "img": 63,
+      "price": 160
     },
     {
       "id": 87,
@@ -1605,8 +1605,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 46,
-      "price": 99
+      "img": 62,
+      "price": 49
     },
     {
       "id": 88,
@@ -1625,8 +1625,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 70,
-      "price": 100
+      "img": 85,
+      "price": 58
     },
     {
       "id": 89,
@@ -1645,8 +1645,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 55,
-      "price": 112
+      "img": 70,
+      "price": 81
     },
     {
       "id": 90,
@@ -1665,8 +1665,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 47,
-      "price": 79,
+      "img": 63,
+      "price": 40,
       "bundle": 625
     },
     {
@@ -1687,7 +1687,7 @@
       "set": 1,
       "rules": [],
       "img": 26,
-      "price": 50,
+      "price": 38,
       "bundle": 638
     },
     {
@@ -1707,8 +1707,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 49,
-      "price": 70
+      "img": 64,
+      "price": 99
     },
     {
       "id": 93,
@@ -1727,8 +1727,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 64,
-      "price": 66
+      "img": 79,
+      "price": 55
     },
     {
       "id": 94,
@@ -1747,8 +1747,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 56,
-      "price": 928
+      "img": 71,
+      "price": 161
     },
     {
       "id": 95,
@@ -1767,8 +1767,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 50,
-      "price": 108
+      "img": 65,
+      "price": 45
     },
     {
       "id": 96,
@@ -1792,8 +1792,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 27,
-      "price": 54,
+      "img": 26,
+      "price": 69,
       "bundle": 639
     },
     {
@@ -1818,8 +1818,8 @@
           "When Vengeance Veil is played, your current Wild is increased equal to the cost of Vengeance Veil."
         ]
       ],
-      "img": 65,
-      "price": 89
+      "img": 80,
+      "price": 70
     },
     {
       "id": 98,
@@ -1838,8 +1838,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 48,
-      "price": 95,
+      "img": 64,
+      "price": 79,
       "bundle": 481
     },
     {
@@ -1859,8 +1859,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 51,
-      "price": 57
+      "img": 66,
+      "price": 43
     },
     {
       "id": 100,
@@ -1879,8 +1879,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 57,
-      "price": 131
+      "img": 72,
+      "price": 77
     },
     {
       "id": 101,
@@ -1899,8 +1899,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 52,
-      "price": 43
+      "img": 67,
+      "price": 60
     },
     {
       "id": 102,
@@ -1919,8 +1919,8 @@
       "decay": 2,
       "set": 1,
       "rules": [],
-      "img": 26,
-      "price": 144
+      "img": 43,
+      "price": 219
     },
     {
       "id": 103,
@@ -1939,8 +1939,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 53,
-      "price": 938
+      "img": 68,
+      "price": 386
     },
     {
       "id": 104,
@@ -1964,8 +1964,8 @@
           "When Bloodboil is played, your current Wild is increased equal to the cost of Bloodboil."
         ]
       ],
-      "img": 58,
-      "price": 97
+      "img": 73,
+      "price": 64
     },
     {
       "id": 105,
@@ -1984,8 +1984,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 54,
-      "price": 87
+      "img": 69,
+      "price": 89
     },
     {
       "id": 107,
@@ -2009,8 +2009,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 49,
-      "price": 48,
+      "img": 65,
+      "price": 39,
       "bundle": 482
     },
     {
@@ -2030,8 +2030,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 50,
-      "price": 111,
+      "img": 66,
+      "price": 77,
       "bundle": 483
     },
     {
@@ -2051,8 +2051,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 55,
-      "price": 84,
+      "img": 70,
+      "price": 87,
       "bundle": 484
     },
     {
@@ -2072,8 +2072,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 51,
-      "price": 85,
+      "img": 67,
+      "price": 58,
       "bundle": 485
     },
     {
@@ -2093,8 +2093,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 56,
-      "price": 200,
+      "img": 71,
+      "price": 75,
       "bundle": 486
     },
     {
@@ -2114,8 +2114,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 59,
-      "price": 91,
+      "img": 74,
+      "price": 73,
       "bundle": 487
     },
     {
@@ -2135,8 +2135,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 60,
-      "price": 178,
+      "img": 75,
+      "price": 65,
       "bundle": 488
     },
     {
@@ -2156,8 +2156,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 61,
-      "price": 111
+      "img": 76,
+      "price": 79
     },
     {
       "id": 115,
@@ -2181,8 +2181,8 @@
           "When Illthorn is attacked in melee combat, Illthorn deals 1 physical damage to attacking unit."
         ]
       ],
-      "img": 62,
-      "price": 117,
+      "img": 77,
+      "price": 54,
       "bundle": 489
     },
     {
@@ -2202,8 +2202,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 57,
-      "price": 1395
+      "img": 72,
+      "price": 500
     },
     {
       "id": 117,
@@ -2222,8 +2222,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 63,
-      "price": 716
+      "img": 78,
+      "price": 318
     },
     {
       "id": 118,
@@ -2247,8 +2247,8 @@
           "This unit targets certain tiles instead of attacking forward."
         ]
       ],
-      "img": 52,
-      "price": 987,
+      "img": 68,
+      "price": 519,
       "bundle": 490
     },
     {
@@ -2268,8 +2268,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 75,
-      "price": 1256,
+      "img": 90,
+      "price": 546,
       "bundle": 491
     },
     {
@@ -2289,8 +2289,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 58,
-      "price": 130,
+      "img": 73,
+      "price": 70,
       "bundle": 492
     },
     {
@@ -2311,7 +2311,7 @@
       "set": 3,
       "rules": [],
       "img": 25,
-      "price": 95,
+      "price": 86,
       "bundle": 626
     },
     {
@@ -2337,7 +2337,7 @@
         ]
       ],
       "img": 26,
-      "price": 75,
+      "price": 119,
       "bundle": 627
     },
     {
@@ -2363,7 +2363,7 @@
         ]
       ],
       "img": 27,
-      "price": 111,
+      "price": 68,
       "bundle": 628
     },
     {
@@ -2392,8 +2392,8 @@
           "Resonance effects are triggered when you play a spell."
         ]
       ],
-      "img": 59,
-      "price": 95
+      "img": 74,
+      "price": 80
     },
     {
       "id": 125,
@@ -2417,8 +2417,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 60,
-      "price": 89,
+      "img": 75,
+      "price": 63,
       "bundle": 496
     },
     {
@@ -2438,8 +2438,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 61,
-      "price": 69,
+      "img": 76,
+      "price": 114,
       "bundle": 497
     },
     {
@@ -2464,8 +2464,8 @@
           "When a Relentless unit destroys another unit, it keeps attacking with its remaining Attack value."
         ]
       ],
-      "img": 62,
-      "price": 259,
+      "img": 77,
+      "price": 128,
       "bundle": 498
     },
     {
@@ -2490,8 +2490,8 @@
           "When Royal Spearman is attacked in melee combat, Royal Spearman deals 3 physical damage to attacking unit."
         ]
       ],
-      "img": 63,
-      "price": 229,
+      "img": 78,
+      "price": 129,
       "bundle": 499
     },
     {
@@ -2511,8 +2511,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 65,
-      "price": 587,
+      "img": 80,
+      "price": 220,
       "bundle": 500
     },
     {
@@ -2532,8 +2532,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 54,
-      "price": 99,
+      "img": 70,
+      "price": 45,
       "bundle": 501
     },
     {
@@ -2553,8 +2553,8 @@
       "decay": 2,
       "set": 1,
       "rules": [],
-      "img": 28,
-      "price": 450,
+      "img": 45,
+      "price": 195,
       "bundle": 502
     },
     {
@@ -2574,13 +2574,13 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 69,
-      "price": 232
+      "img": 85,
+      "price": 137
     },
     {
       "id": 134,
       "name": "Efficiency",
-      "desc": "Target unit gets +1 Attack until end of turn. If that unit destroys another unit this turn, increase Energy by 1.",
+      "desc": "Target unit gets +2 Attack until end of turn. If that unit destroys another unit this turn, increase Energy by 1.",
       "flavor": "The best discipline conserves energy.",
       "kind": "SPELL",
       "types": "",
@@ -2594,8 +2594,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 70,
-      "price": 244
+      "img": 85,
+      "price": 230
     },
     {
       "id": 135,
@@ -2614,8 +2614,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 86,
-      "price": 598
+      "img": 101,
+      "price": 581
     },
     {
       "id": 137,
@@ -2634,8 +2634,8 @@
       "decay": 3,
       "set": 1,
       "rules": [],
-      "img": 29,
-      "price": 650
+      "img": 46,
+      "price": 257
     },
     {
       "id": 138,
@@ -2654,13 +2654,13 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 70,
-      "price": 429
+      "img": 86,
+      "price": 135
     },
     {
       "id": 139,
       "name": "Rigged",
-      "desc": "When enchanted structure is destroyed in [melee combat], its attacker takes 4 [physical damage].",
+      "desc": "When enchanted structure is destroyed in [melee combat], its attacker is dealt 4 [physical damage].",
       "flavor": "Strap it on, then stand back.",
       "kind": "ENCHANTMENT",
       "types": "",
@@ -2679,8 +2679,8 @@
           "When Rigged is destroyed, it deals 1 damage to your opponent's idol on the same row."
         ]
       ],
-      "img": 55,
-      "price": 107
+      "img": 71,
+      "price": 70
     },
     {
       "id": 140,
@@ -2699,8 +2699,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 56,
-      "price": 400
+      "img": 72,
+      "price": 147
     },
     {
       "id": 141,
@@ -2724,8 +2724,8 @@
           "When Plating is played, your current Wild is increased equal to the cost of Plating."
         ]
       ],
-      "img": 57,
-      "price": 45
+      "img": 73,
+      "price": 48
     },
     {
       "id": 142,
@@ -2744,8 +2744,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 58,
-      "price": 74
+      "img": 74,
+      "price": 84
     },
     {
       "id": 143,
@@ -2764,8 +2764,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 59,
-      "price": 105
+      "img": 75,
+      "price": 69
     },
     {
       "id": 145,
@@ -2784,8 +2784,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 60,
-      "price": 290
+      "img": 76,
+      "price": 146
     },
     {
       "id": 146,
@@ -2804,8 +2804,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 61,
-      "price": 98
+      "img": 77,
+      "price": 41
     },
     {
       "id": 147,
@@ -2824,8 +2824,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 62,
-      "price": 75
+      "img": 78,
+      "price": 95
     },
     {
       "id": 148,
@@ -2844,8 +2844,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 63,
-      "price": 568
+      "img": 79,
+      "price": 332
     },
     {
       "id": 149,
@@ -2864,8 +2864,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 64,
-      "price": 75
+      "img": 80,
+      "price": 84
     },
     {
       "id": 150,
@@ -2884,8 +2884,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 71,
-      "price": 111,
+      "img": 87,
+      "price": 145,
       "bundle": 503
     },
     {
@@ -2905,8 +2905,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 65,
-      "price": 74
+      "img": 81,
+      "price": 99
     },
     {
       "id": 152,
@@ -2925,8 +2925,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 66,
-      "price": 384
+      "img": 82,
+      "price": 405
     },
     {
       "id": 153,
@@ -2945,8 +2945,8 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 67,
-      "price": 57,
+      "img": 83,
+      "price": 84,
       "bundle": 504
     },
     {
@@ -2966,8 +2966,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 67,
-      "price": 270,
+      "img": 82,
+      "price": 345,
       "bundle": 505
     },
     {
@@ -2992,8 +2992,8 @@
           "This unit targets certain tiles instead of attacking forward."
         ]
       ],
-      "img": 67,
-      "price": 230,
+      "img": 82,
+      "price": 204,
       "bundle": 506
     },
     {
@@ -3013,8 +3013,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 68,
-      "price": 135,
+      "img": 83,
+      "price": 145,
       "bundle": 507
     },
     {
@@ -3034,8 +3034,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 68,
-      "price": 400
+      "img": 83,
+      "price": 199
     },
     {
       "id": 158,
@@ -3054,15 +3054,16 @@
       "decay": 0,
       "set": 2,
       "rules": [],
-      "img": 69,
-      "price": 197
+      "img": 84,
+      "price": 184
     },
     {
       "id": 159,
       "name": "Unbind",
-      "desc": "Remove all enchantments and [effects] from target unit. Its Countdown is increased by 1.",
+      "desc": "Destroy target enchanted unit.",
+      "flavor": "What once was no longer is.",
       "kind": "SPELL",
-      "types": "",
+      "types": "Destruction",
       "rarity": 1,
       "hp": 0,
       "ap": 0,
@@ -3070,11 +3071,11 @@
       "growth": 0,
       "energy": 0,
       "order": 0,
-      "decay": 2,
+      "decay": 3,
       "set": 1,
       "rules": [],
-      "img": 30,
-      "price": 274
+      "img": 47,
+      "price": 289
     },
     {
       "id": 160,
@@ -3093,8 +3094,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 68,
-      "price": 125,
+      "img": 84,
+      "price": 50,
       "bundle": 508
     },
     {
@@ -3114,8 +3115,8 @@
       "decay": 2,
       "set": 3,
       "rules": [],
-      "img": 31,
-      "price": 293,
+      "img": 48,
+      "price": 142,
       "bundle": 509
     },
     {
@@ -3140,8 +3141,8 @@
           "When Loyal Darkling is destroyed, it deals 2 damage to your opponent's idol on the same row."
         ]
       ],
-      "img": 32,
-      "price": 88,
+      "img": 39,
+      "price": 79,
       "bundle": 510
     },
     {
@@ -3162,7 +3163,7 @@
       "set": 3,
       "rules": [],
       "img": 22,
-      "price": 60,
+      "price": 80,
       "bundle": 640
     },
     {
@@ -3172,7 +3173,7 @@
       "flavor": "\"From the depths of the mire, the Masked appeared.\" \\n- Excerpt, Ilmire Journal II",
       "kind": "CREATURE",
       "types": "Masked,Undead",
-      "rarity": 0,
+      "rarity": 1,
       "hp": 1,
       "ap": 3,
       "ac": 2,
@@ -3182,8 +3183,8 @@
       "decay": 1,
       "set": 2,
       "rules": [],
-      "img": 33,
-      "price": 65,
+      "img": 49,
+      "price": 120,
       "bundle": 512
     },
     {
@@ -3205,11 +3206,11 @@
       "rules": [
         [
           "Poisonous",
-          "When a creature damages or is damaged by Mangy Rat in melee combat, that creature becomes poisoned."
+          "When a creature attacks Mangy Rat in melee combat, or is damaged by Mangy Rat, that creature becomes poisoned."
         ]
       ],
-      "img": 34,
-      "price": 112,
+      "img": 50,
+      "price": 94,
       "bundle": 513
     },
     {
@@ -3234,8 +3235,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 35,
-      "price": 485,
+      "img": 51,
+      "price": 265,
       "bundle": 514
     },
     {
@@ -3255,8 +3256,8 @@
       "decay": 4,
       "set": 2,
       "rules": [],
-      "img": 36,
-      "price": 300,
+      "img": 52,
+      "price": 190,
       "bundle": 515
     },
     {
@@ -3276,8 +3277,8 @@
       "decay": 3,
       "set": 1,
       "rules": [],
-      "img": 37,
-      "price": 1799,
+      "img": 53,
+      "price": 421,
       "bundle": 516
     },
     {
@@ -3297,8 +3298,8 @@
       "decay": 3,
       "set": 2,
       "rules": [],
-      "img": 38,
-      "price": 75,
+      "img": 54,
+      "price": 32,
       "bundle": 517
     },
     {
@@ -3318,8 +3319,8 @@
       "decay": 2,
       "set": 2,
       "rules": [],
-      "img": 39,
-      "price": 110
+      "img": 55,
+      "price": 55
     },
     {
       "id": 172,
@@ -3343,8 +3344,8 @@
           "When a Relentless unit destroys another unit, it keeps attacking with its remaining Attack value."
         ]
       ],
-      "img": 40,
-      "price": 880,
+      "img": 56,
+      "price": 625,
       "bundle": 518
     },
     {
@@ -3364,8 +3365,8 @@
       "decay": 4,
       "set": 3,
       "rules": [],
-      "img": 41,
-      "price": 595,
+      "img": 40,
+      "price": 249,
       "bundle": 519
     },
     {
@@ -3385,8 +3386,8 @@
       "decay": 2,
       "set": 2,
       "rules": [],
-      "img": 42,
-      "price": 439
+      "img": 57,
+      "price": 550
     },
     {
       "id": 175,
@@ -3405,8 +3406,8 @@
       "decay": 3,
       "set": 3,
       "rules": [],
-      "img": 43,
-      "price": 745
+      "img": 58,
+      "price": 388
     },
     {
       "id": 176,
@@ -3425,8 +3426,8 @@
       "decay": 1,
       "set": 1,
       "rules": [],
-      "img": 44,
-      "price": 105
+      "img": 59,
+      "price": 97
     },
     {
       "id": 177,
@@ -3445,8 +3446,8 @@
       "decay": 3,
       "set": 1,
       "rules": [],
-      "img": 45,
-      "price": 446
+      "img": 60,
+      "price": 465
     },
     {
       "id": 178,
@@ -3465,13 +3466,13 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 71,
-      "price": 1084
+      "img": 86,
+      "price": 1200
     },
     {
       "id": 179,
       "name": "Shroud of Unlife",
-      "desc": "Enchanted creature counts as Undead. When it is destroyed, a <Husk> is summoned in its place.",
+      "desc": "When Shroud of Unlife comes into play, enchanted creature becomes Undead. When enchanted creature is destroyed, a <Husk> is summoned in its place.",
       "flavor": "\"You'll not find warmth in this garb.\" \\n- Tobai, Bone Merchant",
       "kind": "ENCHANTMENT",
       "types": "",
@@ -3485,8 +3486,8 @@
       "decay": 1,
       "set": 3,
       "rules": [],
-      "img": 46,
-      "price": 49
+      "img": 61,
+      "price": 54
     },
     {
       "id": 180,
@@ -3510,8 +3511,8 @@
           "When Damning Curse is played, subsequent castings of Damning Curse have their cost increased by 1."
         ]
       ],
-      "img": 47,
-      "price": 1298
+      "img": 62,
+      "price": 1125
     },
     {
       "id": 181,
@@ -3530,8 +3531,8 @@
       "decay": 2,
       "set": 2,
       "rules": [],
-      "img": 48,
-      "price": 257
+      "img": 63,
+      "price": 275
     },
     {
       "id": 182,
@@ -3550,8 +3551,8 @@
       "decay": 2,
       "set": 1,
       "rules": [],
-      "img": 57,
-      "price": 240
+      "img": 72,
+      "price": 147
     },
     {
       "id": 183,
@@ -3570,8 +3571,8 @@
       "decay": 3,
       "set": 3,
       "rules": [],
-      "img": 49,
-      "price": 229
+      "img": 64,
+      "price": 213
     },
     {
       "id": 184,
@@ -3590,8 +3591,8 @@
       "decay": 2,
       "set": 2,
       "rules": [],
-      "img": 50,
-      "price": 466
+      "img": 65,
+      "price": 62
     },
     {
       "id": 185,
@@ -3610,9 +3611,9 @@
       "decay": 3,
       "set": 2,
       "rules": [],
-      "img": 66,
-      "price": 100,
-      "bundle": 647
+      "img": 81,
+      "price": 60,
+      "bundle": 688
     },
     {
       "id": 186,
@@ -3631,8 +3632,8 @@
       "decay": 3,
       "set": 3,
       "rules": [],
-      "img": 51,
-      "price": 1499,
+      "img": 66,
+      "price": 585,
       "bundle": 521
     },
     {
@@ -3652,8 +3653,8 @@
       "decay": 4,
       "set": 3,
       "rules": [],
-      "img": 52,
-      "price": 1689
+      "img": 67,
+      "price": 580
     },
     {
       "id": 188,
@@ -3672,8 +3673,8 @@
       "decay": 7,
       "set": 3,
       "rules": [],
-      "img": 58,
-      "price": 1381
+      "img": 73,
+      "price": 369
     },
     {
       "id": 189,
@@ -3692,8 +3693,8 @@
       "decay": 0,
       "set": 1,
       "rules": [],
-      "img": 69,
-      "price": 137,
+      "img": 84,
+      "price": 59,
       "bundle": 522
     },
     {
@@ -3713,8 +3714,8 @@
       "decay": 3,
       "set": 2,
       "rules": [],
-      "img": 53,
-      "price": 1000
+      "img": 68,
+      "price": 580
     },
     {
       "id": 191,
@@ -3733,8 +3734,8 @@
       "decay": 1,
       "set": 1,
       "rules": [],
-      "img": 60,
-      "price": 101
+      "img": 75,
+      "price": 68
     },
     {
       "id": 192,
@@ -3753,8 +3754,8 @@
       "decay": 3,
       "set": 3,
       "rules": [],
-      "img": 54,
-      "price": 427
+      "img": 69,
+      "price": 211
     },
     {
       "id": 193,
@@ -3773,8 +3774,8 @@
       "decay": 0,
       "set": 3,
       "rules": [],
-      "img": 72,
-      "price": 1200
+      "img": 87,
+      "price": 270
     },
     {
       "id": 194,
@@ -3798,8 +3799,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 55,
-      "price": 122,
+      "img": 70,
+      "price": 88,
       "bundle": 523
     },
     {
@@ -3819,8 +3820,8 @@
       "decay": 3,
       "set": 2,
       "rules": [],
-      "img": 64,
-      "price": 95,
+      "img": 79,
+      "price": 64,
       "bundle": 524
     },
     {
@@ -3845,8 +3846,8 @@
           "When Ilmire Hunter deals damage to a creature, that creature is destroyed."
         ]
       ],
-      "img": 56,
-      "price": 499,
+      "img": 71,
+      "price": 355,
       "bundle": 525
     },
     {
@@ -3866,8 +3867,8 @@
       "decay": 1,
       "set": 2,
       "rules": [],
-      "img": 65,
-      "price": 94,
+      "img": 80,
+      "price": 30,
       "bundle": 526
     },
     {
@@ -3887,8 +3888,8 @@
       "decay": 1,
       "set": 1,
       "rules": [],
-      "img": 59,
-      "price": 50
+      "img": 74,
+      "price": 89
     },
     {
       "id": 199,
@@ -3907,8 +3908,8 @@
       "decay": 5,
       "set": 2,
       "rules": [],
-      "img": 61,
-      "price": 168
+      "img": 76,
+      "price": 144
     },
     {
       "id": 200,
@@ -3932,8 +3933,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 67,
-      "price": 100,
+      "img": 82,
+      "price": 95,
       "bundle": 527
     },
     {
@@ -3953,8 +3954,8 @@
       "decay": 2,
       "set": 3,
       "rules": [],
-      "img": 62,
-      "price": 370
+      "img": 77,
+      "price": 243
     },
     {
       "id": 202,
@@ -3975,11 +3976,11 @@
       "rules": [
         [
           "Idol strike 3",
-          "When enchanted creature deals combat damage to an idol, that idol is dealt an additional 3 damage."
+          "When enchanted creature deals damage to an idol during combat, that idol is dealt an additional 3 damage."
         ]
       ],
-      "img": 63,
-      "price": 50
+      "img": 78,
+      "price": 105
     },
     {
       "id": 203,
@@ -4003,8 +4004,8 @@
           "When Noaidi is played, your current Wild is increased equal to the cost of Noaidi."
         ]
       ],
-      "img": 71,
-      "price": 674,
+      "img": 86,
+      "price": 469,
       "bundle": 528
     },
     {
@@ -4024,8 +4025,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 72,
-      "price": 1346,
+      "img": 88,
+      "price": 790,
       "bundle": 529
     },
     {
@@ -4050,8 +4051,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 73,
-      "price": 95,
+      "img": 89,
+      "price": 144,
       "bundle": 530
     },
     {
@@ -4072,13 +4073,14 @@
       "set": 4,
       "rules": [],
       "img": 28,
-      "price": 166,
+      "price": 215,
       "bundle": 641
     },
     {
       "id": 207,
       "name": "Automata Forge",
       "desc": "Instead of attacking, Automata Forge summons a <Gun Automaton>\\non an adjacent tile. Pay 3 Energy to decrease Countdown by 1.",
+      "flavor": "Kadum... pssht!",
       "kind": "STRUCTURE",
       "types": "Forge",
       "rarity": 2,
@@ -4091,8 +4093,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 74,
-      "price": 1010,
+      "img": 90,
+      "price": 539,
       "bundle": 532
     },
     {
@@ -4112,8 +4114,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 72,
-      "price": 142
+      "img": 87,
+      "price": 134
     },
     {
       "id": 209,
@@ -4132,8 +4134,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 74,
-      "price": 98
+      "img": 89,
+      "price": 44
     },
     {
       "id": 210,
@@ -4152,8 +4154,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 75,
-      "price": 1140,
+      "img": 43,
+      "price": 338,
       "bundle": 533
     },
     {
@@ -4173,8 +4175,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 73,
-      "price": 599,
+      "img": 88,
+      "price": 279,
       "bundle": 534
     },
     {
@@ -4194,8 +4196,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 75,
-      "price": 452,
+      "img": 90,
+      "price": 378,
       "bundle": 535
     },
     {
@@ -4215,8 +4217,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 76,
-      "price": 999
+      "img": 91,
+      "price": 419
     },
     {
       "id": 214,
@@ -4235,8 +4237,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 77,
-      "price": 1100
+      "img": 92,
+      "price": 649
     },
     {
       "id": 215,
@@ -4255,8 +4257,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 78,
-      "price": 1100
+      "img": 93,
+      "price": 474
     },
     {
       "id": 216,
@@ -4280,8 +4282,8 @@
           "When Appurtenance is played, your current Wild is increased equal to the cost of Appurtenance."
         ]
       ],
-      "img": 79,
-      "price": 1050
+      "img": 94,
+      "price": 422
     },
     {
       "id": 217,
@@ -4291,7 +4293,7 @@
       "kind": "CREATURE",
       "types": "Human,Kinfolk",
       "rarity": 1,
-      "hp": 4,
+      "hp": 5,
       "ap": 4,
       "ac": 2,
       "growth": 5,
@@ -4302,11 +4304,11 @@
       "rules": [
         [
           "Regeneration 1",
-          "Heals 1 each round."
+          "Heals 1 each round, and removes poison."
         ]
       ],
-      "img": 80,
-      "price": 442,
+      "img": 95,
+      "price": 300,
       "bundle": 536
     },
     {
@@ -4326,8 +4328,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 81,
-      "price": 57,
+      "img": 96,
+      "price": 64,
       "bundle": 537
     },
     {
@@ -4347,8 +4349,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 82,
-      "price": 50,
+      "img": 97,
+      "price": 66,
       "bundle": 538
     },
     {
@@ -4373,8 +4375,8 @@
           "Owl can move to any tile. If that tile is not adjacent to Owl, its Countdown is increased by 1."
         ]
       ],
-      "img": 83,
-      "price": 168,
+      "img": 98,
+      "price": 55,
       "bundle": 539
     },
     {
@@ -4394,8 +4396,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 85,
-      "price": 450,
+      "img": 100,
+      "price": 305,
       "bundle": 540
     },
     {
@@ -4420,8 +4422,8 @@
           "This unit targets certain tiles instead of attacking forward."
         ]
       ],
-      "img": 76,
-      "price": 70,
+      "img": 91,
+      "price": 118,
       "bundle": 541
     },
     {
@@ -4441,8 +4443,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 77,
-      "price": 383,
+      "img": 92,
+      "price": 209,
       "bundle": 542
     },
     {
@@ -4462,8 +4464,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 78,
-      "price": 1249
+      "img": 93,
+      "price": 545
     },
     {
       "id": 226,
@@ -4482,8 +4484,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 79,
-      "price": 785
+      "img": 94,
+      "price": 399
     },
     {
       "id": 227,
@@ -4511,8 +4513,8 @@
           "Physical damage dealt to Scout Automaton is reduced by 1."
         ]
       ],
-      "img": 80,
-      "price": 1352,
+      "img": 95,
+      "price": 1200,
       "bundle": 543
     },
     {
@@ -4537,8 +4539,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 76,
-      "price": 309,
+      "img": 91,
+      "price": 137,
       "bundle": 544
     },
     {
@@ -4558,8 +4560,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 77,
-      "price": 116,
+      "img": 92,
+      "price": 169,
       "bundle": 545
     },
     {
@@ -4579,13 +4581,13 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 78,
-      "price": 1194
+      "img": 93,
+      "price": 321
     },
     {
       "id": 231,
       "name": "Caller's Bane",
-      "desc": "When enchanted unit deals damage to an idol in combat, other idols on that side are dealt 1 damage.",
+      "desc": "When enchanted unit deals damage to an idol during combat, other idols on that side are dealt 1 damage.",
       "flavor": "Each idol is strongly linked to its Caller.",
       "kind": "ENCHANTMENT",
       "types": "",
@@ -4599,8 +4601,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 82,
-      "price": 250
+      "img": 97,
+      "price": 222
     },
     {
       "id": 232,
@@ -4619,8 +4621,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 79,
-      "price": 190,
+      "img": 94,
+      "price": 122,
       "bundle": 546
     },
     {
@@ -4640,8 +4642,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 80,
-      "price": 1130,
+      "img": 95,
+      "price": 399,
       "bundle": 547
     },
     {
@@ -4661,8 +4663,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 81,
-      "price": 597
+      "img": 96,
+      "price": 269
     },
     {
       "id": 235,
@@ -4681,8 +4683,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 81,
-      "price": 315
+      "img": 96,
+      "price": 346
     },
     {
       "id": 236,
@@ -4701,8 +4703,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 82,
-      "price": 772
+      "img": 97,
+      "price": 374
     },
     {
       "id": 237,
@@ -4721,8 +4723,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 83,
-      "price": 55,
+      "img": 98,
+      "price": 64,
       "bundle": 548
     },
     {
@@ -4742,8 +4744,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 84,
-      "price": 516
+      "img": 99,
+      "price": 397
     },
     {
       "id": 239,
@@ -4767,8 +4769,8 @@
           "When Wicked Being is destroyed, it deals 2 damage to your opponent's idol on the same row."
         ]
       ],
-      "img": 68,
-      "price": 115
+      "img": 83,
+      "price": 50
     },
     {
       "id": 240,
@@ -4787,8 +4789,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 85,
-      "price": 957
+      "img": 100,
+      "price": 404
     },
     {
       "id": 241,
@@ -4809,11 +4811,11 @@
       "rules": [
         [
           "Idol strike 5",
-          "When Siege Cracker deals combat damage to an idol, that idol is dealt an additional 5 damage."
+          "When Siege Cracker deals damage to an idol during combat, that idol is dealt an additional 5 damage."
         ]
       ],
-      "img": 83,
-      "price": 58,
+      "img": 98,
+      "price": 90,
       "bundle": 549
     },
     {
@@ -4834,7 +4836,7 @@
       "set": 4,
       "rules": [],
       "img": 23,
-      "price": 65,
+      "price": 35,
       "bundle": 642
     },
     {
@@ -4854,8 +4856,8 @@
       "decay": 3,
       "set": 4,
       "rules": [],
-      "img": 69,
-      "price": 1179
+      "img": 84,
+      "price": 455
     },
     {
       "id": 244,
@@ -4874,8 +4876,8 @@
       "decay": 2,
       "set": 4,
       "rules": [],
-      "img": 70,
-      "price": 50,
+      "img": 85,
+      "price": 55,
       "bundle": 551
     },
     {
@@ -4900,8 +4902,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 71,
-      "price": 483,
+      "img": 86,
+      "price": 149,
       "bundle": 552
     },
     {
@@ -4921,8 +4923,8 @@
       "decay": 4,
       "set": 4,
       "rules": [],
-      "img": 72,
-      "price": 145
+      "img": 87,
+      "price": 139
     },
     {
       "id": 247,
@@ -4941,8 +4943,8 @@
       "decay": 3,
       "set": 4,
       "rules": [],
-      "img": 73,
-      "price": 201,
+      "img": 88,
+      "price": 202,
       "bundle": 553
     },
     {
@@ -4962,8 +4964,8 @@
       "decay": 2,
       "set": 4,
       "rules": [],
-      "img": 74,
-      "price": 540
+      "img": 89,
+      "price": 304
     },
     {
       "id": 249,
@@ -4982,8 +4984,8 @@
       "decay": 2,
       "set": 4,
       "rules": [],
-      "img": 75,
-      "price": 451
+      "img": 90,
+      "price": 175
     },
     {
       "id": 250,
@@ -5002,8 +5004,8 @@
       "decay": 2,
       "set": 4,
       "rules": [],
-      "img": 76,
-      "price": 496
+      "img": 91,
+      "price": 159
     },
     {
       "id": 251,
@@ -5022,8 +5024,8 @@
       "decay": 2,
       "set": 4,
       "rules": [],
-      "img": 77,
-      "price": 45
+      "img": 92,
+      "price": 53
     },
     {
       "id": 252,
@@ -5042,8 +5044,8 @@
       "decay": 2,
       "set": 4,
       "rules": [],
-      "img": 78,
-      "price": 799
+      "img": 93,
+      "price": 533
     },
     {
       "id": 253,
@@ -5062,8 +5064,8 @@
       "decay": 2,
       "set": 4,
       "rules": [],
-      "img": 80,
-      "price": 1324,
+      "img": 95,
+      "price": 1035,
       "bundle": 554
     },
     {
@@ -5083,8 +5085,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 86,
-      "price": 989,
+      "img": 101,
+      "price": 405,
       "bundle": 555
     },
     {
@@ -5104,8 +5106,8 @@
       "decay": 3,
       "set": 4,
       "rules": [],
-      "img": 79,
-      "price": 130,
+      "img": 94,
+      "price": 59,
       "bundle": 556
     },
     {
@@ -5134,8 +5136,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 85,
-      "price": 782,
+      "img": 100,
+      "price": 697,
       "bundle": 557
     },
     {
@@ -5155,8 +5157,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 84,
-      "price": 994
+      "img": 99,
+      "price": 400
     },
     {
       "id": 258,
@@ -5175,8 +5177,8 @@
       "decay": 0,
       "set": 4,
       "rules": [],
-      "img": 84,
-      "price": 1228,
+      "img": 99,
+      "price": 573,
       "bundle": 558
     },
     {
@@ -5196,8 +5198,8 @@
       "decay": 1,
       "set": 4,
       "rules": [],
-      "img": 81,
-      "price": 149,
+      "img": 96,
+      "price": 317,
       "bundle": 559
     },
     {
@@ -5217,8 +5219,8 @@
       "decay": 1,
       "set": 5,
       "rules": [],
-      "img": 82,
-      "price": 399
+      "img": 97,
+      "price": 155
     },
     {
       "id": 261,
@@ -5242,8 +5244,8 @@
           "This spell remains in play for 4 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
         ]
       ],
-      "img": 87,
-      "price": 429
+      "img": 102,
+      "price": 259
     },
     {
       "id": 262,
@@ -5262,8 +5264,8 @@
       "decay": 0,
       "set": 5,
       "rules": [],
-      "img": 86,
-      "price": 397
+      "img": 101,
+      "price": 434
     },
     {
       "id": 263,
@@ -5282,8 +5284,8 @@
       "decay": 0,
       "set": 5,
       "rules": [],
-      "img": 87,
-      "price": 479
+      "img": 102,
+      "price": 159
     },
     {
       "id": 264,
@@ -5303,7 +5305,7 @@
       "set": 5,
       "rules": [],
       "img": 2,
-      "price": 1598
+      "price": 584
     },
     {
       "id": 265,
@@ -5322,8 +5324,8 @@
       "decay": 2,
       "set": 5,
       "rules": [],
-      "img": 83,
-      "price": 151
+      "img": 98,
+      "price": 135
     },
     {
       "id": 266,
@@ -5342,8 +5344,8 @@
       "decay": 4,
       "set": 5,
       "rules": [],
-      "img": 89,
-      "price": 438,
+      "img": 104,
+      "price": 97,
       "bundle": 560
     },
     {
@@ -5363,8 +5365,8 @@
       "decay": 3,
       "set": 5,
       "rules": [],
-      "img": 84,
-      "price": 82,
+      "img": 99,
+      "price": 55,
       "bundle": 561
     },
     {
@@ -5390,7 +5392,7 @@
         ]
       ],
       "img": 0,
-      "price": 69,
+      "price": 104,
       "bundle": 562
     },
     {
@@ -5411,12 +5413,12 @@
       "set": 5,
       "rules": [
         [
-          "Dominion: +2 Attack",
+          "Dominion: +3 Attack",
           "Dominion effects are active as long as at least one opponent idol is down."
         ]
       ],
       "img": 6,
-      "price": 84,
+      "price": 55,
       "bundle": 563
     },
     {
@@ -5438,11 +5440,11 @@
       "rules": [
         [
           "Poisonous",
-          "When a creature damages or is damaged by Festering Freak in melee combat, that creature becomes poisoned."
+          "When a creature attacks Festering Freak in melee combat, or is damaged by Festering Freak, that creature becomes poisoned."
         ]
       ],
-      "img": 85,
-      "price": 135,
+      "img": 100,
+      "price": 79,
       "bundle": 564
     },
     {
@@ -5462,8 +5464,8 @@
       "decay": 4,
       "set": 5,
       "rules": [],
-      "img": 86,
-      "price": 73,
+      "img": 101,
+      "price": 85,
       "bundle": 565
     },
     {
@@ -5488,8 +5490,8 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 87,
-      "price": 789,
+      "img": 102,
+      "price": 374,
       "bundle": 566
     },
     {
@@ -5515,7 +5517,7 @@
         ]
       ],
       "img": 7,
-      "price": 98
+      "price": 50
     },
     {
       "id": 274,
@@ -5535,7 +5537,7 @@
       "set": 5,
       "rules": [],
       "img": 8,
-      "price": 115
+      "price": 50
     },
     {
       "id": 275,
@@ -5554,8 +5556,8 @@
       "decay": 0,
       "set": 5,
       "rules": [],
-      "img": 88,
-      "price": 144
+      "img": 103,
+      "price": 80
     },
     {
       "id": 276,
@@ -5575,7 +5577,7 @@
       "set": 5,
       "rules": [],
       "img": 3,
-      "price": 140
+      "price": 69
     },
     {
       "id": 277,
@@ -5594,8 +5596,8 @@
       "decay": 0,
       "set": 5,
       "rules": [],
-      "img": 87,
-      "price": 779,
+      "img": 102,
+      "price": 225,
       "bundle": 567
     },
     {
@@ -5625,7 +5627,7 @@
         ]
       ],
       "img": 4,
-      "price": 895,
+      "price": 887,
       "bundle": 568
     },
     {
@@ -5645,8 +5647,8 @@
       "decay": 2,
       "set": 5,
       "rules": [],
-      "img": 88,
-      "price": 60
+      "img": 103,
+      "price": 45
     },
     {
       "id": 280,
@@ -5665,8 +5667,8 @@
       "decay": 0,
       "set": 5,
       "rules": [],
-      "img": 89,
-      "price": 50,
+      "img": 104,
+      "price": 68,
       "bundle": 569
     },
     {
@@ -5692,11 +5694,11 @@
         ],
         [
           "Pillage: Draw 1 structure scroll.",
-          "The pillage effect is triggered when this unit deals combat damage to an idol."
+          "The pillage effect is triggered when this unit deals damage to an idol during combat."
         ]
       ],
-      "img": 88,
-      "price": 533,
+      "img": 103,
+      "price": 195,
       "bundle": 570
     },
     {
@@ -5717,7 +5719,7 @@
       "set": 5,
       "rules": [],
       "img": 1,
-      "price": 721
+      "price": 536
     },
     {
       "id": 283,
@@ -5746,7 +5748,7 @@
         ]
       ],
       "img": 6,
-      "price": 44,
+      "price": 38,
       "bundle": 571
     },
     {
@@ -5767,7 +5769,7 @@
       "set": 5,
       "rules": [],
       "img": 9,
-      "price": 750,
+      "price": 500,
       "bundle": 572
     },
     {
@@ -5793,13 +5795,14 @@
         ]
       ],
       "img": 4,
-      "price": 45,
+      "price": 40,
       "bundle": 573
     },
     {
       "id": 286,
       "name": "Ironclad Reaver",
       "desc": "",
+      "flavor": "\"I've always liked brawling. It's my favorite game.\"\\n- Reaver Khaplan",
       "kind": "CREATURE",
       "types": "Human,Reaver",
       "rarity": 2,
@@ -5814,11 +5817,11 @@
       "rules": [
         [
           "Pillage: Immune to damage until the beginning of your next turn",
-          "The pillage effect is triggered when this unit deals combat damage to an idol."
+          "The pillage effect is triggered when this unit deals damage to an idol during combat."
         ]
       ],
       "img": 10,
-      "price": 1095,
+      "price": 487,
       "bundle": 574
     },
     {
@@ -5843,15 +5846,15 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
-      "img": 89,
-      "price": 150,
+      "img": 104,
+      "price": 138,
       "bundle": 575
     },
     {
       "id": 288,
       "name": "Sudden Eruption",
       "desc": "",
-      "flavor": "\"Too frequent by far, and utterly horrifying.\"\\n - Siani, Dyrran Historian",
+      "flavor": "\"Too frequent by far, and utterly horrifying.\"\\n- Siani, Dyrran Historian",
       "kind": "SPELL",
       "types": "Destruction",
       "rarity": 2,
@@ -5870,7 +5873,7 @@
         ]
       ],
       "img": 7,
-      "price": 1494
+      "price": 927
     },
     {
       "id": 289,
@@ -5889,8 +5892,8 @@
       "decay": 0,
       "set": 5,
       "rules": [],
-      "img": 88,
-      "price": 44,
+      "img": 103,
+      "price": 78,
       "bundle": 576
     },
     {
@@ -5910,8 +5913,8 @@
       "decay": 0,
       "set": 5,
       "rules": [],
-      "img": 89,
-      "price": 999
+      "img": 104,
+      "price": 666
     },
     {
       "id": 291,
@@ -5931,7 +5934,7 @@
       "set": 5,
       "rules": [],
       "img": 10,
-      "price": 194
+      "price": 110
     },
     {
       "id": 292,
@@ -5952,11 +5955,11 @@
       "rules": [
         [
           "Pillage: Increase Growth by 1. Vengeful Vaettr is dealt 1 [pure damage].",
-          "The pillage effect is triggered when this unit deals combat damage to an idol."
+          "The pillage effect is triggered when this unit deals damage to an idol during combat."
         ]
       ],
       "img": 0,
-      "price": 158,
+      "price": 147,
       "bundle": 577
     },
     {
@@ -5977,12 +5980,12 @@
       "set": 5,
       "rules": [],
       "img": 1,
-      "price": 379
+      "price": 309
     },
     {
       "id": 294,
       "name": "Verdant Veil",
-      "desc": "Enchanted creature gets +3 Health. As long as its Health is no less than its base value, it has [Ward].",
+      "desc": "Enchanted creature gets +3 Health. As long as its Health is no less than its [base Health], it has [Ward].",
       "flavor": "\"I swear! I saw a person in there!\"",
       "kind": "ENCHANTMENT",
       "types": "",
@@ -5997,7 +6000,7 @@
       "set": 5,
       "rules": [],
       "img": 2,
-      "price": 944
+      "price": 350
     },
     {
       "id": 295,
@@ -6017,7 +6020,7 @@
       "set": 5,
       "rules": [],
       "img": 9,
-      "price": 60
+      "price": 43
     },
     {
       "id": 296,
@@ -6038,11 +6041,11 @@
       "rules": [
         [
           "Pillage: Your units get +1 Attack during your and your opponent's next turns.",
-          "The pillage effect is triggered when this unit deals combat damage to an idol."
+          "The pillage effect is triggered when this unit deals damage to an idol during combat."
         ]
       ],
       "img": 3,
-      "price": 77,
+      "price": 105,
       "bundle": 578
     },
     {
@@ -6076,11 +6079,11 @@
         ],
         [
           "Pillage: Urhald's Countdown is set to 0 after attacking.",
-          "The pillage effect is triggered when this unit deals combat damage to an idol."
+          "The pillage effect is triggered when this unit deals damage to an idol during combat."
         ]
       ],
       "img": 4,
-      "price": 1295,
+      "price": 648,
       "bundle": 579
     },
     {
@@ -6101,13 +6104,13 @@
       "set": 5,
       "rules": [],
       "img": 5,
-      "price": 1439,
+      "price": 589,
       "bundle": 580
     },
     {
       "id": 299,
       "name": "Tempest Reaver",
-      "desc": "Tempest Reaver's Attack is equal to your [current] Energy resource.",
+      "desc": "Tempest Reaver's Attack is increased by your [current] Energy resource.",
       "flavor": "Managing power, one shot at a time.",
       "kind": "CREATURE",
       "types": "Human,Reaver",
@@ -6131,7 +6134,7 @@
         ]
       ],
       "img": 0,
-      "price": 425,
+      "price": 195,
       "bundle": 581
     },
     {
@@ -6157,7 +6160,7 @@
         ]
       ],
       "img": 3,
-      "price": 587,
+      "price": 262,
       "bundle": 582
     },
     {
@@ -6183,7 +6186,7 @@
         ]
       ],
       "img": 8,
-      "price": 85
+      "price": 70
     },
     {
       "id": 302,
@@ -6203,7 +6206,7 @@
       "set": 5,
       "rules": [],
       "img": 5,
-      "price": 554,
+      "price": 310,
       "bundle": 583
     },
     {
@@ -6229,7 +6232,7 @@
         ]
       ],
       "img": 6,
-      "price": 99
+      "price": 104
     },
     {
       "id": 304,
@@ -6249,7 +6252,7 @@
       "set": 5,
       "rules": [],
       "img": 7,
-      "price": 1399
+      "price": 578
     },
     {
       "id": 305,
@@ -6278,7 +6281,7 @@
         ]
       ],
       "img": 6,
-      "price": 113,
+      "price": 98,
       "bundle": 584
     },
     {
@@ -6308,7 +6311,7 @@
         ]
       ],
       "img": 0,
-      "price": 1196,
+      "price": 558,
       "bundle": 585
     },
     {
@@ -6329,7 +6332,7 @@
       "set": 5,
       "rules": [],
       "img": 27,
-      "price": 548,
+      "price": 339,
       "bundle": 643
     },
     {
@@ -6350,7 +6353,7 @@
       "set": 5,
       "rules": [],
       "img": 1,
-      "price": 107,
+      "price": 50,
       "bundle": 587
     },
     {
@@ -6371,7 +6374,7 @@
       "set": 5,
       "rules": [],
       "img": 5,
-      "price": 189
+      "price": 99
     },
     {
       "id": 310,
@@ -6391,7 +6394,7 @@
       "set": 5,
       "rules": [],
       "img": 8,
-      "price": 538
+      "price": 132
     },
     {
       "id": 311,
@@ -6401,7 +6404,7 @@
       "kind": "CREATURE",
       "types": "Human,Soldier",
       "rarity": 0,
-      "hp": 4,
+      "hp": 5,
       "ap": 5,
       "ac": 2,
       "growth": 0,
@@ -6411,7 +6414,7 @@
       "set": 5,
       "rules": [],
       "img": 10,
-      "price": 37,
+      "price": 65,
       "bundle": 588
     },
     {
@@ -6432,13 +6435,13 @@
       "set": 5,
       "rules": [],
       "img": 2,
-      "price": 230
+      "price": 164
     },
     {
       "id": 313,
       "name": "Ruse",
       "desc": "Units you control have [Spiky] 2.",
-      "flavor": "\"The Kin is a weed in our Imperial garden. It musn't grow.\"\\n- Lord Ungstram, Royal Strategist. ",
+      "flavor": "\"The Kin is a weed in our Imperial garden. It musn't grow.\"\\n- Lord Ungstram, Royal Strategist ",
       "kind": "SPELL",
       "types": "Lingering",
       "rarity": 1,
@@ -6457,7 +6460,7 @@
         ]
       ],
       "img": 3,
-      "price": 430
+      "price": 307
     },
     {
       "id": 314,
@@ -6482,18 +6485,18 @@
         ],
         [
           "Dominion: [Ward]",
-          "Dominion effects are active as long as at least one opponent idol is down. When active, this unit cannot be targeted by opponent spells or enchantments."
+          "Dominion effects are active as long as at least one opponent idol is down."
         ]
       ],
       "img": 9,
-      "price": 1192,
+      "price": 454,
       "bundle": 589
     },
     {
       "id": 315,
       "name": "Warding Stone",
       "desc": "When Warding Stone is destroyed in combat, attacking unit is returned to owner's hand and you draw 1 scroll.",
-      "flavor": "\"You bring your toys, mystic. I'll bring mine.\"\\n - Lord Ungstram, Royal Strategist",
+      "flavor": "\"You bring your toys, mystic. I'll bring mine.\"\\n- Lord Ungstram, Royal Strategist",
       "kind": "STRUCTURE",
       "types": "Wall",
       "rarity": 1,
@@ -6507,13 +6510,13 @@
       "set": 5,
       "rules": [],
       "img": 4,
-      "price": 469,
+      "price": 157,
       "bundle": 590
     },
     {
       "id": 316,
       "name": "Prisoners of War",
-      "desc": "Take the next Growth, Decay and Energy creature scrolls from your library and add them to your hand. Increase [current] Wild by 1.",
+      "desc": "Draw 1 Growth, 1 Decay and 1 Energy creature. Increase [current] Wild by 1.",
       "flavor": "\"We don't need reserves.\\nWe have prisoners.\"\\n- Lord Ungstram, Royal Strategist.\\n",
       "kind": "SPELL",
       "types": "",
@@ -6528,7 +6531,7 @@
       "set": 5,
       "rules": [],
       "img": 11,
-      "price": 1450
+      "price": 799
     },
     {
       "id": 317,
@@ -6548,7 +6551,7 @@
       "set": 5,
       "rules": [],
       "img": 5,
-      "price": 103
+      "price": 125
     },
     {
       "id": 318,
@@ -6568,6 +6571,10 @@
       "set": 5,
       "rules": [
         [
+          "Piercing",
+          "When a Piercing unit damages a unit, half of the damage (rounded down) is also dealt to the unit/idol behind it."
+        ],
+        [
           "Unique",
           "Summoning a Unique destroys previous Uniques with the same name."
         ],
@@ -6576,16 +6583,12 @@
           "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ],
         [
-          "Piercing",
-          "When a Piercing unit damages a unit, half of the damage (rounded down) is also dealt to the unit/idol behind it."
-        ],
-        [
           "Pillage: Your [current] Energy is increased by 2 at the beginning of your next turn.",
-          "The pillage effect is triggered when this unit deals combat damage to an idol."
+          "The pillage effect is triggered when this unit deals damage to an idol during combat."
         ]
       ],
       "img": 2,
-      "price": 1199,
+      "price": 478,
       "bundle": 591
     },
     {
@@ -6611,7 +6614,7 @@
         ]
       ],
       "img": 1,
-      "price": 1835
+      "price": 463
     },
     {
       "id": 320,
@@ -6631,7 +6634,7 @@
       "set": 6,
       "rules": [],
       "img": 12,
-      "price": 1128
+      "price": 445
     },
     {
       "id": 321,
@@ -6656,13 +6659,14 @@
         ]
       ],
       "img": 11,
-      "price": 349,
+      "price": 150,
       "bundle": 592
     },
     {
       "id": 322,
       "name": "Oculus Cannon",
       "desc": "Does not count down. When an opponent unit moves to a tile on the same row as Oculus Cannon, Oculus Cannon's Countdown is set to 0.",
+      "flavor": "\\n\\nAmhan's foremost invention\\nwas the mechanical eye.",
       "kind": "STRUCTURE",
       "types": "Artillery",
       "rarity": 1,
@@ -6676,22 +6680,23 @@
       "set": 6,
       "rules": [
         [
-          "Ranged attack",
-          "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
-        ],
-        [
           "Piercing",
           "When a Piercing unit damages a unit, half of the damage (rounded down) is also dealt to the unit/idol behind it."
+        ],
+        [
+          "Ranged attack",
+          "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
         ]
       ],
       "img": 11,
-      "price": 226,
+      "price": 369,
       "bundle": 593
     },
     {
       "id": 332,
       "name": "Void Gate",
       "desc": "[Physical damage] dealt to Void Gate is instead dealt to the idol behind it.",
+      "flavor": "The sword slashed right through the churning sphere, seeming almost to fall into the void within.",
       "kind": "STRUCTURE",
       "types": "Wall",
       "rarity": 1,
@@ -6705,14 +6710,14 @@
       "set": 6,
       "rules": [],
       "img": 7,
-      "price": 196,
+      "price": 135,
       "bundle": 594
     },
     {
       "id": 333,
       "name": "Fields of Strife",
       "desc": "All Knights have their Attack increased by the number of friendly units on the same row.",
-      "flavor": "\"So many crows!\"\\n-Ihrbraman, Creature Collector",
+      "flavor": "\"So many crows!\"\\n- Ihrbraman, Creature Collector",
       "kind": "SPELL",
       "types": "Lingering",
       "rarity": 0,
@@ -6731,7 +6736,7 @@
         ]
       ],
       "img": 13,
-      "price": 50
+      "price": 54
     },
     {
       "id": 334,
@@ -6756,7 +6761,7 @@
         ]
       ],
       "img": 12,
-      "price": 90
+      "price": 50
     },
     {
       "id": 335,
@@ -6781,7 +6786,7 @@
         ]
       ],
       "img": 13,
-      "price": 667
+      "price": 179
     },
     {
       "id": 336,
@@ -6806,7 +6811,7 @@
         ]
       ],
       "img": 14,
-      "price": 384
+      "price": 210
     },
     {
       "id": 337,
@@ -6831,12 +6836,12 @@
         ]
       ],
       "img": 14,
-      "price": 89
+      "price": 99
     },
     {
       "id": 338,
       "name": "Caravans of the Expanse",
-      "desc": "While Caravans of the Expanse is in play, [Dominion] traits are active.",
+      "desc": "Other [Dominion] traits are active.",
       "flavor": "The Imperial Logisticians are the true warriors of the Empire.",
       "kind": "SPELL",
       "types": "Lingering",
@@ -6853,10 +6858,14 @@
         [
           "Linger: 5",
           "This spell remains in play for 5 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+        ],
+        [
+          "Dominion: Units you control have +1 Attack",
+          "Dominion effects are active as long as at least one opponent idol is down."
         ]
       ],
       "img": 15,
-      "price": 388
+      "price": 290
     },
     {
       "id": 339,
@@ -6876,12 +6885,12 @@
       "set": 6,
       "rules": [
         [
-          "Linger: 4",
-          "This spell remains in play for 4 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+          "Linger: 5",
+          "This spell remains in play for 5 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
         ]
       ],
-      "img": 20,
-      "price": 1258
+      "img": 19,
+      "price": 551
     },
     {
       "id": 340,
@@ -6906,7 +6915,7 @@
         ]
       ],
       "img": 12,
-      "price": 63
+      "price": 50
     },
     {
       "id": 341,
@@ -6930,8 +6939,8 @@
           "This spell remains in play for 4 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
         ]
       ],
-      "img": 13,
-      "price": 70
+      "img": 29,
+      "price": 76
     },
     {
       "id": 342,
@@ -6956,7 +6965,7 @@
         ]
       ],
       "img": 19,
-      "price": 68
+      "price": 75
     },
     {
       "id": 343,
@@ -6981,7 +6990,7 @@
         ]
       ],
       "img": 17,
-      "price": 1180
+      "price": 923
     },
     {
       "id": 344,
@@ -7006,7 +7015,7 @@
         ]
       ],
       "img": 20,
-      "price": 518
+      "price": 417
     },
     {
       "id": 345,
@@ -7026,7 +7035,7 @@
       "set": 6,
       "rules": [],
       "img": 8,
-      "price": 2000,
+      "price": 377,
       "bundle": 595
     },
     {
@@ -7047,7 +7056,7 @@
       "set": 6,
       "rules": [],
       "img": 16,
-      "price": 256,
+      "price": 219,
       "bundle": 596
     },
     {
@@ -7067,8 +7076,8 @@
       "decay": 0,
       "set": 6,
       "rules": [],
-      "img": 14,
-      "price": 244
+      "img": 13,
+      "price": 486
     },
     {
       "id": 348,
@@ -7088,12 +7097,13 @@
       "set": 6,
       "rules": [],
       "img": 23,
-      "price": 269
+      "price": 128
     },
     {
       "id": 349,
       "name": "Revenant",
       "desc": "Revenant is destroyed after attacking.",
+      "flavor": "Revenants rose in the hundreds; free from conscience, though not from purpose.",
       "kind": "CREATURE",
       "types": "Undead,Anima",
       "rarity": 0,
@@ -7112,8 +7122,8 @@
         ]
       ],
       "img": 16,
-      "price": 79,
-      "bundle": 597
+      "price": 95,
+      "bundle": 690
     },
     {
       "id": 350,
@@ -7138,7 +7148,7 @@
         ]
       ],
       "img": 9,
-      "price": 90,
+      "price": 91,
       "bundle": 598
     },
     {
@@ -7164,7 +7174,7 @@
         ]
       ],
       "img": 10,
-      "price": 50,
+      "price": 80,
       "bundle": 599
     },
     {
@@ -7185,7 +7195,7 @@
       "set": 6,
       "rules": [],
       "img": 11,
-      "price": 373,
+      "price": 394,
       "bundle": 600
     },
     {
@@ -7206,13 +7216,14 @@
       "set": 6,
       "rules": [],
       "img": 12,
-      "price": 896,
+      "price": 598,
       "bundle": 601
     },
     {
       "id": 354,
       "name": "Reloras, Lord Knight",
       "desc": "",
+      "flavor": "\"There's no one I admire more.\\nNo one I'd rather see dead.\"\\n- Jarl Urhald",
       "kind": "CREATURE",
       "types": "Human,Knight",
       "rarity": 2,
@@ -7235,7 +7246,7 @@
         ]
       ],
       "img": 17,
-      "price": 1047,
+      "price": 585,
       "bundle": 602
     },
     {
@@ -7256,7 +7267,7 @@
       "set": 6,
       "rules": [],
       "img": 18,
-      "price": 220,
+      "price": 189,
       "bundle": 603
     },
     {
@@ -7277,7 +7288,7 @@
       "set": 6,
       "rules": [],
       "img": 19,
-      "price": 59,
+      "price": 85,
       "bundle": 604
     },
     {
@@ -7311,7 +7322,7 @@
         ]
       ],
       "img": 29,
-      "price": 1400,
+      "price": 1423,
       "bundle": 644
     },
     {
@@ -7332,7 +7343,7 @@
       "set": 6,
       "rules": [],
       "img": 23,
-      "price": 80,
+      "price": 54,
       "bundle": 606
     },
     {
@@ -7358,7 +7369,7 @@
         ]
       ],
       "img": 21,
-      "price": 40
+      "price": 64
     },
     {
       "id": 360,
@@ -7383,7 +7394,7 @@
         ]
       ],
       "img": 22,
-      "price": 157,
+      "price": 219,
       "bundle": 607
     },
     {
@@ -7404,7 +7415,7 @@
       "set": 6,
       "rules": [],
       "img": 20,
-      "price": 100,
+      "price": 102,
       "bundle": 608
     },
     {
@@ -7425,7 +7436,7 @@
       "set": 6,
       "rules": [],
       "img": 13,
-      "price": 92
+      "price": 55
     },
     {
       "id": 363,
@@ -7449,14 +7460,14 @@
           "Summoning a Unique destroys previous Uniques with the same name."
         ]
       ],
-      "img": 21,
-      "price": 450,
+      "img": 20,
+      "price": 546,
       "bundle": 609
     },
     {
       "id": 364,
       "name": "Gravelock Freak",
-      "desc": "When another Gravelock takes damage, Gravelock Freak's Countdown is decreased by 1.",
+      "desc": "When another Gravelock you control takes damage, Gravelock Freak's Countdown is decreased by 1.",
       "flavor": "Stone teeth, metal maw.\r\nRend limb, bone gnaw.",
       "kind": "CREATURE",
       "types": "Gravelock",
@@ -7470,8 +7481,8 @@
       "decay": 0,
       "set": 6,
       "rules": [],
-      "img": 23,
-      "price": 258,
+      "img": 22,
+      "price": 239,
       "bundle": 610
     },
     {
@@ -7493,11 +7504,11 @@
       "rules": [
         [
           "Pillage: A random opponent unit is dealt 1 [physical damage].",
-          "The pillage effect is triggered when this unit deals combat damage to an idol."
+          "The pillage effect is triggered when this unit deals damage to an idol during combat."
         ]
       ],
-      "img": 17,
-      "price": 76,
+      "img": 16,
+      "price": 49,
       "bundle": 611
     },
     {
@@ -7517,8 +7528,8 @@
       "decay": 0,
       "set": 6,
       "rules": [],
-      "img": 15,
-      "price": 100,
+      "img": 14,
+      "price": 74,
       "bundle": 612
     },
     {
@@ -7543,8 +7554,8 @@
           "Resonance effects are triggered when you play a spell."
         ]
       ],
-      "img": 16,
-      "price": 49,
+      "img": 15,
+      "price": 50,
       "bundle": 613
     },
     {
@@ -7569,8 +7580,8 @@
           "When this spell is cast, all remaining resources of its type are spent. The surge value (X) is equal to the amount spent."
         ]
       ],
-      "img": 18,
-      "price": 149
+      "img": 17,
+      "price": 194
     },
     {
       "id": 369,
@@ -7589,8 +7600,8 @@
       "decay": 0,
       "set": 6,
       "rules": [],
-      "img": 19,
-      "price": 110
+      "img": 18,
+      "price": 179
     },
     {
       "id": 370,
@@ -7619,7 +7630,7 @@
         ]
       ],
       "img": 15,
-      "price": 800,
+      "price": 446,
       "bundle": 614
     },
     {
@@ -7640,7 +7651,7 @@
       "set": 6,
       "rules": [],
       "img": 16,
-      "price": 81,
+      "price": 77,
       "bundle": 615
     },
     {
@@ -7661,14 +7672,14 @@
       "set": 6,
       "rules": [],
       "img": 17,
-      "price": 60,
+      "price": 88,
       "bundle": 616
     },
     {
       "id": 373,
       "name": "Gusty Izulr",
       "desc": "",
-      "flavor": "\"Relationship to Nogs unknown. Both have feathers.\" - Ihrbraman, Creature Collector",
+      "flavor": "\"Relationship to Nogs unknown. Both have feathers.\"\\n- Ihrbraman, Creature Collector",
       "kind": "CREATURE",
       "types": "Beast",
       "rarity": 0,
@@ -7687,7 +7698,7 @@
         ]
       ],
       "img": 18,
-      "price": 80,
+      "price": 65,
       "bundle": 617
     },
     {
@@ -7708,7 +7719,7 @@
       "set": 6,
       "rules": [],
       "img": 24,
-      "price": 378,
+      "price": 309,
       "bundle": 618
     },
     {
@@ -7729,7 +7740,7 @@
       "set": 6,
       "rules": [],
       "img": 19,
-      "price": 1149,
+      "price": 665,
       "bundle": 619
     },
     {
@@ -7750,7 +7761,7 @@
       "set": 6,
       "rules": [],
       "img": 20,
-      "price": 89
+      "price": 106
     },
     {
       "id": 377,
@@ -7770,7 +7781,7 @@
       "set": 6,
       "rules": [],
       "img": 21,
-      "price": 1700
+      "price": 644
     },
     {
       "id": 378,
@@ -7790,7 +7801,7 @@
       "set": 6,
       "rules": [],
       "img": 22,
-      "price": 519,
+      "price": 193,
       "bundle": 620
     },
     {
@@ -7810,8 +7821,8 @@
       "decay": 0,
       "set": 6,
       "rules": [],
-      "img": 22,
-      "price": 69,
+      "img": 21,
+      "price": 50,
       "bundle": 621
     },
     {
@@ -7830,9 +7841,14 @@
       "order": 0,
       "decay": 1,
       "set": 6,
-      "rules": [],
+      "rules": [
+        [
+          "Magic resistance 2",
+          "Magic damage dealt to Slithering Form is reduced by 2."
+        ]
+      ],
       "img": 14,
-      "price": 400
+      "price": 222
     },
     {
       "id": 381,
@@ -7852,7 +7868,7 @@
       "set": 6,
       "rules": [],
       "img": 18,
-      "price": 600,
+      "price": 404,
       "bundle": 622
     },
     {
@@ -7878,7 +7894,7 @@
         ]
       ],
       "img": 15,
-      "price": 1250,
+      "price": 975,
       "bundle": 623
     },
     {
@@ -7898,8 +7914,8 @@
       "decay": 0,
       "set": 6,
       "rules": [],
-      "img": 24,
-      "price": 900,
+      "img": 23,
+      "price": 429,
       "bundle": 624
     },
     {
@@ -7919,14 +7935,14 @@
       "decay": 0,
       "set": 6,
       "rules": [],
-      "img": 66,
-      "price": 167
+      "img": 81,
+      "price": 134
     },
     {
       "id": 385,
       "name": "Feedback Jolt",
-      "desc": "Deal 3 [magic damage] to enchanted opponent units.",
-      "flavor": "\"Magic makes an excellent conduit.\" - Amhan, Machine Master",
+      "desc": "Each opponent unit is dealt 2 [magic damage] per attached enchantment.",
+      "flavor": "\"Magic makes an excellent conduit.\"\\n- Amhan, Machine Master",
       "kind": "SPELL",
       "types": "Destruction",
       "rarity": 0,
@@ -7939,14 +7955,14 @@
       "decay": 0,
       "set": 6,
       "rules": [],
-      "img": 25,
-      "price": 99
+      "img": 24,
+      "price": 50
     },
     {
       "id": 540,
       "name": "Omen of Damnation",
       "desc": "When an opponent creature comes into play, a random idol on that side is dealt 1 damage.",
-      "flavor": "\"I don't like these marches. I hear Nuru's whispers in the rustling leaves.\" - Jamra, Expedition Leader",
+      "flavor": "\"I don't like these marches. I hear Nuru's whispers in the rustling leaves.\"\\n- Jamra, Expedition Leader",
       "kind": "SPELL",
       "types": "Lingering",
       "rarity": 0,
@@ -7965,7 +7981,7 @@
         ]
       ],
       "img": 21,
-      "price": 134
+      "price": 84
     },
     {
       "id": 541,
@@ -7990,7 +8006,7 @@
         ]
       ],
       "img": 24,
-      "price": 700
+      "price": 710
     },
     {
       "id": 542,
@@ -8010,7 +8026,1427 @@
       "set": 6,
       "rules": [],
       "img": 25,
-      "price": 691
+      "price": 297
+    },
+    {
+      "id": 774,
+      "name": "Ashen Vapors",
+      "desc": " [Poison damage] is increased by 1.",
+      "flavor": "Breathing is for the weak.",
+      "kind": "SPELL",
+      "types": "Lingering",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 2,
+      "set": 7,
+      "rules": [
+        [
+          "Linger: 5",
+          "This spell remains in play for 5 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+        ]
+      ],
+      "img": 25,
+      "price": 116
+    },
+    {
+      "id": 775,
+      "name": "Infested Husk",
+      "desc": "When Infested Husk is destroyed, a random opponent creature becomes [poisoned].",
+      "flavor": "\"My last expedition to the mire was perilous at best. This is something else entirely.\"\\n- Jamra, Expedition Leader",
+      "kind": "CREATURE",
+      "types": "Undead",
+      "rarity": 0,
+      "hp": 3,
+      "ap": 2,
+      "ac": 3,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 2,
+      "set": 7,
+      "rules": [],
+      "img": 26,
+      "price": 116,
+      "bundle": 648
+    },
+    {
+      "id": 776,
+      "name": "Canister Automaton",
+      "desc": "When Canister Automaton is destroyed in [melee combat], its attacker is dealt 3 [physical damage].",
+      "flavor": "\"It explodes.\"\\n- Grahm, Animator",
+      "kind": "CREATURE",
+      "types": "Automaton",
+      "rarity": 1,
+      "hp": 3,
+      "ap": 2,
+      "ac": 2,
+      "growth": 0,
+      "energy": 2,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 31,
+      "price": 584,
+      "bundle": 649
+    },
+    {
+      "id": 777,
+      "name": "Melt-Iron Shell",
+      "desc": "",
+      "flavor": "Dyrran blacksmiths think outside the box. Way outside the box.",
+      "kind": "ENCHANTMENT",
+      "types": "",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 3,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Surge: Enchanted unit's Attack and Health are increased by X.",
+          "When this spell is cast, all remaining resources of its type are spent. The surge value (X) is equal to the amount spent."
+        ]
+      ],
+      "img": 28,
+      "price": 111
+    },
+    {
+      "id": 778,
+      "name": "Earthen Splendour",
+      "desc": "Enchanted units you control get +1 Attack and +2 Health.",
+      "flavor": "A blessing, woven into the humming earth and the keening winds.",
+      "kind": "SPELL",
+      "types": "",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 2,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 29,
+      "price": 102
+    },
+    {
+      "id": 779,
+      "name": "Steelwood Vindicator",
+      "desc": "",
+      "flavor": "\"Steelwood weaponry is matched only by the shardswords of faraway Ilmire.\"\\n- Siani's Historia, Vol. III",
+      "kind": "CREATURE",
+      "types": "Human,Warden",
+      "rarity": 0,
+      "hp": 2,
+      "ap": 4,
+      "ac": 2,
+      "growth": 3,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Relentless",
+          "When a Relentless unit destroys another unit, it keeps attacking with its remaining Attack value."
+        ]
+      ],
+      "img": 31,
+      "price": 117,
+      "bundle": 650
+    },
+    {
+      "id": 780,
+      "name": "Mystic's Storm",
+      "desc": "Your [Lingering] spells count up by 2, and your opponent's Lingering spells count down by 3.",
+      "flavor": "Time moves forward. Mostly.",
+      "kind": "SPELL",
+      "types": "",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 2,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 30,
+      "price": 99
+    },
+    {
+      "id": 781,
+      "name": "Proud Mercenary",
+      "desc": "Adjacent creatures have +1 Attack.",
+      "flavor": "The start of the expeditions marked the birth of new trades. Mercenaries, guards and porters all found work aplenty.",
+      "kind": "CREATURE",
+      "types": "Human,Mercenary",
+      "rarity": 0,
+      "hp": 3,
+      "ap": 2,
+      "ac": 2,
+      "growth": 0,
+      "energy": 0,
+      "order": 3,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 32,
+      "price": 104,
+      "bundle": 651
+    },
+    {
+      "id": 782,
+      "name": "Shambler Sickness",
+      "desc": "Before attacking, enchanted unit is moved to a random adjacent tile.",
+      "flavor": "The mire can do strange things to the mind.",
+      "kind": "ENCHANTMENT",
+      "types": "Displacement",
+      "rarity": 1,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 1,
+      "set": 7,
+      "rules": [],
+      "img": 24,
+      "price": 338
+    },
+    {
+      "id": 783,
+      "name": "Lightning Chest",
+      "desc": "Unused Energy is added to your [current] Energy at the start of your next turn.",
+      "flavor": "Danger, do not touch!",
+      "kind": "SPELL",
+      "types": "Lingering",
+      "rarity": 2,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 3,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Linger: 5",
+          "This spell remains in play for 5 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+        ]
+      ],
+      "img": 27,
+      "price": 1180
+    },
+    {
+      "id": 784,
+      "name": "Eager to Battle",
+      "desc": "Creatures with [base Attack] 2 or less come into play with [Haste].",
+      "flavor": "Early bird gets the worm. Hasty hunter gets the bird.\\n- Kinfolk saying",
+      "kind": "SPELL",
+      "types": "Lingering",
+      "rarity": 2,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 3,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Linger: 3",
+          "This spell remains in play for 3 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+        ]
+      ],
+      "img": 28,
+      "price": 1189
+    },
+    {
+      "id": 785,
+      "name": "Coronation",
+      "desc": "Enchanted creature you control has its [base Countdown] set to 1, and gets +6 Attack and +6 Health. When enchanted creature is destroyed, all idols you control are destroyed.",
+      "flavor": "\\nNow crowned Queen-Empress,\\nCaera had Cay deliver unity to\\nthe Empire.",
+      "kind": "ENCHANTMENT",
+      "types": "",
+      "rarity": 2,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 8,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 31,
+      "price": 929
+    },
+    {
+      "id": 786,
+      "name": "Battle Dance",
+      "desc": "Target creature and connected creatures have their Countdown reduced by 1.",
+      "flavor": "\"Qorran waltzes are played in thunderclap.\"\\n- Reaver proverb",
+      "kind": "SPELL",
+      "types": "",
+      "rarity": 1,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 4,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 30,
+      "price": 343
+    },
+    {
+      "id": 787,
+      "name": "Steelwood Champion",
+      "desc": "",
+      "kind": "CREATURE",
+      "types": "Human,Warden",
+      "rarity": 1,
+      "hp": 3,
+      "ap": 4,
+      "ac": 2,
+      "growth": 4,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Inspiring: +1 Attack",
+          "When Steelwood Champion comes into play, adjacent units have their Attack increased by +1 until end of turn."
+        ]
+      ],
+      "img": 32,
+      "price": 547,
+      "bundle": 652
+    },
+    {
+      "id": 788,
+      "name": "Earthboon",
+      "desc": "Enchanted unit gets +2 Attack for each [Lingering] spell in play. Whenever a Lingering spell is played, enchanted unit's Countdown is decreased by 1.",
+      "flavor": "Revel in the magic while it lasts.",
+      "kind": "ENCHANTMENT",
+      "types": "",
+      "rarity": 2,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 2,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 30,
+      "price": 498
+    },
+    {
+      "id": 789,
+      "name": "Sleep Moratorium",
+      "desc": "[Sift] 3 random scrolls from your discard pile, and draw 1 of them. Gain current Decay equal to its casting cost.",
+      "flavor": "In the mire, \"Get up and pull yourself together\" has a very different meaning.",
+      "kind": "SPELL",
+      "types": "",
+      "rarity": 2,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 5,
+      "set": 7,
+      "rules": [],
+      "img": 27,
+      "price": 1498
+    },
+    {
+      "id": 790,
+      "name": "Scout",
+      "desc": "When Scout comes into play, [sift] 3 scrolls from your library. Choose one of them to put on top of your library.",
+      "flavor": "\"You know me, general. I'm just full of ruined surprises.\"",
+      "kind": "CREATURE",
+      "types": "Human",
+      "rarity": 1,
+      "hp": 2,
+      "ap": 2,
+      "ac": 2,
+      "growth": 0,
+      "energy": 0,
+      "order": 2,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 33,
+      "price": 434,
+      "bundle": 653
+    },
+    {
+      "id": 791,
+      "name": "Varas, Essence Eater",
+      "desc": "Varas has +2 Attack for each destroyed idol on the board.",
+      "flavor": "\"Somehow, I drew Varas out of hiding. I wish I hadn't.\"\\n- Atmahs, Imperial Quartermaster",
+      "kind": "CREATURE",
+      "types": "Human,Mystic",
+      "rarity": 2,
+      "hp": 6,
+      "ap": 3,
+      "ac": 2,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 6,
+      "set": 7,
+      "rules": [
+        [
+          "Unique",
+          "Summoning a Unique destroys previous Uniques with the same name."
+        ],
+        [
+          "Relentless",
+          "When a Relentless unit destroys another unit, it keeps attacking with its remaining Attack value."
+        ]
+      ],
+      "img": 34,
+      "price": 1066,
+      "bundle": 663
+    },
+    {
+      "id": 792,
+      "name": "Miremare",
+      "desc": "",
+      "flavor": "\"Intriguing. I want one!\"\\n- Ihrbraman, Creature Collector",
+      "kind": "CREATURE",
+      "types": "Beast,Masked",
+      "rarity": 1,
+      "hp": 2,
+      "ap": 2,
+      "ac": 2,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 2,
+      "set": 7,
+      "rules": [
+        [
+          "Dominion: +2 Attack and +3 Health.",
+          "Dominion effects are active as long as at least one opponent idol is down."
+        ]
+      ],
+      "img": 38,
+      "price": 401,
+      "bundle": 679
+    },
+    {
+      "id": 793,
+      "name": "Pack Husk",
+      "desc": "When Pack Husk is destroyed, draw 1 scroll.",
+      "flavor": "Death weighs heavy on us all.",
+      "kind": "CREATURE",
+      "types": "Undead",
+      "rarity": 0,
+      "hp": 4,
+      "ap": 2,
+      "ac": 3,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 3,
+      "set": 7,
+      "rules": [],
+      "img": 35,
+      "price": 107,
+      "bundle": 654
+    },
+    {
+      "id": 794,
+      "name": "Corpse Strider",
+      "desc": "When an Undead you control is destroyed, Corpse Strider's Attack and Health are increased by 1.",
+      "flavor": "\"About one in every thousand husks is actually still breathing. Those are the\\nones to look out for.\"\\n- Jamra, Expedition Leader",
+      "kind": "CREATURE",
+      "types": "Human,Mystic",
+      "rarity": 1,
+      "hp": 1,
+      "ap": 2,
+      "ac": 2,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 2,
+      "set": 7,
+      "rules": [],
+      "img": 37,
+      "price": 1047,
+      "bundle": 676
+    },
+    {
+      "id": 795,
+      "name": "Doomteller",
+      "desc": "When Doomteller's Countdown becomes 0, opponent idols take 2 damage.",
+      "flavor": "\"No rush. Their demise is inevitable.\"",
+      "kind": "STRUCTURE",
+      "types": "Totem",
+      "rarity": 2,
+      "hp": 4,
+      "ap": 0,
+      "ac": 4,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 4,
+      "set": 7,
+      "rules": [],
+      "img": 29,
+      "price": 1238,
+      "bundle": 664
+    },
+    {
+      "id": 796,
+      "name": "Gloomstone Treaty",
+      "desc": "When a non-Decay creature you control is destroyed during your opponent's turn, summon a Revenant in its place.",
+      "flavor": "One does not lightly sign a treaty with the artifacts of Ilmire.",
+      "kind": "SPELL",
+      "types": "Lingering",
+      "rarity": 1,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 2,
+      "set": 7,
+      "rules": [
+        [
+          "Linger: 5",
+          "This spell remains in play for 5 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+        ]
+      ],
+      "img": 32,
+      "price": 307
+    },
+    {
+      "id": 797,
+      "name": "Deathly Grasp",
+      "desc": "Target creature gets [Slayer] until end of turn.",
+      "flavor": "A blow that leaves no bruises.",
+      "kind": "SPELL",
+      "types": "",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 2,
+      "set": 7,
+      "rules": [],
+      "img": 30,
+      "price": 94
+    },
+    {
+      "id": 798,
+      "name": "Essence Garb",
+      "desc": "Enchanted creature gets +1 Attack and +1 Health.",
+      "flavor": "Fashion that grows on you.",
+      "kind": "ENCHANTMENT",
+      "types": "",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 2,
+      "set": 7,
+      "rules": [
+        [
+          "Dominion: +2 Attack and +2 Health.",
+          "Dominion effects are active as long as at least one opponent idol is down."
+        ]
+      ],
+      "img": 31,
+      "price": 83
+    },
+    {
+      "id": 799,
+      "name": "Corpse Theft",
+      "desc": "When enchanted creature is destroyed, an Undead copy of that creature is summoned on a random tile on your side.",
+      "flavor": "\"That one's mine.\"\\n- Nuru, Flesh-seamstress",
+      "kind": "ENCHANTMENT",
+      "types": "",
+      "rarity": 2,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 4,
+      "set": 7,
+      "rules": [],
+      "img": 28,
+      "price": 1386
+    },
+    {
+      "id": 800,
+      "name": "Swirling Smoke",
+      "desc": "Target creature and connected creatures have their Countdown increased by 1. Any attached enchantments are destroyed.",
+      "flavor": "\"Deep within the mire, the very air churned with a malice I cannot explain.\"\\n- Frysk, Imperial Scout",
+      "kind": "SPELL",
+      "types": "",
+      "rarity": 1,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 2,
+      "set": 7,
+      "rules": [],
+      "img": 36,
+      "price": 517
+    },
+    {
+      "id": 801,
+      "name": "Expedition Guard",
+      "desc": "Expedition Guard has +1 Attack for each non-Human creature your opponent controls.",
+      "flavor": "\"Don't worry. I'll keep any assailants at bay.\"\\n- Garthe, Expedition Guard",
+      "kind": "CREATURE",
+      "types": "Human",
+      "rarity": 0,
+      "hp": 4,
+      "ap": 2,
+      "ac": 2,
+      "growth": 0,
+      "energy": 0,
+      "order": 3,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 38,
+      "price": 90,
+      "bundle": 659
+    },
+    {
+      "id": 803,
+      "name": "Stirring Effigy",
+      "desc": "",
+      "flavor": "The Empire's greatest never truly die.",
+      "kind": "STRUCTURE",
+      "types": "Totem",
+      "rarity": 0,
+      "hp": 4,
+      "ap": 0,
+      "ac": -1,
+      "growth": 0,
+      "energy": 0,
+      "order": 2,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Resonance: A random adjacent creature gets +1 Attack.",
+          "Resonance effects are triggered when you play a spell."
+        ]
+      ],
+      "img": 42,
+      "price": 70,
+      "bundle": 665
+    },
+    {
+      "id": 804,
+      "name": "Just Conviction",
+      "desc": "Soldiers you control have +1 Attack.",
+      "flavor": "\"My soldiers know what's mine. That's what I like about them.\"\\n- Queen-Empress Caera",
+      "kind": "SPELL",
+      "types": "Lingering",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 3,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Linger: 5",
+          "This spell remains in play for 5 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+        ]
+      ],
+      "img": 39,
+      "price": 109
+    },
+    {
+      "id": 805,
+      "name": "Resonant Sword",
+      "desc": "",
+      "flavor": "Think of it as a tuning fork, only sharper.",
+      "kind": "ENCHANTMENT",
+      "types": "",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 1,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Resonance: +2 Attack until end of turn.",
+          "Resonance effects are triggered when you play a spell."
+        ]
+      ],
+      "img": 35,
+      "price": 105
+    },
+    {
+      "id": 806,
+      "name": "Favored",
+      "desc": "Enchanted unit gets +2 Health.",
+      "flavor": "After years on the Arren Cape, Cay came to Southport. She stayed but a day, then left with a\\nloyal army.",
+      "kind": "ENCHANTMENT",
+      "types": "",
+      "rarity": 2,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 3,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Dominion: Enchanted unit's Attack is increased by 5.",
+          "Dominion effects are active as long as at least one opponent idol is down."
+        ]
+      ],
+      "img": 34,
+      "price": 1034
+    },
+    {
+      "id": 807,
+      "name": "Pickaxe Volunteer",
+      "desc": "",
+      "flavor": "Many hands make light work.",
+      "kind": "CREATURE",
+      "types": "Human",
+      "rarity": 0,
+      "hp": 3,
+      "ap": 3,
+      "ac": 3,
+      "growth": 0,
+      "energy": 2,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Idol strike 4",
+          "When Pickaxe Volunteer deals damage to an idol during combat, that idol is dealt an additional 4 damage."
+        ]
+      ],
+      "img": 32,
+      "price": 85,
+      "bundle": 655
+    },
+    {
+      "id": 808,
+      "name": "Magma Thrower",
+      "desc": "Magma Thrower's Attack is increased by your [current] Energy resource.",
+      "flavor": "If a problem can't be solved with a gallon of molten rock, it's not worth solving.",
+      "kind": "CREATURE",
+      "types": "Human",
+      "rarity": 0,
+      "hp": 3,
+      "ap": 2,
+      "ac": 2,
+      "growth": 0,
+      "energy": 3,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 35,
+      "price": 111,
+      "bundle": 694
+    },
+    {
+      "id": 809,
+      "name": "Blast Automaton",
+      "desc": "When Blast Automaton damages an opponent unit in combat, adjacent units are dealt 1 [physical damage].",
+      "flavor": "\\nNobody knows for sure, but\\nsome say each houses a tiny Piddlejack. It's probably nonsense.",
+      "kind": "CREATURE",
+      "types": "Automaton",
+      "rarity": 1,
+      "hp": 4,
+      "ap": 2,
+      "ac": 2,
+      "growth": 0,
+      "energy": 5,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Ranged attack",
+          "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
+        ],
+        [
+          "Armor 2",
+          "Physical damage dealt to Blast Automaton is reduced by 2."
+        ]
+      ],
+      "img": 39,
+      "price": 698,
+      "bundle": 685
+    },
+    {
+      "id": 810,
+      "name": "Ka Zum Driller",
+      "desc": "",
+      "flavor": "\"It's made to take on\\nmountains. Magical rocks\\nare nothing, really.\"\\n- Krys, from Ka Zum",
+      "kind": "CREATURE",
+      "types": "Human",
+      "rarity": 2,
+      "hp": 3,
+      "ap": 3,
+      "ac": 2,
+      "growth": 0,
+      "energy": 5,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Pillage: The damaged idol is destroyed.",
+          "The pillage effect is triggered when this unit deals damage to an idol during combat."
+        ]
+      ],
+      "img": 33,
+      "price": 1243,
+      "bundle": 656
+    },
+    {
+      "id": 811,
+      "name": "Assault Battery",
+      "desc": "",
+      "flavor": "\"Hit them hard. Harder! More! Boom!\"\\n- Enryk, Machine Maker",
+      "kind": "STRUCTURE",
+      "types": "Artillery",
+      "rarity": 1,
+      "hp": 3,
+      "ap": 4,
+      "ac": 2,
+      "growth": 0,
+      "energy": 4,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Ranged attack",
+          "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
+        ],
+        [
+          "Surge: X other [random] structures you control have their Countdown decreased by 2.",
+          "When this unit is played, all remaining resources of its type are spent. The surge value (X) is equal to the amount spent."
+        ]
+      ],
+      "img": 41,
+      "price": 549,
+      "bundle": 675
+    },
+    {
+      "id": 812,
+      "name": "Excogitator",
+      "desc": "Instead of attacking, Excogitator summons a <Scout Automaton> on an adjacent tile. Pay 3 Energy to decrease Countdown by 1.",
+      "flavor": "",
+      "kind": "STRUCTURE",
+      "types": "Forge",
+      "rarity": 2,
+      "hp": 5,
+      "ap": 0,
+      "ac": 3,
+      "growth": 0,
+      "energy": 5,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Unique",
+          "Summoning a Unique destroys previous Uniques with the same name."
+        ]
+      ],
+      "img": 36,
+      "price": 1497,
+      "bundle": 680
+    },
+    {
+      "id": 813,
+      "name": "Controlled Lightning",
+      "desc": "Target unit you control makes a ranged attack, dealing damage equal to its Countdown.",
+      "flavor": "When they least expect it... that's when lightning strikes.",
+      "kind": "SPELL",
+      "types": "",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 2,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 40,
+      "price": 96
+    },
+    {
+      "id": 814,
+      "name": "Wind-up Automaton",
+      "desc": "Wind-up counts up instead of down at the beginning of its turn. Pay 3 Energy to increase Attack by Countdown until end of turn. Countdown is set to 0.",
+      "flavor": "",
+      "kind": "CREATURE",
+      "types": "Automaton",
+      "rarity": 2,
+      "hp": 3,
+      "ap": 0,
+      "ac": 1,
+      "growth": 0,
+      "energy": 2,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Ranged attack",
+          "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
+        ]
+      ],
+      "img": 42,
+      "price": 1777,
+      "bundle": 687
+    },
+    {
+      "id": 815,
+      "name": "Steelwood Dedication",
+      "desc": "If a creature you control is dealt damage during combat, it is then healed by 3.",
+      "flavor": "Show no fear. The earth will tend to your wounds.",
+      "kind": "SPELL",
+      "types": "Lingering",
+      "rarity": 1,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 2,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Linger: 5",
+          "This spell remains in play for 5 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+        ]
+      ],
+      "img": 34,
+      "price": 353
+    },
+    {
+      "id": 816,
+      "name": "Raid",
+      "desc": "Any [Pillage] traits on units you control are activated.",
+      "flavor": "\"Find the stores! Hungry soldiers won't last long in Khaile.\"",
+      "kind": "SPELL",
+      "types": "",
+      "rarity": 1,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 2,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 35,
+      "price": 249
+    },
+    {
+      "id": 817,
+      "name": "Verdant Remnant",
+      "desc": "When Verdant Remnant's Countdown becomes 0, draw 1 creature scroll.",
+      "flavor": "On the northernmost tip of Reason's End, remnants of a distant past litter the wind-beaten landscape.",
+      "kind": "STRUCTURE",
+      "types": "Totem",
+      "rarity": 1,
+      "hp": 5,
+      "ap": 0,
+      "ac": 3,
+      "growth": 5,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Haste",
+          "Creature comes in play with Countdown set to 0."
+        ]
+      ],
+      "img": 33,
+      "price": 440,
+      "bundle": 657
+    },
+    {
+      "id": 818,
+      "name": "Consolidator Niara",
+      "desc": "When you play a creature scroll with a subtype not on your side, creatures you control get +2 Attack until end of turn.",
+      "flavor": "\\nThe Consolidator alone can\\nsummon the Jarls to council.",
+      "kind": "CREATURE",
+      "types": "Human",
+      "rarity": 2,
+      "hp": 5,
+      "ap": 2,
+      "ac": 2,
+      "growth": 6,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Unique",
+          "Summoning a Unique destroys previous Uniques with the same name."
+        ],
+        [
+          "Relentless",
+          "When a Relentless unit destroys another unit, it keeps attacking with its remaining Attack value."
+        ]
+      ],
+      "img": 42,
+      "price": 1100,
+      "bundle": 683
+    },
+    {
+      "id": 819,
+      "name": "Spotted Lynx",
+      "desc": "When an opponent creature comes into play, Spotted Lynx's Countdown is decreased by 1.",
+      "flavor": "\"The lynx is a remarkable creature. Its pounce is unmatched by anything roaming these woods.\"\\n- Maans, Forest Keeper",
+      "kind": "CREATURE",
+      "types": "Beast,Cat",
+      "rarity": 0,
+      "hp": 2,
+      "ap": 3,
+      "ac": 3,
+      "growth": 2,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 39,
+      "price": 118,
+      "bundle": 677
+    },
+    {
+      "id": 820,
+      "name": "Overgrown Menhir",
+      "desc": "When a creature comes into play next to Overgrown Menhir, that creature's Countdown is decreased by 1.",
+      "flavor": "These stones are more than just symbols. They're the voice of Khaile.",
+      "kind": "STRUCTURE",
+      "types": "Totem",
+      "rarity": 2,
+      "hp": 2,
+      "ap": 0,
+      "ac": -1,
+      "growth": 3,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 36,
+      "price": 998,
+      "bundle": 668
+    },
+    {
+      "id": 821,
+      "name": "Extractor Device",
+      "desc": "",
+      "flavor": "\"This is absolutely awesome! It's... great!\"\\n- Owin, Machine Operator",
+      "kind": "ENCHANTMENT",
+      "types": "",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 3,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Pillage: Increase Energy by 1.",
+          "The pillage effect is triggered when this unit deals damage to an idol during combat."
+        ]
+      ],
+      "img": 34,
+      "price": 75
+    },
+    {
+      "id": 822,
+      "name": "Stone Recluse",
+      "desc": "",
+      "flavor": "\"Each day's a trial. I tackle them in solitude.\"\\n- Jehb, Khaile recluse",
+      "kind": "CREATURE",
+      "types": "Human,Warden",
+      "rarity": 0,
+      "hp": 3,
+      "ap": 3,
+      "ac": 2,
+      "growth": 3,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Pillage: +2 Attack and relentless until next attack.",
+          "The pillage effect is triggered when this unit deals damage to an idol during combat."
+        ]
+      ],
+      "img": 37,
+      "price": 116,
+      "bundle": 660
+    },
+    {
+      "id": 823,
+      "name": "Potency Burst",
+      "desc": "",
+      "flavor": "\"I don't do subtle.\"\\n- Enryk, Machine Maker",
+      "kind": "SPELL",
+      "types": "Destruction",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 1,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Surge: Deal X [magic damage] to target unit.",
+          "When this spell is cast, all remaining resources of its type are spent. The surge value (X) is equal to the amount spent."
+        ]
+      ],
+      "img": 37,
+      "price": 107
+    },
+    {
+      "id": 824,
+      "name": "Keen Warden",
+      "desc": "",
+      "flavor": "\"We're one with this forest - the birds, the bunnies and the snakes.\"\\n- Poy Pohi, Grove Warden",
+      "kind": "CREATURE",
+      "types": "Human,Warden",
+      "rarity": 0,
+      "hp": 2,
+      "ap": 1,
+      "ac": 2,
+      "growth": 1,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Pillage: +3 Attack until next attack.",
+          "The pillage effect is triggered when this unit deals damage to an idol during combat."
+        ]
+      ],
+      "img": 40,
+      "price": 99,
+      "bundle": 669
+    },
+    {
+      "id": 825,
+      "name": "Orz Disruptor",
+      "desc": "When a Human you control deals damage to a unit, opponent's idol on that row is dealt 2 damage.",
+      "flavor": "The university's all about magic. The disruptors work as a safeguard, should things\\ngo wrong.",
+      "kind": "CREATURE",
+      "types": "Human,Knight",
+      "rarity": 2,
+      "hp": 5,
+      "ap": 5,
+      "ac": 2,
+      "growth": 0,
+      "energy": 0,
+      "order": 7,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 44,
+      "price": 1169,
+      "bundle": 678
+    },
+    {
+      "id": 826,
+      "name": "Imperial Scepter",
+      "desc": "",
+      "flavor": "On the verge of collapse, the city of Ochre brought to the battlefield the Imperial Scepter. In its shadow, the battle turned.",
+      "kind": "STRUCTURE",
+      "types": "Totem",
+      "rarity": 2,
+      "hp": 3,
+      "ap": 0,
+      "ac": -1,
+      "growth": 0,
+      "energy": 0,
+      "order": 5,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Unique",
+          "Summoning a Unique destroys previous Uniques with the same name."
+        ],
+        [
+          "Resonance: Adjacent units have their Countdown decreased by 1.",
+          "Resonance effects are triggered when you play a spell."
+        ]
+      ],
+      "img": 43,
+      "price": 1110,
+      "bundle": 670
+    },
+    {
+      "id": 827,
+      "name": "Expurgator",
+      "desc": "When Expurgator comes into play, any enchantments on its row are destroyed.",
+      "flavor": "There was a crackle in the air as the torch purged the air of miasmic dust. There could be no neglect, lest the entire convoy were to fungify.",
+      "kind": "CREATURE",
+      "types": "Human,Mystic",
+      "rarity": 0,
+      "hp": 2,
+      "ap": 3,
+      "ac": 2,
+      "growth": 0,
+      "energy": 0,
+      "order": 0,
+      "decay": 3,
+      "set": 7,
+      "rules": [],
+      "img": 33,
+      "price": 94,
+      "bundle": 691
+    },
+    {
+      "id": 828,
+      "name": "Pack Fowl",
+      "desc": "",
+      "flavor": "\"The burden of Arom makes life easier for the rest of us. It's truly a blessing.\"\\n- Niem, about his pack fowl",
+      "kind": "CREATURE",
+      "types": "Beast",
+      "rarity": 1,
+      "hp": 3,
+      "ap": 3,
+      "ac": 2,
+      "growth": 0,
+      "energy": 0,
+      "order": 3,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Dominion: While Pack Fowl is in play, Wild is increased by 2.",
+          "Dominion effects are active as long as at least one opponent idol is down."
+        ]
+      ],
+      "img": 41,
+      "price": 385,
+      "bundle": 681
+    },
+    {
+      "id": 829,
+      "name": "Aes Moran Scholar",
+      "desc": "When Aes Moran Scholar comes into play, [sift] 3 scrolls from your library, and draw 1 of them.",
+      "flavor": "\"I think about these things, you know? Scrolls and such.\"\\n- Jahk Ob, Aes Moran Scholar",
+      "kind": "CREATURE",
+      "types": "Human,Mystic",
+      "rarity": 1,
+      "hp": 3,
+      "ap": 2,
+      "ac": 2,
+      "growth": 0,
+      "energy": 0,
+      "order": 4,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Ranged attack",
+          "This unit is unaffected by effects that apply only to melee units (for example Spiky)."
+        ]
+      ],
+      "img": 36,
+      "price": 732,
+      "bundle": 658
+    },
+    {
+      "id": 830,
+      "name": "Oppressor's Rule",
+      "desc": "Units on one side of a row have their Move decreased by 1 until end of their turn. Any attached enchantments are destroyed.",
+      "flavor": "Imperial law follows the Empire's expansion. Sometimes, it even precedes it.",
+      "kind": "SPELL",
+      "types": "",
+      "rarity": 1,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 2,
+      "decay": 0,
+      "set": 7,
+      "rules": [],
+      "img": 37,
+      "price": 359
+    },
+    {
+      "id": 831,
+      "name": "Keeper's Pledge",
+      "desc": "When a creature comes into play, other creatures on that side get +1 Attack until end of turn.",
+      "flavor": "“Jarl, it is not my duty to\\nfight for you, just to honor\\nthe Pledge.”\\n- Aer Lindr, Earthborn Keeper",
+      "kind": "SPELL",
+      "types": "Lingering",
+      "rarity": 0,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 2,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Linger: 4",
+          "This spell remains in play for 4 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+        ]
+      ],
+      "img": 41,
+      "price": 103
+    },
+    {
+      "id": 854,
+      "name": "Border Treaty",
+      "desc": "Non-Order Human creatures you control have +2 Attack.",
+      "flavor": "Although mostly short-lived, a succession of treaties followed the end of the rebellion. It's as yet unclear who stands to gain the most from them.",
+      "kind": "SPELL",
+      "types": "Lingering",
+      "rarity": 1,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 0,
+      "order": 2,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Linger: 6",
+          "This spell remains in play for 6 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+        ]
+      ],
+      "img": 40,
+      "price": 239
+    },
+    {
+      "id": 855,
+      "name": "Hunter's Treaty",
+      "desc": "If you control creatures from multiple factions, creatures you control have +2 Attack.",
+      "flavor": "Sometimes, kinship reaches further than family.",
+      "kind": "SPELL",
+      "types": "Lingering",
+      "rarity": 1,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 2,
+      "energy": 0,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Linger: 3",
+          "This spell remains in play for 3 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+        ]
+      ],
+      "img": 38,
+      "price": 229
+    },
+    {
+      "id": 856,
+      "name": "Reaver's Treaty",
+      "desc": "Units you control with [Pillage] or [Dominion] have +1 Attack.",
+      "flavor": "The combined might of the reavers and the Mudo finally forced the Empire to withdraw. The rebellion was over; merely a waypoint in history.",
+      "kind": "SPELL",
+      "types": "Lingering",
+      "rarity": 1,
+      "hp": 0,
+      "ap": 0,
+      "ac": 0,
+      "growth": 0,
+      "energy": 2,
+      "order": 0,
+      "decay": 0,
+      "set": 7,
+      "rules": [
+        [
+          "Linger: 8",
+          "This spell remains in play for 8 turns after being played.  If the same spell is cast again while it lingers, its duration is added to the remaining."
+        ]
+      ],
+      "img": 38,
+      "price": 212
     }
   ],
   "strings": {
@@ -8018,9 +9454,17 @@
       "Armor",
       "Armor reduces physical damage by the Armor value."
     ],
+    "base attack": [
+      "Base Attack",
+      "A unit's base Attack is the Attack value printed on the scroll."
+    ],
     "base countdown": [
       "Base Countdown",
-      "When a unit's Countdown resets after having reached 0, it counts up to its base Countdown."
+      "When a unit's Countdown resets after having reached 0, it counts up to its base Countdown. The default is printed on the scroll."
+    ],
+    "base health": [
+      "Base Health",
+      "A unit's base Health is the Health value printed on the scroll."
     ],
     "beast rat": [
       "Beast Rat",
@@ -8042,6 +9486,10 @@
       "Dominion",
       "Dominion traits are scroll-specific rules that are active only when at least one opponent idol is down."
     ],
+    "echomaton": [
+      "Echomaton",
+      "Creature, 1/2/3. Sometimes gives Energy when destroyed."
+    ],
     "effects": [
       "Effects",
       "Temporary effects that changes a unit's stats or rules, but don't count as enchantments."
@@ -8049,6 +9497,10 @@
     "gun automaton": [
       "Gun Automaton",
       "Creature, 2/2/3. Ranged."
+    ],
+    "haste": [
+      "Haste",
+      "Creature with Haste come in play with Countdown set to 0."
     ],
     "heal": [
       "Heal",
@@ -8116,7 +9568,7 @@
     ],
     "piercing": [
       "Piercing",
-      "When a Piercing unit damages a unit, half of the damage (rounded down) is also dealt to the unit behind it."
+      "When a Piercing unit damages a unit, half of the damage (rounded down) is also dealt to the unit/idol behind it."
     ],
     "pillage": [
       "Pillage",
@@ -8150,6 +9602,10 @@
       "Revenant",
       "Creature, 2/1/1. Ward. Destroyed after attacking."
     ],
+    "scout automaton": [
+      "Scout Automaton",
+      "Creature, 1/2/3. Armor 1. Gives +1 Attack to other Automatons."
+    ],
     "sift": [
       "Sift",
       "When sifting, you are shown a number of scrolls and pick one of them. The remainder are shuffled back."
@@ -8171,6 +9627,6 @@
       "Units with Ward cannot be targeted by opponent Spells or Enchantments."
     ]
   },
-  "modified": "2015-04-09T15:30:04.364Z",
-  "version": "1.2.0"
+  "modified": "2015-06-17T12:36:01.271Z",
+  "version": "1.3.1"
 }

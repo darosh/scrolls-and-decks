@@ -767,4 +767,8 @@ gulp.task('scrolls:bundles:copy:data', function () {
         .pipe(gulp.dest('client/data/bundles'));
 });
 
+gulp.task('scrolls:bundles', function (cb) {
+    return runSequence('scrolls:bundles:deserialize', 'scrolls:bundles:build', ['scrolls:bundles:copy:images', 'scrolls:bundles:copy:data'], cb);
+});
+
 gulp.task('scrolls', ['scrolls:images:build']);
