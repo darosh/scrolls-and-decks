@@ -15,7 +15,7 @@
     "quick-ng-repeat": "allaud/quick-ng-repeat",
     "roboto-fontface": "~0.4.2",
     "angulartics": "~0.17.2",
-    "mdi": "~1.0.8-beta",
+    "mdi": "1.1.34",
     "screenfull": "~2.0.0",
     "angular-messages": "1.4.1"
   },
