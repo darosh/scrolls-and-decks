@@ -9,7 +9,7 @@
     "angular-resource": "1.4.1",
     "angular-sanitize": "1.4.1",
     "angular-ui-router": "0.2.13",
-    "lodash": "3.8.0",
+    "lodash": "3.9.3",
     "ngInfiniteScroll": "1.2.1",
     "ngstorage": "0.3.3",
     "quick-ng-repeat": "allaud/quick-ng-repeat",
